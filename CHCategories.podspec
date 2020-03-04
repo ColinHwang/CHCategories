@@ -23,6 +23,14 @@ Pod::Spec.new do |s|
     # Foundation
     s.subspec 'Foundation' do |foundation|
         
+        # NSObject
+        foundation.subspec 'NSObject' do |nsobject|
+            # NSObject+CHBase
+            nsobject.subspec 'NSObject+CHBase' do |nsobject_chbase|
+                nsobject_chbase.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.{h,m}'
+            end
+        end
+        
         # NSValue
         foundation.subspec 'NSValue' do |nsvalue|
             # NSValue+CHBase
