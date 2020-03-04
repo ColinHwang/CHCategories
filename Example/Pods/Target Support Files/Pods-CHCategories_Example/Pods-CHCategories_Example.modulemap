@@ -1,0 +1,6 @@
+framework module Pods_CHCategories_Example {
+  umbrella header "Pods-CHCategories_Example-umbrella.h"
+
+  export *
+  module * { export * }
+}

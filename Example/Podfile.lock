@@ -1,0 +1,16 @@
+PODS:
+  - CHCategories (0.1.0)
+
+DEPENDENCIES:
+  - CHCategories (from `../`)
+
+EXTERNAL SOURCES:
+  CHCategories:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  CHCategories: 0299c6536ea24e008f4eacd6ee714388449ddec2
+
+PODFILE CHECKSUM: 530a61dfb5fb92730fee23f0f5706bc79237ed6e
+
+COCOAPODS: 1.9.0
