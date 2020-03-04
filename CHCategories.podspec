@@ -23,6 +23,31 @@ Pod::Spec.new do |s|
     # Foundation
     s.subspec 'Foundation' do |foundation|
         
+        # NSArray
+        foundation.subspec 'NSArray' do |nsarray|
+            # NSArray+CHBase
+            nsarray.subspec 'NSArray+CHBase' do |nsarray_chbase|
+                nsarray_chbase.dependency 'CHCategories/Foundation/NSData/NSData+CHBase'
+                nsarray_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
+                nsarray_chbase.source_files = 'CHCategories/Classes/Foundation/NSArray/NSArray+CHBase.{h,m}'
+            end
+        end
+        
+        # NSData
+        foundation.subspec 'NSData' do |nsdata|
+            # NSData+CHBase
+            nsdata.subspec 'NSData+CHBase' do |nsdata_chbase|
+                nsdata_chbase.library = 'z.1.2.5'
+                nsdata_chbase.source_files = 'CHCategories/Classes/Foundation/NSData/NSData+CHBase.{h,m}'
+            end
+            
+            # NSData+CHCrypto
+            nsdata.subspec 'NSData+CHCrypto' do |nsdata_chcrypto|
+                nsdata_chcrypto.library = 'z.1.2.5'
+                nsdata_chcrypto.source_files = 'CHCategories/Classes/Foundation/NSData/NSData+CHCrypto.{h,m}'
+            end
+        end
+        
         # NSObject
         foundation.subspec 'NSObject' do |nsobject|
             # NSObject+CHBase
