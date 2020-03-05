@@ -27,3 +27,7 @@ ColinHwang, chwang7158@gmail.com
 ## License
 
 CHCategories is available under the MIT license. See the LICENSE file for more info.
+
+## Thanks
+
+YYCategories, QMUI_iOS
