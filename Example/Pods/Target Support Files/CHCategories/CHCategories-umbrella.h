@@ -10,6 +10,8 @@
 #endif
 #endif
 
+#import "CHCategories.h"
+#import "NSValue+CHBase.h"
 
 FOUNDATION_EXPORT double CHCategoriesVersionNumber;
 FOUNDATION_EXPORT const unsigned char CHCategoriesVersionString[];

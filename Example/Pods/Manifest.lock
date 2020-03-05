@@ -1,5 +1,11 @@
 PODS:
-  - CHCategories (0.1.0)
+  - CHCategories (0.0.1):
+    - CHCategories/Foundation (= 0.0.1)
+  - CHCategories/Foundation (0.0.1):
+    - CHCategories/Foundation/NSValue (= 0.0.1)
+  - CHCategories/Foundation/NSValue (0.0.1):
+    - "CHCategories/Foundation/NSValue/NSValue+CHBase (= 0.0.1)"
+  - "CHCategories/Foundation/NSValue/NSValue+CHBase (0.0.1)"
 
 DEPENDENCIES:
   - CHCategories (from `../`)
@@ -9,7 +15,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  CHCategories: 0299c6536ea24e008f4eacd6ee714388449ddec2
+  CHCategories: bcd03c0375610474f84089143772bc3df098ae0d
 
 PODFILE CHECKSUM: 530a61dfb5fb92730fee23f0f5706bc79237ed6e
 
