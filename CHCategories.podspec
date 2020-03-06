@@ -100,6 +100,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSIndexPath
+        foundation.subspec 'NSIndexPath' do |nsindexpath|
+            # NSIndexPath+CHBase
+            nsindexpath.subspec 'NSIndexPath+CHBase' do |nsindexpath_chbase|
+                nsindexpath_chbase.source_files = 'CHCategories/Classes/Foundation/NSIndexPath/NSIndexPath+CHBase.{h,m}'
+            end
+        end
+        
         # NSNumber
         foundation.subspec 'NSNumber' do |nsnumber|
             # NSNumber+CHBase
