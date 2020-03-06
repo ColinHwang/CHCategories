@@ -65,6 +65,15 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSDate
+        foundation.subspec 'NSDate' do |nsdate|
+            # NSDate+CHBase
+            nsdate.subspec 'NSDate+CHBase' do |nsdate_chbase|
+                nsdate_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
+                nsdate_chbase.source_files = 'CHCategories/Classes/Foundation/NSDate/NSDate+CHBase.{h,m}'
+            end
+        end
+        
         # NSObject
         foundation.subspec 'NSObject' do |nsobject|
             # NSObject+CHBase
