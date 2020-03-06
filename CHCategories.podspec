@@ -157,6 +157,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSPointerArray
+        foundation.subspec 'NSPointerArray' do |nspointerarray|
+            # NSPointerArray+CHBase
+            nspointerarray.subspec 'NSPointerArray+CHBase' do |nspointerarray_chbase|
+                nspointerarray_chbase.source_files = 'CHCategories/Classes/Foundation/NSPointerArray/NSPointerArray+CHBase.{h,m}'
+            end
+        end
+        
         # NSValue
         foundation.subspec 'NSValue' do |nsvalue|
             # NSValue+CHBase
