@@ -254,6 +254,39 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSTimer
+        foundation.subspec 'NSTimer' do |nstimer|
+            # NSTimer+CHBase
+            nstimer.subspec 'NSTimer+CHBase' do |nstimer_chbase|
+                nstimer_chbase.source_files = 'CHCategories/Classes/Foundation/NSTimer/NSTimer+CHBase.{h,m}'
+            end
+        end
+        
+        
+        foundation.subspec 'NSURL' do |nsurl|
+            # NSURL+CHBase
+            nsurl.subspec 'NSURL+CHBase' do |nsurl_chbase|
+                nsurl_chbase.source_files = 'CHCategories/Classes/Foundation/NSURL/NSURL+CHBase.{h,m}'
+            end
+        end
+        
+        # NSURLComponents
+        foundation.subspec 'NSURLComponents' do |nsurlcomponents|
+            # NSURLComponents+CHBase
+            nsurlcomponents.subspec 'NSURLComponents+CHBase' do |nsurlcomponents_chbase|
+                nsurlcomponents_chbase.source_files = 'CHCategories/Classes/Foundation/NSURLComponents/NSURLComponents+CHBase.{h,m}'
+            end
+        end
+        
+        # NSUserDefaults
+        foundation.subspec 'NSUserDefaults' do |nsuserdefaults|
+            # NSUserDefaults+CHBase
+            nsuserdefaults.subspec 'NSUserDefaultsCHBase' do |nsuserdefaults_chbase|
+                nsuserdefaults_chbase.source_files = 'CHCategories/Classes/Foundation/NSUserDefaults/NSUserDefaults+CHBase.{h,m}'
+                nsuserdefaults_chbase.dependency 'CHCategories/Foundation/NSDictionary/NSDictionary+CHBase'
+            end
+        end
+        
         # NSValue
         foundation.subspec 'NSValue' do |nsvalue|
             # NSValue+CHBase
