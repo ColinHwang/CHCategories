@@ -148,6 +148,15 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSParagraphStyle
+        foundation.subspec 'NSParagraphStyle' do |nsparagraphstyle|
+            # NSParagraphStyle+CHBase
+            nsparagraphstyle.subspec 'NSParagraphStyle+CHBase' do |nsparagraphstyle_chbase|
+                nsparagraphstyle_chbase.frameworks = 'CoreText'
+                nsparagraphstyle_chbase.source_files = 'CHCategories/Classes/Foundation/NSParagraphStyle/NSParagraphStyle+CHBase.{h,m}'
+            end
+        end
+        
         # NSValue
         foundation.subspec 'NSValue' do |nsvalue|
             # NSValue+CHBase
