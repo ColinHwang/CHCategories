@@ -116,6 +116,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSKeyedArchiver
+        foundation.subspec 'NSKeyedArchiver' do |nskeyedarchiver|
+            # NSKeyedArchiver+CHBase
+            nskeyedarchiver.subspec 'NSKeyedArchiver+CHBase' do |nskeyedarchiver_chbase|
+                nskeyedarchiver_chbase.source_files = 'CHCategories/Classes/Foundation/NSKeyedArchiver/NSKeyedArchiver+CHBase.{h,m}'
+            end
+        end
+        
         # NSNumber
         foundation.subspec 'NSNumber' do |nsnumber|
             # NSNumber+CHBase
