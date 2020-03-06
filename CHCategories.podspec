@@ -74,6 +74,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSDecimalNumber
+        foundation.subspec 'NSDecimalNumber' do |nsdecimalNumber|
+            # NSDecimalNumber+CHBase
+            nsdecimalNumber.subspec 'NSDecimalNumber+CHBase' do |nsdecimalnumber_chbase|
+                nsdecimalnumber_chbase.source_files = 'CHCategories/Classes/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase.{h,m}'
+            end
+        end
+        
         # NSObject
         foundation.subspec 'NSObject' do |nsobject|
             # NSObject+CHBase
