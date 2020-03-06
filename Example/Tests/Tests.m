@@ -2,7 +2,7 @@
 //  CHCategoriesTests.m
 //  CHCategoriesTests
 //
-//  Created by ColinHwang on 03/04/2020.
+//  Created by CHwang on 03/04/2020.
 //  Copyright (c) 2020 ColinHwang. All rights reserved.
 //
 

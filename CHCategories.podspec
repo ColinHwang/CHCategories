@@ -82,6 +82,16 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSDictionary
+        foundation.subspec 'NSDictionary' do |nsdictionary|
+            # NSDictionary+CHBase
+            nsdictionary.subspec 'NSDictionary+CHBase' do |nsdictionary_chbase|
+                nsdictionary_chbase.dependency 'CHCategories/Foundation/NSData/NSData+CHBase'
+                nsdictionary_chbase.dependency 'CHCategories/Foundation/NSNumber/NSNumber+CHBase'
+                nsdictionary_chbase.source_files = 'CHCategories/Classes/Foundation/NSDictionary/NSDictionary+CHBase.{h,m}'
+            end
+        end
+        
         # NSNumber
         foundation.subspec 'NSNumber' do |nsnumber|
             # NSNumber+CHBase
