@@ -36,6 +36,8 @@
 		3BE5C812241285AE00155F96 /* NSJSONSerialization+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5C810241285AE00155F96 /* NSJSONSerialization+CHBase.m */; };
 		3BE5C8152412863300155F96 /* NSKeyedArchiver+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5C8132412863300155F96 /* NSKeyedArchiver+CHBase.m */; };
 		3BE5C8162412863300155F96 /* NSKeyedArchiver+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE5C8142412863300155F96 /* NSKeyedArchiver+CHBase.h */; };
+		3BE5C819241286EE00155F96 /* NSNotificationCenter+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5C817241286EE00155F96 /* NSNotificationCenter+CHBase.m */; };
+		3BE5C81A241286EE00155F96 /* NSNotificationCenter+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE5C818241286EE00155F96 /* NSNotificationCenter+CHBase.h */; };
 		4380A85033508FD0FF5BBB1E69AC6620 /* CHCategories.h in Headers */ = {isa = PBXBuildFile; fileRef = 11F2692E45735CA82F72D34CF52F7893 /* CHCategories.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		54F61BFF7E3EC41DEF77455DB04C5C52 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EC52B314F24BC32CDA7B523FAA24A727 /* CoreGraphics.framework */; };
 		7506FD0C501A7A665D1E91AF192576DF /* Pods-CHCategories_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E71B02236714D95C8BB800EFB846B48D /* Pods-CHCategories_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -107,6 +109,8 @@
 		3BE5C810241285AE00155F96 /* NSJSONSerialization+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSJSONSerialization+CHBase.m"; path = "CHCategories/Classes/Foundation/NSJSONSerialization/NSJSONSerialization+CHBase.m"; sourceTree = "<group>"; };
 		3BE5C8132412863300155F96 /* NSKeyedArchiver+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSKeyedArchiver+CHBase.m"; path = "CHCategories/Classes/Foundation/NSKeyedArchiver/NSKeyedArchiver+CHBase.m"; sourceTree = "<group>"; };
 		3BE5C8142412863300155F96 /* NSKeyedArchiver+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSKeyedArchiver+CHBase.h"; path = "CHCategories/Classes/Foundation/NSKeyedArchiver/NSKeyedArchiver+CHBase.h"; sourceTree = "<group>"; };
+		3BE5C817241286EE00155F96 /* NSNotificationCenter+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSNotificationCenter+CHBase.m"; path = "CHCategories/Classes/Foundation/NSNotificationCenter/NSNotificationCenter+CHBase.m"; sourceTree = "<group>"; };
+		3BE5C818241286EE00155F96 /* NSNotificationCenter+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSNotificationCenter+CHBase.h"; path = "CHCategories/Classes/Foundation/NSNotificationCenter/NSNotificationCenter+CHBase.h"; sourceTree = "<group>"; };
 		3D6965CDB79AA46511921717E08F1AAD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		3DB1E649FA010F8BB37571D8D7A375D5 /* Pods-CHCategories_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHCategories_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		4186EB63AD6C25634971979E5E37A628 /* Pods-CHCategories_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CHCategories_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
@@ -172,6 +176,8 @@
 		08836546D33BD8B9917A6C0D98C71B57 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				3BE5C818241286EE00155F96 /* NSNotificationCenter+CHBase.h */,
+				3BE5C817241286EE00155F96 /* NSNotificationCenter+CHBase.m */,
 				3BE5C8142412863300155F96 /* NSKeyedArchiver+CHBase.h */,
 				3BE5C8132412863300155F96 /* NSKeyedArchiver+CHBase.m */,
 				3BE5C80F241285AE00155F96 /* NSJSONSerialization+CHBase.h */,
@@ -371,6 +377,7 @@
 				243B58A47CA3CB08A019B63406708ABA /* CHCategories-umbrella.h in Headers */,
 				3BE5C7F524127DEE00155F96 /* NSCharacterSet+CHBase.h in Headers */,
 				3BE5C7E2240FFBCA00155F96 /* NSData+CHCrypto.h in Headers */,
+				3BE5C81A241286EE00155F96 /* NSNotificationCenter+CHBase.h in Headers */,
 				3BE5C8012412819300155F96 /* NSNumber+CHBase.h in Headers */,
 				4380A85033508FD0FF5BBB1E69AC6620 /* CHCategories.h in Headers */,
 				3BE5C7F124124BBF00155F96 /* NSCalendar+CHBase.h in Headers */,
@@ -520,6 +527,7 @@
 				3BE5C7F624127DEE00155F96 /* NSCharacterSet+CHBase.m in Sources */,
 				3BE5C8022412819300155F96 /* NSNumber+CHBase.m in Sources */,
 				3BE5C7E1240FFBCA00155F96 /* NSData+CHBase.m in Sources */,
+				3BE5C819241286EE00155F96 /* NSNotificationCenter+CHBase.m in Sources */,
 				3BE5C8152412863300155F96 /* NSKeyedArchiver+CHBase.m in Sources */,
 				3BE5C80E2412850100155F96 /* NSIndexPath+CHBase.m in Sources */,
 				3BE5C7F924127F4800155F96 /* NSDate+CHBase.m in Sources */,

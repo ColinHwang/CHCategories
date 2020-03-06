@@ -124,6 +124,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSNotificationCenter
+        foundation.subspec 'NSNotificationCenter' do |nsnotificationcenter|
+            # NSNotificationCenter+CHBase
+            nsnotificationcenter.subspec 'NSNotificationCenter+CHBase' do |nsnotificationcenter_chbase|
+                nsnotificationcenter_chbase.source_files = 'CHCategories/Classes/Foundation/NSNotificationCenter/NSNotificationCenter+CHBase.{h,m}'
+            end
+        end
+        
         # NSNumber
         foundation.subspec 'NSNumber' do |nsnumber|
             # NSNumber+CHBase
