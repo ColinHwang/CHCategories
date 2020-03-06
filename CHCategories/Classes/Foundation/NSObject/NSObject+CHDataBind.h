@@ -2,7 +2,7 @@
 //  NSObject+CHDataBind.h
 //  CHCategories
 //
-//  Created by Colin on 2019/2/12.
+//  Created by CHwang on 2019/2/12.
 //
 
 #import <Foundation/Foundation.h>

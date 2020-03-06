@@ -191,6 +191,69 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSString
+        foundation.subspec 'NSString' do |nsstring|
+            # NSString+CHBase
+            nsstring.subspec 'NSString+CHBase' do |nsstring_chbase|
+                nsstring_chbase.dependency 'CHCategories/Foundation/NSCharacterSet/NSCharacterSet+CHBase'
+                nsstring_chbase.dependency 'CHCategories/Foundation/NSData/NSData+CHBase'
+                nsstring_chbase.dependency 'CHCategories/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase'
+                nsstring_chbase.dependency 'CHCategories/Foundation/NSNumber/NSNumber+CHBase'
+                nsstring_chbase.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHBase.{h,m}'
+            end
+            
+            # NSString+CHCheck
+            nsstring.subspec 'NSString+CHCheck' do |nsstring_chcheck|
+                nsstring_chcheck.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
+                nsstring_chcheck.dependency 'CHCategories/Foundation/NSString/NSString+CHRegularExpression'
+                nsstring_chcheck.dependency 'CHCategories/Foundation/NSDictionary/NSDictionary+CHBase'
+                nsstring_chcheck.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHCheck.{h,m}'
+            end
+            
+            # NSString+CHChinese
+            nsstring.subspec 'NSString+CHChinese' do |nsstring_chchinese|
+                nsstring_chchinese.dependency 'CHCategories/Foundation/NSString/NSString+CHRegularExpression'
+                nsstring_chchinese.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHChinese.{h,m}'
+            end
+            
+            # NSString+CHCrypto
+            nsstring.subspec 'NSString+CHCrypto' do |nsstring_chcrypto|
+                nsstring_chcrypto.dependency 'CHCategories/Foundation/NSData/NSData+CHCrypto'
+                nsstring_chcrypto.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHCrypto.{h,m}'
+            end
+            
+            # NSString+CHDrawing
+            nsstring.subspec 'NSString+CHDrawing' do |nsstring_chdrawing|
+                nsstring_chdrawing.frameworks = 'UIKit', 'CoreGraphics'
+                nsstring_chdrawing.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHDrawing.{h,m}'
+            end
+            
+            # NSString+CHEmoji
+            nsstring.subspec 'NSString+CHEmoji' do |nsstring_chemoji|
+                nsstring_chemoji.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
+                nsstring_chemoji.dependency 'CHCategories/Foundation/NSString/NSString+CHRegularExpression'
+                nsstring_chemoji.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHEmoji.{h,m}'
+            end
+            
+            # NSString+CHRegularExpression
+            nsstring.subspec 'NSString+CHRegularExpression' do |nsstring_chregularexpression|
+                nsstring_chregularexpression.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHRegularExpression.{h,m}'
+            end
+            
+            # NSString+CHRoundNumberString
+            nsstring.subspec 'NSString+CHRoundNumberString' do |nsstring_chroundnumberstring|
+                nsstring_chroundnumberstring.dependency 'CHCategories/Foundation/NSDecimalNumber/NSDecimalNumber+CHBase'
+                nsstring_chroundnumberstring.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHRoundNumberString.{h,m}'
+            end
+            
+            # NSString+CHTrimming
+            nsstring.subspec 'NSString+CHTrimming' do |nsstring_chtrimming|
+                nsstring_chtrimming.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
+                nsstring_chtrimming.dependency 'CHCategories/Foundation/NSString/NSString+CHRegularExpression'
+                nsstring_chtrimming.source_files = 'CHCategories/Classes/Foundation/NSString/NSString+CHTrimming.{h,m}'
+            end
+        end
+        
         # NSValue
         foundation.subspec 'NSValue' do |nsvalue|
             # NSValue+CHBase

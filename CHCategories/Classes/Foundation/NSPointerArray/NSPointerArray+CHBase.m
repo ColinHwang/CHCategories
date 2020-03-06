@@ -2,7 +2,7 @@
 //  NSPointerArray+CHBase.m
 //  CHCategories
 //
-//  Created by Colin on 2018/6/2.
+//  Created by CHwang on 2018/6/2.
 //
 
 #import "NSPointerArray+CHBase.h"

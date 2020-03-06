@@ -2,7 +2,7 @@
 //  NSObject+CHMultipleDelegates.m
 //  CHCategories
 //
-//  Created by Colin on 2018/6/2.
+//  Created by CHwang on 2018/6/2.
 //
 
 #import "NSObject+CHMultipleDelegates.h"
