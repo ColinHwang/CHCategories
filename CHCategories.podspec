@@ -82,6 +82,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSNumber
+        foundation.subspec 'NSNumber' do |nsnumber|
+            # NSNumber+CHBase
+            nsnumber.subspec 'NSNumber+CHBase' do |nsnumber_chbase|
+                nsnumber_chbase.source_files = 'CHCategories/Classes/Foundation/NSNumber/NSNumber+CHBase.{h,m}'
+            end
+        end
+        
         # NSObject
         foundation.subspec 'NSObject' do |nsobject|
             # NSObject+CHBase
