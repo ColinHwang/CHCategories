@@ -92,6 +92,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSFileManager
+        foundation.subspec 'NSFileManager' do |nsfilemanager|
+            # NSFileManager+CHBase
+            nsfilemanager.subspec 'NSFileManager+CHBase' do |nsfilemanager_chbase|
+                nsfilemanager_chbase.source_files = 'CHCategories/Classes/Foundation/NSFileManager/NSFileManager+CHBase.{h,m}'
+            end
+        end
+        
         # NSNumber
         foundation.subspec 'NSNumber' do |nsnumber|
             # NSNumber+CHBase
