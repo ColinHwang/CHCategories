@@ -146,6 +146,32 @@ Pod::Spec.new do |s|
             nsobject.subspec 'NSObject+CHBase' do |nsobject_chbase|
                 nsobject_chbase.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.{h,m}'
             end
+            
+            # NSObject+CHDataBind
+            nsobject.subspec 'NSObject+CHDataBind' do |nsobject_chdatabind|
+                nsobject_chdatabind.dependency 'CHCategories/Foundation/NSNumber/NSNumber+CHBase'
+                nsobject_chdatabind.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                nsobject_chdatabind.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHDataBind.{h,m}'
+            end
+            
+            # NSObject+CHKeyValueCoding
+            nsobject.subspec 'NSObject+CHKeyValueCoding' do |nsobject_chkeyvaluecoding|
+                nsobject_chkeyvaluecoding.dependency 'CHCategories/Foundation/NSNumber/NSNumber+CHBase'
+                nsobject_chkeyvaluecoding.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHKeyValueCoding.{h,m}'
+            end
+            
+            # NSObject+CHKeyValueObserving
+            nsobject.subspec 'NSObject+CHKeyValueObserving' do |nsobject_chkeyvalueobserving|
+                nsobject_chkeyvalueobserving.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                nsobject_chkeyvalueobserving.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHKeyValueObserving.{h,m}'
+            end
+            
+            # NSObject+CHMultipleDelegates
+            nsobject.subspec 'NSObject+CHMultipleDelegates' do |nsobject_chmultipledelegates|
+                nsobject_chmultipledelegates.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                nsobject_chmultipledelegates.dependency 'CHCategories/Foundation/NSPointerArray/NSPointerArray+CHBase'
+                nsobject_chmultipledelegates.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHMultipleDelegates.{h,m}'
+            end
         end
         
         # NSParagraphStyle
