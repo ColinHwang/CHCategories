@@ -42,6 +42,32 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSAttributedString
+        foundation.subspec 'NSAttributedString' do |nsattributedstring|
+            # NSAttributedString+CHBase
+            nsattributedstring.subspec 'NSAttributedString+CHBase' do |nsattributedstring_chbase|
+                nsattributedstring_chbase.frameworks = 'UIKit', 'CoreText'
+                nsattributedstring_chbase.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
+                nsattributedstring_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
+                nsattributedstring_chbase.source_files = 'CHCategories/Classes/Foundation/NSAttributedString/NSAttributedString+CHBase.{h,m}'
+            end
+            
+            # NSAttributedString+CHCreation
+            nsattributedstring.subspec 'NSAttributedString+CHCreation' do |nsattributedstring_chcreation|
+                nsattributedstring_chcreation.frameworks = 'UIKit'
+                nsattributedstring_chcreation.dependency 'CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase'
+                nsattributedstring_chcreation.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
+                nsattributedstring_chcreation.source_files = 'CHCategories/Classes/Foundation/NSAttributedString/NSAttributedString+CHCreation.{h,m}'
+            end
+                        
+            # NSAttributedString+CHParagraphStyleAttributes
+            nsattributedstring.subspec 'NSAttributedString+CHParagraphStyleAttributes' do |nsattributedstring_chparagraphstyleattributes|
+                nsattributedstring_chparagraphstyleattributes.frameworks = 'UIKit'
+                nsattributedstring_chparagraphstyleattributes.dependency 'CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase'
+                nsattributedstring_chparagraphstyleattributes.source_files = 'CHCategories/Classes/Foundation/NSAttributedString/NSAttributedString+CHParagraphStyleAttributes.{h,m}'
+            end
+        end
+        
         # NSCharacterSet
         foundation.subspec 'NSCharacterSet' do |nscharacterset|
             # NSCharacterSet+CHBase
