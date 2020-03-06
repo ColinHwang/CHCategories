@@ -108,6 +108,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSJSONSerialization
+        foundation.subspec 'NSJSONSerialization' do |nsjsonserialization|
+            # NSJSONSerialization+CHBase
+            nsjsonserialization.subspec 'NSJSONSerialization+CHBase' do |nsjsonserialization_chbase|
+                nsjsonserialization_chbase.source_files = 'CHCategories/Classes/Foundation/NSJSONSerialization/NSJSONSerialization+CHBase.{h,m}'
+            end
+        end
+        
         # NSNumber
         foundation.subspec 'NSNumber' do |nsnumber|
             # NSNumber+CHBase
