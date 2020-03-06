@@ -42,6 +42,14 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSCharacterSet
+        foundation.subspec 'NSCharacterSet' do |nscharacterset|
+            # NSCharacterSet+CHBase
+            nscharacterset.subspec 'NSCharacterSet+CHBase' do |nscharacterset_chbase|
+                nscharacterset_chbase.source_files = 'CHCategories/Classes/Foundation/NSCharacterSet/NSCharacterSet+CHBase.{h,m}'
+            end
+        end
+        
         # NSData
         foundation.subspec 'NSData' do |nsdata|
             # NSData+CHBase
