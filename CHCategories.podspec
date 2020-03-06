@@ -33,6 +33,15 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSCalendar
+        foundation.subspec 'NSCalendar' do |nscalendar|
+            # NSCalendar+CHBase
+            nscalendar.subspec 'NSCalendar+CHBase' do |nscalendar_chbase|
+                nscalendar_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                nscalendar_chbase.source_files = 'CHCategories/Classes/Foundation/NSCalendar/NSCalendar+CHBase.{h,m}'
+            end
+        end
+        
         # NSData
         foundation.subspec 'NSData' do |nsdata|
             # NSData+CHBase

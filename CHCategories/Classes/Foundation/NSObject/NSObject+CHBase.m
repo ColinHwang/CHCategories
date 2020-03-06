@@ -2,7 +2,7 @@
 //  NSObject+CHBase.m
 //  CHCategories
 //
-//  Created by Colin on 2020/1/3.
+//  Created by CHwang on 2020/1/3.
 //
 
 #import "NSObject+CHBase.h"

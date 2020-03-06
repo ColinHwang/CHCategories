@@ -2,7 +2,7 @@
 //  NSData+CHCrypto.h
 //  CHCategories
 //
-//  Created by Colin on 2020/1/24.
+//  Created by CHwang on 2020/1/24.
 //  加密和解密
 
 #import <Foundation/Foundation.h>

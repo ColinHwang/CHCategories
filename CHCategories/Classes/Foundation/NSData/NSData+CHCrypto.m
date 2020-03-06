@@ -2,7 +2,7 @@
 //  NSData+CHCrypto.m
 //  CHCategories
 //
-//  Created by Colin on 2020/1/24.
+//  Created by CHwang on 2020/1/24.
 //
 
 #import "NSData+CHCrypto.h"
