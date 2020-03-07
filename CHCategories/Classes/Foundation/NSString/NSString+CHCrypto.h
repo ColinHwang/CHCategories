@@ -145,7 +145,7 @@ NS_ASSUME_NONNULL_BEGIN
  
  @return string对应的CRC32字符串(小写)
  */
-- (nullable NSString *)ch_crc32String;
+- (nullable NSString *)ch_CRC32String;
 
 @end
 

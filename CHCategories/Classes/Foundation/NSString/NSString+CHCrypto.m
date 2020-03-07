@@ -91,7 +91,7 @@
 }
 
 #pragma mark - CRC32
-- (NSString *)ch_crc32String {
+- (NSString *)ch_CRC32String {
     return [[self dataUsingEncoding:NSUTF8StringEncoding] ch_CRC32String];
 }
 
