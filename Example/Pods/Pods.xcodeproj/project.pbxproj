@@ -51,6 +51,8 @@
 		3BDC9BA6241382FB002FBD28 /* UIImageView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */; };
 		3BDC9BAA241385DB002FBD28 /* UIAlertController+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BA8241385DB002FBD28 /* UIAlertController+CHBase.h */; };
 		3BDC9BAB241385DB002FBD28 /* UIAlertController+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BA9241385DB002FBD28 /* UIAlertController+CHBase.m */; };
+		3BDC9BB024138B9F002FBD28 /* NSException+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BAE24138B9F002FBD28 /* NSException+CHBase.h */; };
+		3BDC9BB124138B9F002FBD28 /* NSException+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BAF24138B9F002FBD28 /* NSException+CHBase.m */; };
 		40CF3885630F3599945B3E58779AEAA3 /* NSPointerArray+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D97BE73D6A3CE0F1A11948F5A3434EDF /* NSPointerArray+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		419B46813D250A411D19AE726EC2625D /* NSAttributedString+CHCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = D88310E2C7250715FAE7744D6901A38C /* NSAttributedString+CHCreation.m */; };
 		44C2D4823A8CFED29290C4376CAD91BA /* NSNumber+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7914E9F89F1CC4C977822F4D20908D6D /* NSNumber+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -252,6 +254,8 @@
 		3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CHBase.m"; sourceTree = "<group>"; };
 		3BDC9BA8241385DB002FBD28 /* UIAlertController+CHBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CHBase.h"; sourceTree = "<group>"; };
 		3BDC9BA9241385DB002FBD28 /* UIAlertController+CHBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9BAE24138B9F002FBD28 /* NSException+CHBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSException+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9BAF24138B9F002FBD28 /* NSException+CHBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSException+CHBase.m"; sourceTree = "<group>"; };
 		3C6470C2006AE1D05EAEED45BC99D2E9 /* NSPointerArray+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPointerArray+CHBase.m"; path = "CHCategories/Classes/Foundation/NSPointerArray/NSPointerArray+CHBase.m"; sourceTree = "<group>"; };
 		3C6C62D33F64E834B5E57888B53AFF96 /* NSDictionary+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+CHBase.h"; path = "CHCategories/Classes/Foundation/NSDictionary/NSDictionary+CHBase.h"; sourceTree = "<group>"; };
 		3DB1E649FA010F8BB37571D8D7A375D5 /* Pods-CHCategories_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHCategories_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -773,6 +777,16 @@
 			path = CHCategories/Classes/UIKit/UIAlertController;
 			sourceTree = "<group>";
 		};
+		3BDC9BAD24138B75002FBD28 /* NSException */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BAE24138B9F002FBD28 /* NSException+CHBase.h */,
+				3BDC9BAF24138B9F002FBD28 /* NSException+CHBase.m */,
+			);
+			name = NSException;
+			path = CHCategories/Classes/Foundation/NSException;
+			sourceTree = "<group>";
+		};
 		3F27CB4CB3C5753F1C5EA7177C47B20A /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -811,6 +825,7 @@
 		42BE240502A87439F5046205DCBA7046 /* Foundation */ = {
 			isa = PBXGroup;
 			children = (
+				3BDC9BAD24138B75002FBD28 /* NSException */,
 				3F27CB4CB3C5753F1C5EA7177C47B20A /* NSArray */,
 				7E569A136B08267FF93FE9D345D6D874 /* NSAttributedString */,
 				17F4CA3B9D5E3B5F5A45540CEA3A0BE7 /* NSCalendar */,
@@ -1838,6 +1853,7 @@
 				22C0968BAD70DF9E64F6450A968B926A /* NSValue+CHBase.h in Headers */,
 				3BDC9BA5241382FB002FBD28 /* UIImageView+CHBase.h in Headers */,
 				4F6D791E0DE7E0719069E30C963BEFAE /* UIActivityIndicatorView+CHBase.h in Headers */,
+				3BDC9BB024138B9F002FBD28 /* NSException+CHBase.h in Headers */,
 				B064C5F45E0B49F2D7454185E2926897 /* UIApplication+CHBase.h in Headers */,
 				C1884818C6D253B217A30B64BD217292 /* UIBarButtonItem+CHBase.h in Headers */,
 				D358D5F4E83D5D1B74DA4F30BFA06600 /* UIBarItem+CHBase.h in Headers */,
@@ -2056,6 +2072,7 @@
 				7C8D1D6AB10E6F3E8E7351D3592E56DC /* UIImage+CHGIFImage.m in Sources */,
 				95F86EFDD9DB12DB076F14511DA09956 /* UIImage+CHImageCompression.m in Sources */,
 				472C7AD72275DE745E37F993E2385590 /* UIImage+CHImageEffect.m in Sources */,
+				3BDC9BB124138B9F002FBD28 /* NSException+CHBase.m in Sources */,
 				E3E5ECB46CF83198C68B3219CC1C5D36 /* UINavigationBar+CHBase.m in Sources */,
 				E1949DE224E79A3427DCC18888E4ACBF /* UINavigationController+CHBase.m in Sources */,
 				6CEAF15A9029FF0CF7F259555EA88D27 /* UIScreen+CHBase.m in Sources */,

@@ -120,6 +120,15 @@ Pod::Spec.new do |s|
             end
         end
         
+        # NSException
+        foundation.subspec 'NSException' do |nsexception|
+            # NSException+CHBase
+            nsexception.subspec 'NSException+CHBase' do |nsexception_chbase|
+                nsexception_chbase.source_files = 'CHCategories/Classes/Foundation/NSException/NSException+CHBase.{h,m}'
+                nsexception_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+            end
+        end
+        
         # NSFileManager
         foundation.subspec 'NSFileManager' do |nsfilemanager|
             # NSFileManager+CHBase

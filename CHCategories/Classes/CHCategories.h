@@ -20,6 +20,7 @@
 #import "NSDate+CHBase.h"
 #import "NSDecimalNumber+CHBase.h"
 #import "NSDictionary+CHBase.h"
+#import "NSException+CHBase.h"
 #import "NSFileManager+CHBase.h"
 #import "NSIndexPath+CHBase.h"
 #import "NSJSONSerialization+CHBase.h"
