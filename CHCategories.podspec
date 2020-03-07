@@ -323,6 +323,27 @@ Pod::Spec.new do |s|
         end
     end
     
+    
+    # QuartzCore
+    s.subspec 'QuartzCore' do |quartzCore|
+        
+        # CALayer
+        quartzCore.subspec 'CALayer' do |calayer|
+            # CALayer+CHAnimation
+            calayer.subspec 'CALayer+CHAnimation' do |calayer_chanimation|
+                calayer_chanimation.frameworks = 'UIKit'
+                calayer_chanimation.source_files = 'CHCategories/Classes/QuartzCore/CALayer/CALayer+CHAnimation.{h,m}'
+            end
+            
+            # CALayer+CHBase
+            calayer.subspec 'CALayer+CHBase' do |calayer_chbase|
+                calayer_chbase.frameworks = 'UIKit'
+                calayer_chbase.dependency 'CHCategories/CoreGraphic'
+                calayer_chbase.source_files = 'CHCategories/Classes/QuartzCore/CALayer/CALayer+CHBase.{h,m}'
+            end
+        end
+    end
+    
     # CoreGraphic
     s.subspec 'CoreGraphic' do |coregraphic|
         coregraphic.source_files = 'CHCategories/Classes/CoreGraphic/*.{h,m}'
