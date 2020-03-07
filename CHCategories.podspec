@@ -350,6 +350,7 @@ Pod::Spec.new do |s|
         uikit.subspec 'UIApplication' do |uiapplication|
             # UIApplication+CHBase
             uiapplication.subspec 'UIApplication+CHBase' do |uiapplication_ch_base|
+                uiapplication_ch_base.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
                 uiapplication_ch_base.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
                 uiapplication_ch_base.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
                 uiapplication_ch_base.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo'

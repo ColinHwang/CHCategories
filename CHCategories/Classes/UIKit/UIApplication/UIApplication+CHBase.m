@@ -8,6 +8,7 @@
 
 #import "UIApplication+CHBase.h"
 #import <mach/mach.h>
+#import "NSArray+CHBase.h"
 #import "NSObject+CHBase.h"
 #import "NSString+CHBase.h"
 #import <sys/sysctl.h>
@@ -88,6 +89,15 @@
 - (CGFloat)ch_statusBarWidth {
     CGSize statusBarSize = [UIApplication sharedApplication].statusBarFrame.size;
     return MAX(statusBarSize.height, statusBarSize.width);
+}
+
+- (UIEdgeInsets)ch_safeAreaInsets {
+    UIWindow *window = [[self windows] ch_objectOrNilAtIndex:0];
+    if (!window) return UIEdgeInsetsZero;
+    if (@available(iOS 11.0, *)) {
+        return window.safeAreaInsets;
+    }
+    return UIEdgeInsetsZero;
 }
 
 #pragma mark - Check

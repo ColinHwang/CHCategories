@@ -28,8 +28,9 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) NSURL *ch_temporaryURL;       ///< 获取应用沙盒内Tmp文件夹的URL
 @property (nonatomic, readonly) NSString *ch_temporaryPath;   ///< 获取应用沙盒内Tmp文件夹的路径
 
-@property (nonatomic, readonly) CGFloat ch_statusBarHeight;   ///< 获取当前应用状态栏的高度, 状态栏隐藏时高度为0
-@property (nonatomic, readonly) CGFloat ch_statusBarWidth;    ///< 获取当前应用状态栏的宽度, 状态栏隐藏时宽度为0
+@property (nonatomic, readonly) CGFloat ch_statusBarHeight;     ///< 获取当前应用状态栏的高度, 状态栏隐藏时高度为0
+@property (nonatomic, readonly) CGFloat ch_statusBarWidth;      ///< 获取当前应用状态栏的宽度, 状态栏隐藏时宽度为0
+@property (nonatomic, readonly) UIEdgeInsets ch_safeAreaInsets; ///< 获取当前应用的SafeAreaInsets
 
 #pragma mark - Check
 @property (nonatomic, readonly) BOOL ch_isPirated;       ///< 应用是否为盗版(非通过AppStore安装, 包被破解, 简单判断)
