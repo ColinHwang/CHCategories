@@ -15,8 +15,8 @@ NS_ASSUME_NONNULL_BEGIN
 #pragma mark - Base
 @property (nonatomic, weak, readonly) UIButton *ch_clearButton; ///< 输入框的清除按钮
 @property (nullable, nonatomic, strong) UIImage *ch_clearButtonImage; ///< 输入框的清除按钮图片
-
 @property (nonatomic, assign) NSRange ch_selectedRange; ///< 文本的选中范围
+@property (nonatomic, assign) BOOL ch_adjustsPlaceholderFontSizeToFitWidth; ///< 占位文本是否根据宽度调整字体
 
 /**
  选中所有的文本
@@ -28,7 +28,7 @@ NS_ASSUME_NONNULL_BEGIN
 
  @param length 最大长度
  */
-- (void)ch_limitMaxLength:(int)length;
+- (void)ch_setLimitMaxLength:(NSUInteger)length;
 
 @end
 

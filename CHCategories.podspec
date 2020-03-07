@@ -597,6 +597,7 @@ Pod::Spec.new do |s|
             # UITextField+CHBase
             uitextfield.subspec 'UITextField+CHBase' do |uitextfield_chbase|
                 uitextfield_chbase.source_files = 'CHCategories/Classes/UIKit/UITextField/UITextField+CHBase.{h,m}'
+                uitextfield_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
             end
         end
         

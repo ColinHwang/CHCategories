@@ -7,13 +7,17 @@
 //
 
 #import "UITextField+CHBase.h"
+#import "NSObject+CHBase.h"
 
-#import <objc/objc.h>
-#import <objc/runtime.h>
+static const int CH_UI_TEXT_FIELD_LIMIT_MAX_LENGTH_KEY;
+
+@interface UITextField ()
+
+@property (nonatomic, strong) UILabel *_ch_ui_placeholderLabel;
+
+@end
 
 @implementation UITextField (CHBase)
-
-static NSString *kLimitTextLengthKey = @"CHLimitTextLengthKey";
 
 #pragma mark - Base
 - (UIButton *)ch_clearButton {
@@ -47,17 +51,26 @@ static NSString *kLimitTextLengthKey = @"CHLimitTextLengthKey";
     [self setSelectedTextRange:range];
 }
 
-- (void)ch_limitMaxLength:(int)length
-{
-    objc_setAssociatedObject(self, (const void *)CFBridgingRetain(kLimitTextLengthKey), [NSNumber numberWithInt:length], OBJC_ASSOCIATION_RETAIN_NONATOMIC);
-    
-    [self addTarget:self action:@selector(textFieldTextLengthLimit:) forControlEvents:UIControlEventEditingChanged];
+- (UILabel *)_ch_placeholderLabel {
+    return [self valueForKey:@"_placeholderLabel"];
 }
 
-- (void)textFieldTextLengthLimit:(id)sender
-{
-    NSNumber *lengthNumber = objc_getAssociatedObject(self, (const void *)CFBridgingRetain(kLimitTextLengthKey));
-    int maxLength = [lengthNumber intValue];
+- (void)setCh_adjustsPlaceholderFontSizeToFitWidth:(BOOL)ch_adjustsPlaceholderFontSizeToFitWidth {
+    self._ch_placeholderLabel.adjustsFontSizeToFitWidth = ch_adjustsPlaceholderFontSizeToFitWidth;
+}
+
+- (BOOL)ch_adjustsPlaceholderFontSizeToFitWidth {
+    return self._ch_placeholderLabel.adjustsFontSizeToFitWidth;
+}
+
+- (void)ch_setLimitMaxLength:(NSUInteger)length {
+    [self ch_setAssociatedValue:[NSNumber numberWithUnsignedInteger:length] withKey:&CH_UI_TEXT_FIELD_LIMIT_MAX_LENGTH_KEY];
+    [self addTarget:self action:@selector(_ch_textFieldTextLengthLimit:) forControlEvents:UIControlEventEditingChanged];
+}
+
+- (void)_ch_textFieldTextLengthLimit:(id)sender {
+    NSNumber *lengthNumber = [self ch_getAssociatedValueForKey:&CH_UI_TEXT_FIELD_LIMIT_MAX_LENGTH_KEY];
+    NSUInteger maxLength = [lengthNumber unsignedIntValue];
     NSString *toBeString = self.text;
     NSString *lang = self.textInputMode.primaryLanguage; // 键盘输入模式
     if ([lang isEqualToString:@"zh-Hans"] || [lang isEqualToString:@"zh-Hant"]) { // 简繁体中文
@@ -70,19 +83,14 @@ static NSString *kLimitTextLengthKey = @"CHLimitTextLengthKey";
                 self.text = [toBeString substringToIndex:maxLength];
             }
         }
-    }
-    // 中文输入法以外的直接对其统计限制即可，不考虑其他语种情况
-    else{
-        if (toBeString.length > maxLength && self.markedTextRange == nil)
-        {
+    } else {
+        // 中文输入法以外的直接对其统计限制即可，不考虑其他语种情况
+        if (toBeString.length > maxLength && self.markedTextRange == nil) {
             //用字符串的字符编码指定索引查找位置
             NSRange rangeIndex = [toBeString rangeOfComposedCharacterSequenceAtIndex:maxLength];
-            if (rangeIndex.length == 1)
-            {
+            if (rangeIndex.length == 1) {
                 self.text = [toBeString substringToIndex:maxLength];
-            }
-            else
-            {
+            } else {
                 //用字符串的字符编码指定区域段查找位置
                 self.text = [toBeString substringWithRange:NSMakeRange(0, toBeString.length - rangeIndex.length)];
             }
@@ -90,9 +98,9 @@ static NSString *kLimitTextLengthKey = @"CHLimitTextLengthKey";
     }
 }
 
-- (BOOL)shouldChangeTextInRange:(UITextRange *)range replacementText:(NSString *)text
-{
-    [self textFieldTextLengthLimit:nil];
+# pragma mark - <UITextInput>
+- (BOOL)shouldChangeTextInRange:(UITextRange *)range replacementText:(NSString *)text {
+    [self _ch_textFieldTextLengthLimit:nil];
     return YES;
 }
 
