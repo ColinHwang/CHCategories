@@ -8,6 +8,9 @@
 #import "NSObject+CHBase.h"
 #import <objc/message.h>
 
+static const int CH_NS_OBJECT_THROTTLE_SERIAL_QUEUE_KEY;
+static const int CH_NS_OBJECT_THROTTLE_SELECTORS_KEY;
+
 @implementation NSObject (CHBase)
 
 #pragma mark - Base
@@ -418,6 +421,53 @@ void CHNSObjectEnumerateProtocolMethodsUsingBlock(Protocol *protocol, void (^blo
 
 - (void)ch_enumrateInstanceMethodsUsingBlock:(void (^)(Method method, SEL selector))block {
     CHNSObjectEnumerateInstanceMethodsUsingBlock(self.class, NO, block);
+}
+
+#pragma mark - Throttle
+- (void)ch_performSelector:(SEL)aSelector
+           throttleInteval:(NSTimeInterval)inteval
+               withObjects:(id)argument, ... {
+    dispatch_async(self._ch_throttleSerialQueue, ^{
+        NSString *selectorName = NSStringFromSelector(aSelector);
+        if ([self._ch_throttleSelectors objectForKey:selectorName]) return;
+        
+        [self._ch_throttleSelectors setObject:selectorName forKey:selectorName];
+        
+        dispatch_async(dispatch_get_main_queue(), (id)^{
+            [self ch_performSelector:aSelector withObjects:argument, nil];
+            
+            dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(inteval * NSEC_PER_SEC)), self._ch_throttleSerialQueue, ^{
+                [self _ch_removeThrottleSelector:selectorName];
+            });
+        });
+    });
+}
+
+
+- (void)_ch_removeThrottleSelector:(NSString *)selectorName {
+    dispatch_async(self._ch_throttleSerialQueue, ^{
+        if ([self._ch_throttleSelectors objectForKey:selectorName]) {
+            [self._ch_throttleSelectors removeObjectForKey:selectorName];
+        }
+    });
+}
+
+- (NSMutableDictionary *)_ch_throttleSelectors {
+    NSMutableDictionary *selectors = [self ch_getAssociatedValueForKey:&CH_NS_OBJECT_THROTTLE_SELECTORS_KEY];
+    if (!selectors) {
+        selectors = @{}.mutableCopy;
+        [self ch_setAssociatedValue:selectors withKey:&CH_NS_OBJECT_THROTTLE_SELECTORS_KEY];
+    }
+    return selectors;
+}
+
+- (dispatch_queue_t)_ch_throttleSerialQueue {
+    dispatch_queue_t queue = [self ch_getAssociatedValueForKey:&CH_NS_OBJECT_THROTTLE_SERIAL_QUEUE_KEY];;
+    if (!queue) {
+        queue = dispatch_queue_create("com.ch.nsobject.throttle", NULL);
+        [self ch_setAssociatedValue:queue withKey:&CH_NS_OBJECT_THROTTLE_SERIAL_QUEUE_KEY];
+    }
+    return queue;
 }
 
 #pragma mark - Check

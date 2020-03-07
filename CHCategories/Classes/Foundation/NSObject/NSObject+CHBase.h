@@ -58,7 +58,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param argument 参数集
  @return 返回值
  */
-- (nullable id)ch_performSelector:(SEL)selector withObjects:(id)argument, ... NS_REQUIRES_NIL_TERMINATION;
+- (nullable id)ch_performSelector:(SEL)selector withObjects:(nullable id)argument, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
  根据延迟时间, 执行指定方法
@@ -77,7 +77,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)ch_performSelector:(SEL)selector
                 afterDelay:(NSTimeInterval)delay
-               withObjects:(id)argument, ... NS_REQUIRES_NIL_TERMINATION;
+               withObjects:(nullable id)argument, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
  根据参数集, 在主线程执行指定方法(类似`performSelectorOnMainThread:withObject:waitUntilDone:`, 支持多个参数)
@@ -89,7 +89,7 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable id)ch_performSelectorOnMainThread:(SEL)selector
                                 waitUntilDone:(BOOL)wait
-                                  withObjects:(id)argument, ... NS_REQUIRES_NIL_TERMINATION;
+                                  withObjects:(nullable id)argument, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
  根据参数集及线程, 在指定线程执行指定方法(类似`performSelector:onThread:withObject:waitUntilDone:wait`, 支持多个参数)
@@ -103,7 +103,7 @@ NS_ASSUME_NONNULL_BEGIN
 - (nullable id)ch_performSelector:(SEL)selector
                          onThread:(NSThread *)thr
                     waitUntilDone:(BOOL)wait
-                      withObjects:(id)argument, ... NS_REQUIRES_NIL_TERMINATION;
+                      withObjects:(nullable id)argument, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
  根据参数集, 在后台线程执行指定方法(类似`performSelectorInBackground:withObject:, 支持多个参数)
@@ -111,7 +111,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param selector 指定方法
  @param argument 参数集
  */
-- (void)ch_performSelectorInBackground:(SEL)selector withObjects:(id)argument, ... NS_REQUIRES_NIL_TERMINATION;
+- (void)ch_performSelectorInBackground:(SEL)selector withObjects:(nullable id)argument, ... NS_REQUIRES_NIL_TERMINATION;
 
 /**
  遍历指定类别的所有成员变量(例:_a, 不包含property对应的_property成员变量)
@@ -168,6 +168,18 @@ FOUNDATION_EXTERN void CHNSObjectEnumerateeProtocolMethodsUsingBlock(Protocol *p
  @param block 遍历处理回调(method:方法, selector:方法名称)
  */
 - (void)ch_enumrateInstanceMethodsUsingBlock:(void (^)(Method method, SEL selector))block;
+
+#pragma mark - Throttle
+/**
+ 根据函数节流时间, 执行指定方法
+
+ @param aSelector 指定方法
+ @param inteval 函数节流时间
+ @param argument 参数集
+ */
+- (void)ch_performSelector:(SEL)aSelector
+           throttleInteval:(NSTimeInterval)inteval
+               withObjects:(nullable id)argument, ... NS_REQUIRES_NIL_TERMINATION;
 
 #pragma mark - Check
 /**
