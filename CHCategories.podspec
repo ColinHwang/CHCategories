@@ -322,4 +322,9 @@ Pod::Spec.new do |s|
             end
         end
     end
+    
+    # CoreGraphic
+    s.subspec 'CoreGraphic' do |coregraphic|
+        coregraphic.source_files = 'CHCategories/Classes/CoreGraphic/*.{h,m}'
+    end
 end
