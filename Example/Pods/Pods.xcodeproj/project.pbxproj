@@ -47,6 +47,8 @@
 		34A7EA3F857FB3CE1AC32BB77E38626A /* NSString+CHChinese.m in Sources */ = {isa = PBXBuildFile; fileRef = 8FA3A2C575972E1632F1DB2B8AA61B56 /* NSString+CHChinese.m */; };
 		35CD68896F4B365A2DDD0C55BBD0FB1A /* NSUserDefaults+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 7DDD0B090DE729DD10E0D666CB444AEC /* NSUserDefaults+CHBase.m */; };
 		37C80D68AA8A100B32C37FA3972ED9B1 /* NSURL+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D6F4BE0E1D52730D8EA855026A9F9 /* NSURL+CHBase.m */; };
+		3BDC9BA5241382FB002FBD28 /* UIImageView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BA3241382FB002FBD28 /* UIImageView+CHBase.h */; };
+		3BDC9BA6241382FB002FBD28 /* UIImageView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */; };
 		40CF3885630F3599945B3E58779AEAA3 /* NSPointerArray+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D97BE73D6A3CE0F1A11948F5A3434EDF /* NSPointerArray+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		419B46813D250A411D19AE726EC2625D /* NSAttributedString+CHCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = D88310E2C7250715FAE7744D6901A38C /* NSAttributedString+CHCreation.m */; };
 		44C2D4823A8CFED29290C4376CAD91BA /* NSNumber+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7914E9F89F1CC4C977822F4D20908D6D /* NSNumber+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -197,7 +199,7 @@
 
 /* Begin PBXFileReference section */
 		013F74C8BF8F730125C0ACF41F527537 /* NSString+CHCheck.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHCheck.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHCheck.h"; sourceTree = "<group>"; };
-		03155AEF93D08048E707FB7556281E54 /* Pods_CHCategories_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CHCategories_Example.framework; path = "Pods-CHCategories_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		03155AEF93D08048E707FB7556281E54 /* Pods_CHCategories_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHCategories_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0391C85C1FFBB5EA17D159C7D06241E8 /* NSString+CHChinese.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHChinese.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHChinese.h"; sourceTree = "<group>"; };
 		04148459AC57588151E53E9ED73FD2B0 /* UICollectionView+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UICollectionView+CHBase.h"; path = "CHCategories/Classes/UIKit/UICollectionView/UICollectionView+CHBase.h"; sourceTree = "<group>"; };
 		053F21BEAC71DD9B317F1477FC2EED82 /* NSUserDefaults+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSUserDefaults+CHBase.h"; path = "CHCategories/Classes/Foundation/NSUserDefaults/NSUserDefaults+CHBase.h"; sourceTree = "<group>"; };
@@ -213,7 +215,7 @@
 		1366EAE4D78001D0411E702F84DF119C /* UISwipeGestureRecognizer+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISwipeGestureRecognizer+CHBase.h"; path = "CHCategories/Classes/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+CHBase.h"; sourceTree = "<group>"; };
 		14C33AF4A1F01B2F70987FA024951375 /* UIGestureRecognizer+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIGestureRecognizer+CHBase.h"; path = "CHCategories/Classes/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase.h"; sourceTree = "<group>"; };
 		16570F2A1E9C98A3636696F1DCB8B7CA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		17F0828808BBD1ED6858E3D29E9F7C5A /* Pods_CHCategories_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_CHCategories_Tests.framework; path = "Pods-CHCategories_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		17F0828808BBD1ED6858E3D29E9F7C5A /* Pods_CHCategories_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CHCategories_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		1857FD2D0A8C20EF3D92CBB17CCA5B1D /* NSString+CHCrypto.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHCrypto.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHCrypto.h"; sourceTree = "<group>"; };
 		19792978C6010D2F561D32A4540E6F84 /* CHCoreGraphicHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHCoreGraphicHelper.m; path = CHCategories/Classes/CoreGraphic/CHCoreGraphicHelper.m; sourceTree = "<group>"; };
 		197B51847FEE0BFBD38866F462FC0471 /* NSString+CHTrimming.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHTrimming.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHTrimming.h"; sourceTree = "<group>"; };
@@ -221,7 +223,7 @@
 		1C11A1CAE6E4542061C2355D476D485E /* Pods-CHCategories_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-CHCategories_Tests.modulemap"; sourceTree = "<group>"; };
 		1CD36425AA5BA4EEC60726EA8AE22BB1 /* UIButton+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIButton+CHBase.h"; path = "CHCategories/Classes/UIKit/UIButton/UIButton+CHBase.h"; sourceTree = "<group>"; };
 		1E92E8E88E0A24F78134F3457DAF6D97 /* NSString+CHCrypto.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CHCrypto.m"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHCrypto.m"; sourceTree = "<group>"; };
-		1F6D511C8FC5848E51541ECEC0C2E262 /* CHCategories.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = CHCategories.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1F6D511C8FC5848E51541ECEC0C2E262 /* CHCategories.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = CHCategories.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		1F72862F0293F6674E3D831BB0A27714 /* UITabBarItem+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITabBarItem+CHBase.m"; path = "CHCategories/Classes/UIKit/UITabBarItem/UITabBarItem+CHBase.m"; sourceTree = "<group>"; };
 		24C2F37A66E474998014D9EF9F0F9F5E /* UICollectionViewFlowLayout+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UICollectionViewFlowLayout+CHBase.m"; path = "CHCategories/Classes/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+CHBase.m"; sourceTree = "<group>"; };
 		254CF7FF6918DFE1BA023B4FED1854EF /* UIColor+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CHBase.h"; path = "CHCategories/Classes/UIKit/UIColor/UIColor+CHBase.h"; sourceTree = "<group>"; };
@@ -244,6 +246,8 @@
 		3A1BBD4085E952012329902D44EBC766 /* UIColor+CHColorSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CHColorSpace.h"; path = "CHCategories/Classes/UIKit/UIColor/UIColor+CHColorSpace.h"; sourceTree = "<group>"; };
 		3A86D6EDF7B6A8846145F442A86D99AF /* UIFont+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+CHBase.h"; path = "CHCategories/Classes/UIKit/UIFont/UIFont+CHBase.h"; sourceTree = "<group>"; };
 		3B1359C0332426A90618BC288D5856AC /* UIFont+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+CHBase.m"; path = "CHCategories/Classes/UIKit/UIFont/UIFont+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9BA3241382FB002FBD28 /* UIImageView+CHBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CHBase.m"; sourceTree = "<group>"; };
 		3C6470C2006AE1D05EAEED45BC99D2E9 /* NSPointerArray+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPointerArray+CHBase.m"; path = "CHCategories/Classes/Foundation/NSPointerArray/NSPointerArray+CHBase.m"; sourceTree = "<group>"; };
 		3C6C62D33F64E834B5E57888B53AFF96 /* NSDictionary+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+CHBase.h"; path = "CHCategories/Classes/Foundation/NSDictionary/NSDictionary+CHBase.h"; sourceTree = "<group>"; };
 		3DB1E649FA010F8BB37571D8D7A375D5 /* Pods-CHCategories_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHCategories_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -277,7 +281,7 @@
 		660EEF61E57443F67CD13591CD37F864 /* NSCalendar+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSCalendar+CHBase.m"; path = "CHCategories/Classes/Foundation/NSCalendar/NSCalendar+CHBase.m"; sourceTree = "<group>"; };
 		6717F35E569B63CF60EB5B010992240A /* UIScreen+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIScreen+CHBase.h"; path = "CHCategories/Classes/UIKit/UIScreen/UIScreen+CHBase.h"; sourceTree = "<group>"; };
 		671BDB778B066048B336498550D08BB2 /* UINavigationController+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UINavigationController+CHBase.m"; path = "CHCategories/Classes/UIKit/UINavigationController/UINavigationController+CHBase.m"; sourceTree = "<group>"; };
-		6765B1FF9187DC8A2471EBB9771E249D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		6765B1FF9187DC8A2471EBB9771E249D /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		67D4740506FB9AEE5E34EE095294FED4 /* CHCategories-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "CHCategories-prefix.pch"; sourceTree = "<group>"; };
 		68E7CEF56CF6DF40A4A9674D3D98AFA8 /* UITableView+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITableView+CHBase.m"; path = "CHCategories/Classes/UIKit/UITableView/UITableView+CHBase.m"; sourceTree = "<group>"; };
 		6B563A26E2AD67BF34998AA29734D0BD /* NSString+CHRegularExpression.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSString+CHRegularExpression.h"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHRegularExpression.h"; sourceTree = "<group>"; };
@@ -318,11 +322,11 @@
 		98B2C214AE735AFD67B2A539B6DA8E2D /* UIDevice+CHMachineInfo.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIDevice+CHMachineInfo.h"; path = "CHCategories/Classes/UIKit/UIDevice/UIDevice+CHMachineInfo.h"; sourceTree = "<group>"; };
 		98BDA910BBF1397AE2991275D4D0E2EC /* Pods-CHCategories_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-CHCategories_Example-frameworks.sh"; sourceTree = "<group>"; };
 		9959FE594F3B7AF08C05F581CE8004FC /* NSArray+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSArray+CHBase.m"; path = "CHCategories/Classes/Foundation/NSArray/NSArray+CHBase.m"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9F3943ADD0EB21DF5776C6FBCAAA4736 /* NSURLComponents+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSURLComponents+CHBase.h"; path = "CHCategories/Classes/Foundation/NSURLComponents/NSURLComponents+CHBase.h"; sourceTree = "<group>"; };
 		A02D8956162F21A83A1BD2C20E76C4E6 /* CHMacroHelper.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = CHMacroHelper.m; path = CHCategories/Classes/Macro/CHMacroHelper.m; sourceTree = "<group>"; };
 		A0A010679F398759F658F5A0CE0031B8 /* UIImage+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CHBase.h"; path = "CHCategories/Classes/UIKit/UIImage/UIImage+CHBase.h"; sourceTree = "<group>"; };
-		A19D243D8AF749BBFCB6F842E4024F64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		A19D243D8AF749BBFCB6F842E4024F64 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
 		A21C5040EC8B1725DFBF87D369FA81EF /* NSIndexPath+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSIndexPath+CHBase.h"; path = "CHCategories/Classes/Foundation/NSIndexPath/NSIndexPath+CHBase.h"; sourceTree = "<group>"; };
 		A32A0B1EBFA4EBD99FFF12FC50C819E7 /* UIImage+CHImageEffect.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+CHImageEffect.h"; path = "CHCategories/Classes/UIKit/UIImage/UIImage+CHImageEffect.h"; sourceTree = "<group>"; };
 		A45D6F4BE0E1D52730D8EA855026A9F9 /* NSURL+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSURL+CHBase.m"; path = "CHCategories/Classes/Foundation/NSURL/NSURL+CHBase.m"; sourceTree = "<group>"; };
@@ -374,7 +378,7 @@
 		F21F54B5AA8714D5BD84F8F180857B55 /* UIControl+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIControl+CHBase.m"; path = "CHCategories/Classes/UIKit/UIControl/UIControl+CHBase.m"; sourceTree = "<group>"; };
 		F2FA4706192ACBD67280EFD1FD838189 /* NSNumber+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSNumber+CHBase.m"; path = "CHCategories/Classes/Foundation/NSNumber/NSNumber+CHBase.m"; sourceTree = "<group>"; };
 		F3A3D80848AC2F041A1B2509141B621C /* CALayer+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "CALayer+CHBase.h"; path = "CHCategories/Classes/QuartzCore/CALayer/CALayer+CHBase.h"; sourceTree = "<group>"; };
-		F403D4B174318D15FA23D27332B4516E /* CHCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = CHCategories.framework; path = CHCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F403D4B174318D15FA23D27332B4516E /* CHCategories.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = CHCategories.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F456B1B0E74EB87C94C679F3B53433BF /* UIBezierPath+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIBezierPath+CHBase.m"; path = "CHCategories/Classes/UIKit/UIBezierPath/UIBezierPath+CHBase.m"; sourceTree = "<group>"; };
 		F491753B740C157C3ED5C2D2CC85AE2A /* Pods-CHCategories_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHCategories_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		F5141DAD9FDB936A2B2B17088AE12B55 /* NSString+CHCheck.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSString+CHCheck.m"; path = "CHCategories/Classes/Foundation/NSString/NSString+CHCheck.m"; sourceTree = "<group>"; };
@@ -745,6 +749,16 @@
 			name = "NSURLComponents+CHBase";
 			sourceTree = "<group>";
 		};
+		3BDC9BA2241382DC002FBD28 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BA3241382FB002FBD28 /* UIImageView+CHBase.h */,
+				3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */,
+			);
+			name = UIImageView;
+			path = CHCategories/Classes/UIKit/UIImageView;
+			sourceTree = "<group>";
+		};
 		3F27CB4CB3C5753F1C5EA7177C47B20A /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -1035,6 +1049,7 @@
 		85C9414CBA514705A3AF774B071E1AF0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3BDC9BA2241382DC002FBD28 /* UIImageView */,
 				317213D4366C38BF24448904E884CD4A /* UIActivityIndicatorView */,
 				F66AE996F5576DDFD7259B9A31969F9F /* UIApplication */,
 				94194B9563A71AFCAB1CC4F748545B48 /* UIBarButtonItem */,
@@ -1806,6 +1821,7 @@
 				E20A0C1C42B76F61CF19A45CC26812F7 /* NSURLComponents+CHBase.h in Headers */,
 				029A34F9E2B3257E81E2C46E5436DAE6 /* NSUserDefaults+CHBase.h in Headers */,
 				22C0968BAD70DF9E64F6450A968B926A /* NSValue+CHBase.h in Headers */,
+				3BDC9BA5241382FB002FBD28 /* UIImageView+CHBase.h in Headers */,
 				4F6D791E0DE7E0719069E30C963BEFAE /* UIActivityIndicatorView+CHBase.h in Headers */,
 				B064C5F45E0B49F2D7454185E2926897 /* UIApplication+CHBase.h in Headers */,
 				C1884818C6D253B217A30B64BD217292 /* UIBarButtonItem+CHBase.h in Headers */,
@@ -2026,6 +2042,7 @@
 				E3E5ECB46CF83198C68B3219CC1C5D36 /* UINavigationBar+CHBase.m in Sources */,
 				E1949DE224E79A3427DCC18888E4ACBF /* UINavigationController+CHBase.m in Sources */,
 				6CEAF15A9029FF0CF7F259555EA88D27 /* UIScreen+CHBase.m in Sources */,
+				3BDC9BA6241382FB002FBD28 /* UIImageView+CHBase.m in Sources */,
 				E75F54B8081E712FD029343699189776 /* UIScrollView+CHBase.m in Sources */,
 				DD96D03C1875B5063FA91524347C5295 /* UISlider+CHBase.m in Sources */,
 				91EC6D3B75595E433A4DC3B4997A1E3C /* UISwipeGestureRecognizer+CHBase.m in Sources */,
@@ -2193,8 +2210,7 @@
 				MTL_FAST_MATH = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};

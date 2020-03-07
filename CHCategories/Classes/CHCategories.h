@@ -69,6 +69,7 @@
 #import "UIImage+CHGIFImage.h"
 #import "UIImage+CHImageCompression.h"
 #import "UIImage+CHImageEffect.h"
+#import "UIImageView+CHBase.h"
 #import "UINavigationBar+CHBase.h"
 #import "UINavigationController+CHBase.h"
 #import "UIScreen+CHBase.h"

@@ -498,6 +498,15 @@ Pod::Spec.new do |s|
             end
         end
         
+        # UIImageView
+        uikit.subspec 'UIImageView' do |uiimageview|
+            # UIImageView+CHBase
+            uiimageview.subspec 'UIImageView+CHBase' do |uiimageview_chbase|
+                uiimageview_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uiimageview_chbase.source_files = 'CHCategories/Classes/UIKit/UIImageView/UIImageView+CHBase.{h,m}'
+            end
+        end
+        
         # UINavigationBar
         uikit.subspec 'UINavigationBar' do |uinavigationBar|
             # UINavigationBar+CHBase
