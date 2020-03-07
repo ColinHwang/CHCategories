@@ -74,8 +74,31 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (nullable id)ch_attribute:(NSString *)attrName;
 
-#pragma mark - Attributed Substrings
+#pragma mark - Drawing
+/**
+ 获取NSAttributedString的Size
 
+ @param size 宽高限制, 用于计算文本绘制时占据的最大矩形块
+ @return NSAttributedString的Size
+ */
+- (CGSize)ch_boundingSizeForSize:(CGSize)size;
+
+/**
+ 获取NSAttributedString宽度(单行)
+
+ @return NSAttributedString宽度(单行)
+ */
+- (CGFloat)ch_boundingWidth;
+
+/**
+ 获取NSAttributedString高度
+
+ @param width 宽度限制, 用于计算文本绘制时占据的最大宽度
+ @return NSAttributedString高度
+ */
+- (CGFloat)ch_boundingHeightForWidth:(CGFloat)width;
+
+#pragma mark - Attributed Substrings
 /**
  获取NSAttributedString从0到指定结束位置的子AttributedString
 

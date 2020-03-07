@@ -107,8 +107,23 @@
     return [self ch_attribute:attrName inRange:self.ch_rangeOfAll];
 }
 
-#pragma mark - Attributed Substrings
+#pragma mark - Drawing
+- (CGSize)ch_boundingSizeForSize:(CGSize)size {
+    CGRect result = [self boundingRectWithSize:size options:NSStringDrawingUsesFontLeading | NSStringDrawingUsesLineFragmentOrigin context:nil];
+    return result.size;
+}
 
+- (CGFloat)ch_boundingWidth {
+    CGSize size = [self ch_boundingSizeForSize:CGSizeMake(HUGE, HUGE)];
+    return size.width;
+}
+
+- (CGFloat)ch_boundingHeightForWidth:(CGFloat)width {
+    CGSize size = [self ch_boundingSizeForSize:CGSizeMake(width, HUGE)];
+    return size.height;
+}
+
+#pragma mark - Attributed Substrings
 - (NSAttributedString *)ch_attributedSubstringToIndex:(NSUInteger)to {
     NSRange range = NSMakeRange(0, to);
     return [self attributedSubstringFromRange:range];
