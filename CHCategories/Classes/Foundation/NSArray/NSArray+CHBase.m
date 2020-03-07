@@ -234,8 +234,29 @@
 
 #pragma mark - Filter
 - (NSArray<id> *)ch_filteredArray:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))block {
-    NSMutableArray<id> *buffer = [NSMutableArray arrayWithArray:self];
-    [buffer ch_filter:block];
+    return [self ch_filteredArrayWithOptions:kNilOptions usingBlock:block];
+
+}
+
+- (NSArray<id> *)ch_filteredArrayWithOptions:(NSEnumerationOptions)opts usingBlock:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))block {
+     NSMutableArray<id> *buffer = [NSMutableArray arrayWithArray:self];
+    [buffer ch_filterWithOptions:opts usingBlock:block];
+    return buffer.copy;
+}
+
+#pragma mark - Map
+- (NSArray<id> *)ch_mappedArray:(id (^)(id obj, NSUInteger idx, BOOL *stop))block {
+    return [self ch_mappedArrayWithOptions:kNilOptions usingBlock:block];
+}
+
+- (NSArray<id> *)ch_mappedArrayWithOptions:(NSEnumerationOptions)opts usingBlock:(id (^)(id obj, NSUInteger idx, BOOL *stop))block {
+    __block NSMutableArray<id> *buffer = [NSMutableArray new];
+    [self enumerateObjectsWithOptions:opts usingBlock:^(id  _Nonnull obj, NSUInteger idx, BOOL * _Nonnull stop) {
+        id anObj = block(obj, idx, stop);
+        if (anObj) {
+            [buffer addObject:anObj];
+        }
+    }];
     return buffer.copy;
 }
 
