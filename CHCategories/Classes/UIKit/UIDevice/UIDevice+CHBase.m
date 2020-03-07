@@ -90,6 +90,7 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPod4,1" : @"iPod touch 4",
                                @"iPod5,1" : @"iPod touch 5",
                                @"iPod7,1" : @"iPod touch 6",
+                               @"iPod9,1" : @"iPod touch 7",
                                
                                @"iPhone1,1" : @"iPhone 1G",
                                @"iPhone1,2" : @"iPhone 3G",
@@ -123,6 +124,9 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPhone11,4" : @"iPhone XS Max",
                                @"iPhone11,6" : @"iPhone XS Max",
                                @"iPhone11,8" : @"iPhone XR",
+                               @"iPhone12,1" : @"iPhone 11",
+                               @"iPhone12,3" : @"iPhone 11 Pro",
+                               @"iPhone12,5" : @"iPhone 11 Pro Max",
                                
                                @"iPad1,1" : @"iPad 1",
                                @"iPad2,1" : @"iPad 2 (WiFi)",
@@ -170,13 +174,19 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPad8,5" : @"iPad Pro 12.9 inch 3 (WiFi)",
                                @"iPad8,6" : @"iPad Pro 12.9 inch 3 (WiFi)",
                                @"iPad8,7" : @"iPad Pro 12.9 inch 3 (Cellular)",
-                               @"iPad8,8" : @"iPad Pro 12.9 inch 3 (Cellular)",
+                               @"iPad11,1" : @"iPad mini 5",
+                               @"iPad11,2" : @"iPad mini 5",
+                               @"iPad11,3" : @"iPad Air 3",
+                               @"iPad11,4" : @"iPad Air 3",
                                
                                @"AppleTV2,1" : @"Apple TV 2",
                                @"AppleTV3,1" : @"Apple TV 3",
                                @"AppleTV3,2" : @"Apple TV 3",
                                @"AppleTV5,3" : @"Apple TV 4",
                                @"AppleTV6,2" : @"Apple TV 4K",
+                               
+                               @"AirPods1,1" : @"AirPods 1",
+                               @"AirPods2,1" : @"AirPods 2",
                                
                                @"i386" : @"Simulator x86",
                                @"x86_64" : @"Simulator x64",

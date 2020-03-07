@@ -48,6 +48,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL ch_isiOS10Later; ///< 设备系统版本是否iOS10及以上
 @property (nonatomic, readonly) BOOL ch_isiOS11Later; ///< 设备系统版本是否iOS11及以上
 @property (nonatomic, readonly) BOOL ch_isiOS12Later; ///< 设备系统版本是否iOS12及以上
+@property (nonatomic, readonly) BOOL ch_isiOS13Later; ///< 设备系统版本是否iOS13及以上
 
 @end
 

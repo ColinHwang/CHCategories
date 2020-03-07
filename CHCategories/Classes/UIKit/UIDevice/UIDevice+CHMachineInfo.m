@@ -231,6 +231,24 @@ return isConstained; \
     CHDeviceIsMachineModelInSet(@"iPhone11,4", @"iPhone11,6");
 }
 
+- (BOOL)ch_isiPhone11 {
+    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X896);
+    
+    CHDeviceIsMachineModelInSet(@"iPhone12,1");
+}
+
+- (BOOL)ch_isiPhone11Pro {
+    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X812);
+    
+    CHDeviceIsMachineModelInSet(@"iPhone12,3");
+}
+
+- (BOOL)ch_isiPhone11ProMax {
+    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X896);
+    
+    CHDeviceIsMachineModelInSet(@"iPhone12,5");
+}
+
 #undef CHDeviceIsMachineModelInSet
 
 #pragma mark - Operation System Info
@@ -260,6 +278,10 @@ return isConstained; \
 
 - (BOOL)ch_isiOS12Later {
     return [UIDevice ch_systemVersion] >= 12;
+}
+
+- (BOOL)ch_isiOS13Later {
+    return [UIDevice ch_systemVersion] >= 13;
 }
 
 @end
