@@ -8,6 +8,8 @@
 
 #import "NSAttributedString+CHCreation.h"
 #import "NSAttributedString+CHBase.h"
+#import "NSData+CHBase.h"
+#import "NSString+CHBase.h"
 #import "NSValue+CHBase.h"
 #import <UIKit/UIKit.h>
 
@@ -105,6 +107,17 @@
         [mutableAttributedString appendAttributedString:[self ch_attributedStringWithWidth:rightSpacing]];
     }
     return mutableAttributedString.copy;
+}
+
+#pragma mark - HTML
+- (nullable instancetype)ch_initWithHTMLString:(NSString *)HTMLString {
+    return [[[self class] alloc] initWithData:HTMLString.ch_dataValue
+                                      options:@{
+                                                NSDocumentTypeDocumentAttribute : NSHTMLTextDocumentType,
+                                                NSCharacterEncodingDocumentAttribute : @(NSUTF8StringEncoding),
+                                                }
+                           documentAttributes:nil
+                                        error:nil];
 }
 
 @end

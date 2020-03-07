@@ -56,6 +56,8 @@ Pod::Spec.new do |s|
             nsattributedstring.subspec 'NSAttributedString+CHCreation' do |nsattributedstring_chcreation|
                 nsattributedstring_chcreation.frameworks = 'UIKit'
                 nsattributedstring_chcreation.dependency 'CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase'
+                nsattributedstring_chcreation.dependency 'CHCategories/Foundation/NSData/NSData+CHBase'
+                nsattributedstring_chcreation.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
                 nsattributedstring_chcreation.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 nsattributedstring_chcreation.source_files = 'CHCategories/Classes/Foundation/NSAttributedString/NSAttributedString+CHCreation.{h,m}'
             end

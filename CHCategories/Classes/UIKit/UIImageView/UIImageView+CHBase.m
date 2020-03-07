@@ -60,8 +60,8 @@ static const int CH_UI_IMAGE_VIEW_PREFERRED_SCALE_INTRINSIC_CONTENT_WIDTH_KEY;
 #pragma mark - Swizzle
 - (CGSize)_ch_ui_image_view_intrinsicContentSize {
     CGSize size = [self _ch_ui_image_view_intrinsicContentSize];
-    
     if (!self.ch_scaleIntrinsicContentSizeEnabled) return size;
+    
     CGFloat imageWidth = self.image.size.width;
     CGFloat imageHeight = self.image.size.height;
     if (self.ch_preferredScaleIntrinsicContentHeight >= 0) {

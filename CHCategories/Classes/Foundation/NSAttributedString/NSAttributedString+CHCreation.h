@@ -144,6 +144,15 @@ NS_ASSUME_NONNULL_BEGIN
                                                   leftSpacing:(CGFloat)leftSpacing
                                                  rightSpacing:(CGFloat)rightSpacing;
 
+#pragma mark - HTML
+/**
+ 根据HTML字符串, 创建NSAttributedString对象
+
+ @param HTMLString HTML字符串
+ @return NSAttributedString对象
+ */
+- (nullable instancetype)ch_initWithHTMLString:(NSString *)HTMLString;
+
 @end
 
 NS_ASSUME_NONNULL_END
