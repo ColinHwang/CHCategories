@@ -547,6 +547,9 @@ Pod::Spec.new do |s|
         uikit.subspec 'UINavigationController' do |uinavigationController|
             # UINavigationController+CHBase
             uinavigationController.subspec 'UINavigationController+CHBase' do |uinavigationController_chbase|
+                uinavigationController_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uinavigationController_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
+                uinavigationController_chbase.dependency 'CHCategories/UIKit/UIViewController/UIViewController+CHBase'
                 uinavigationController_chbase.source_files = 'CHCategories/Classes/UIKit/UINavigationController/UINavigationController+CHBase.{h,m}'
             end
         end
@@ -658,6 +661,16 @@ Pod::Spec.new do |s|
                 uiview_chtouchinset.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
                 uiview_chtouchinset.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uiview_chtouchinset.source_files = 'CHCategories/Classes/UIKit/UIView/UIView+CHTouchInset.{h,m}'
+            end
+            
+            # UIViewController
+            uikit.subspec 'UIViewController' do |uiviewController|
+                # UIViewController+CHBase
+                uiviewController.subspec 'UIViewController+CHBase' do |uiviewcontroller_chbase|
+                    uiviewcontroller_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                    uiviewcontroller_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
+                    uiviewcontroller_chbase.source_files = 'CHCategories/Classes/UIKit/UIViewController/UIViewController+CHBase.{h,m}'
+                end
             end
         end
     end

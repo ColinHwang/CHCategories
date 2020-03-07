@@ -7,10 +7,25 @@
 //
 
 #import "UINavigationController+CHBase.h"
+#import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
+#import "UIViewController+CHBase.h"
 
 @implementation UINavigationController (CHBase)
 
 #pragma mark - Base
++ (void)load {
+    if (@available(iOS 13.0, *)) {
+        static dispatch_once_t onceToken;
+        dispatch_once(&onceToken, ^{
+            NSArray *selectors = @[
+                [NSValue ch_valueWithSelector:@selector(initWithRootViewController:)],
+                [NSValue ch_valueWithSelector:@selector(initWithNavigationBarClass:toolbarClass:)],
+            ];
+            CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"_ch_ui_navigation_controller_");
+        });
+    }
+}
 
 - (void)ch_removeViewControllerFromClassName:(NSString *)className {
     [self ch_removeViewControllerFromClassName:className options:0];
@@ -104,6 +119,19 @@
         }
     }
     return nil;
+}
+
+#pragma mark - Swizzle
+- (instancetype)_ch_ui_navigation_controller_initWithNavigationBarClass:(Class)navigationBarClass toolbarClass:(Class)toolbarClass {
+    UINavigationController *viewController = [self _ch_ui_navigation_controller_initWithNavigationBarClass:navigationBarClass toolbarClass:toolbarClass];
+    viewController.modalPresentationStyle = [UIViewController ch_preferredModalPresentationStyle];
+    return viewController;
+}
+
+- (instancetype)_ch_ui_navigation_controller_initWithRootViewController:(UIViewController *)rootViewController {
+    UINavigationController *viewController = [self _ch_ui_navigation_controller_initWithRootViewController:rootViewController];
+    viewController.modalPresentationStyle = [UIViewController ch_preferredModalPresentationStyle];
+    return viewController;
 }
 
 @end
