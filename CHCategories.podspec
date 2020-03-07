@@ -642,6 +642,7 @@ Pod::Spec.new do |s|
             # UIView+CHBase
             uiview.subspec 'UIView+CHBase' do |uiview_chbase|
                 uiview_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
+                uiview_chbase.dependency 'CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase'
                 uiview_chbase.source_files = 'CHCategories/Classes/UIKit/UIView/UIView+CHBase.{h,m}'
             end
             

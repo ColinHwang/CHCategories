@@ -8,6 +8,7 @@
 
 #import "UIView+CHBase.h"
 #import "NSArray+CHBase.h"
+#import "UIGestureRecognizer+CHBase.h"
 
 @implementation UIView (CHBase)
 
@@ -444,6 +445,91 @@
     UIImage *snap = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     return snap;
+}
+
+#pragma mark - Gesture Recognizer
+- (UITapGestureRecognizer *)ch_addTapGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UITapGestureRecognizer *)ch_addTapGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UITapGestureRecognizer *recognizer = [[UITapGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIPinchGestureRecognizer *)ch_addPinchGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UIPinchGestureRecognizer *recognizer = [[UIPinchGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIPinchGestureRecognizer *)ch_addPinchGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UIPinchGestureRecognizer *recognizer = [[UIPinchGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIRotationGestureRecognizer *)ch_addRotationGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UIRotationGestureRecognizer *recognizer = [[UIRotationGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIRotationGestureRecognizer *)ch_addRotationGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UIRotationGestureRecognizer *recognizer = [[UIRotationGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UISwipeGestureRecognizer *)ch_addSwipeGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UISwipeGestureRecognizer *)ch_addSwipeGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UISwipeGestureRecognizer *recognizer = [[UISwipeGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIPanGestureRecognizer *)ch_addPanGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIPanGestureRecognizer *)ch_addPanGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UIPanGestureRecognizer *recognizer = [[UIPanGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIScreenEdgePanGestureRecognizer *)ch_addScreenEdgePanGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UIScreenEdgePanGestureRecognizer *recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UIScreenEdgePanGestureRecognizer *)ch_addScreenEdgePanGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UIScreenEdgePanGestureRecognizer *recognizer = [[UIScreenEdgePanGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UILongPressGestureRecognizer *)ch_addLongPressGestureRecognizerWithTarget:(id)target action:(SEL)action {
+    UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithTarget:target action:action];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
+}
+
+- (UILongPressGestureRecognizer *)ch_addLongPressGestureRecognizerWithActionBlock:(void (^)(id sender))block {
+    UILongPressGestureRecognizer *recognizer = [[UILongPressGestureRecognizer alloc] initWithActionBlock:block];
+    [self addGestureRecognizer:recognizer];
+    return recognizer;
 }
 
 @end

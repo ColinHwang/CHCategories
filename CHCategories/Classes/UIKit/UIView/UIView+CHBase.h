@@ -177,6 +177,125 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (UIImage *)ch_snapshotImageAfterScreenUpdates:(BOOL)afterUpdates;
 
+#pragma mark - Gesture Recognizer
+/**
+ 根据Target及Action, 添加点按手势
+
+ @param target Target
+ @param action Action
+ @return 点按手势
+ */
+- (UITapGestureRecognizer *)ch_addTapGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加点按手势
+
+ @param block 手势回调事件
+ @return 点按手势
+ */
+- (UITapGestureRecognizer *)ch_addTapGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+
+/**
+ 根据Target及Action, 添加捏合手势
+ 
+ @param target Target
+ @param action Action
+ @return 捏合手势
+ */
+- (UIPinchGestureRecognizer *)ch_addPinchGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加捏合手势
+ 
+ @param block 手势回调事件
+ @return 捏合手势
+ */
+- (UIPinchGestureRecognizer *)ch_addPinchGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+/**
+ 根据Target及Action, 添加旋转手势
+ 
+ @param target Target
+ @param action Action
+ @return 旋转手势
+ */
+- (UIRotationGestureRecognizer *)ch_addRotationGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加旋转手势
+ 
+ @param block 手势回调事件
+ @return 旋转手势
+ */
+- (UIRotationGestureRecognizer *)ch_addRotationGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+
+/**
+ 根据Target及Action, 添加轻扫手势
+ 
+ @param target Target
+ @param action Action
+ @return 轻扫手势
+ */
+- (UISwipeGestureRecognizer *)ch_addSwipeGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加轻扫手势
+ 
+ @param block 手势回调事件
+ @return 轻扫手势
+ */
+- (UISwipeGestureRecognizer *)ch_addSwipeGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+
+/**
+ 根据Target及Action, 添加拖动手势
+ 
+ @param target Target
+ @param action Action
+ @return 拖动手势
+ */
+- (UIPanGestureRecognizer *)ch_addPanGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加拖动手势
+ 
+ @param block 手势回调事件
+ @return 拖动手势
+ */
+- (UIPanGestureRecognizer *)ch_addPanGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+
+/**
+ 根据Target及Action, 添加屏幕边缘拖动手势
+ 
+ @param target Target
+ @param action Action
+ @return 屏幕边缘拖动手势
+ */
+- (UIScreenEdgePanGestureRecognizer *)ch_addScreenEdgePanGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加屏幕边缘拖动手势
+ 
+ @param block 手势回调事件
+ @return 屏幕边缘拖动手势
+ */
+- (UIScreenEdgePanGestureRecognizer *)ch_addScreenEdgePanGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+
+/**
+ 根据Target及Action, 添加长按手势
+ 
+ @param target Target
+ @param action Action
+ @return 长按手势
+ */
+- (UILongPressGestureRecognizer *)ch_addLongPressGestureRecognizerWithTarget:(id)target action:(SEL)action;
+
+/**
+ 根据手势回调事件, 添加长按手势
+ 
+ @param block 手势回调事件
+ @return 长按手势
+ */
+- (UILongPressGestureRecognizer *)ch_addLongPressGestureRecognizerWithActionBlock:(void (^)(id sender))block;
+
 @end
 
 NS_ASSUME_NONNULL_END
