@@ -16,6 +16,76 @@
 		3BDC9AF524136AA1002FBD28 /* CALayer+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9AF124136AA1002FBD28 /* CALayer+CHBase.h */; };
 		3BDC9AF824136C34002FBD28 /* CHMacroHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9AF624136C34002FBD28 /* CHMacroHelper.h */; };
 		3BDC9AF924136C34002FBD28 /* CHMacroHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9AF724136C34002FBD28 /* CHMacroHelper.m */; };
+		3BDC9B5C24137412002FBD28 /* UIImage+CHImageCompression.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9AFC24137412002FBD28 /* UIImage+CHImageCompression.h */; };
+		3BDC9B5D24137412002FBD28 /* UIImage+CHGIFImage.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9AFD24137412002FBD28 /* UIImage+CHGIFImage.h */; };
+		3BDC9B5E24137412002FBD28 /* UIImage+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9AFE24137412002FBD28 /* UIImage+CHBase.m */; };
+		3BDC9B5F24137412002FBD28 /* UIImage+CHImageEffect.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9AFF24137412002FBD28 /* UIImage+CHImageEffect.m */; };
+		3BDC9B6024137412002FBD28 /* UIImage+CHGIFImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B0024137412002FBD28 /* UIImage+CHGIFImage.m */; };
+		3BDC9B6124137412002FBD28 /* UIImage+CHImageCompression.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B0124137412002FBD28 /* UIImage+CHImageCompression.m */; };
+		3BDC9B6224137412002FBD28 /* UIImage+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B0224137412002FBD28 /* UIImage+CHBase.h */; };
+		3BDC9B6324137412002FBD28 /* UIImage+CHImageEffect.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B0324137412002FBD28 /* UIImage+CHImageEffect.h */; };
+		3BDC9B6424137412002FBD28 /* UIScrollView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B0524137412002FBD28 /* UIScrollView+CHBase.m */; };
+		3BDC9B6524137412002FBD28 /* UIScrollView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B0624137412002FBD28 /* UIScrollView+CHBase.h */; };
+		3BDC9B6624137412002FBD28 /* UIActivityIndicatorView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B0824137412002FBD28 /* UIActivityIndicatorView+CHBase.h */; };
+		3BDC9B6724137412002FBD28 /* UIActivityIndicatorView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B0924137412002FBD28 /* UIActivityIndicatorView+CHBase.m */; };
+		3BDC9B6824137412002FBD28 /* UIScreen+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B0B24137412002FBD28 /* UIScreen+CHBase.m */; };
+		3BDC9B6924137412002FBD28 /* UIScreen+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B0C24137412002FBD28 /* UIScreen+CHBase.h */; };
+		3BDC9B6A24137412002FBD28 /* UIApplication+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B0E24137412002FBD28 /* UIApplication+CHBase.m */; };
+		3BDC9B6B24137412002FBD28 /* UIApplication+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B0F24137412002FBD28 /* UIApplication+CHBase.h */; };
+		3BDC9B6C24137412002FBD28 /* UITableViewCell+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B1124137412002FBD28 /* UITableViewCell+CHBase.h */; };
+		3BDC9B6D24137412002FBD28 /* UITableViewCell+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B1224137412002FBD28 /* UITableViewCell+CHBase.m */; };
+		3BDC9B6E24137412002FBD28 /* UIButton+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B1424137412002FBD28 /* UIButton+CHBase.h */; };
+		3BDC9B6F24137412002FBD28 /* UIButton+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B1524137412002FBD28 /* UIButton+CHBase.m */; };
+		3BDC9B7024137412002FBD28 /* UIColor+CHColorSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B1724137412002FBD28 /* UIColor+CHColorSpace.h */; };
+		3BDC9B7124137412002FBD28 /* UIColor+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B1824137412002FBD28 /* UIColor+CHBase.h */; };
+		3BDC9B7224137412002FBD28 /* UIColor+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B1924137412002FBD28 /* UIColor+CHBase.m */; };
+		3BDC9B7324137412002FBD28 /* UIColor+CHColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B1A24137412002FBD28 /* UIColor+CHColorSpace.m */; };
+		3BDC9B7424137412002FBD28 /* UIView+CHAnimation.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B1C24137412002FBD28 /* UIView+CHAnimation.h */; };
+		3BDC9B7524137412002FBD28 /* UIView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B1D24137412002FBD28 /* UIView+CHBase.h */; };
+		3BDC9B7624137412002FBD28 /* UIView+CHTouchInset.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B1E24137412002FBD28 /* UIView+CHTouchInset.m */; };
+		3BDC9B7724137412002FBD28 /* UIView+CHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B1F24137412002FBD28 /* UIView+CHAnimation.m */; };
+		3BDC9B7824137412002FBD28 /* UIView+CHTouchInset.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B2024137412002FBD28 /* UIView+CHTouchInset.h */; };
+		3BDC9B7924137412002FBD28 /* UIView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B2124137412002FBD28 /* UIView+CHBase.m */; };
+		3BDC9B7A24137412002FBD28 /* UITabBarItem+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B2324137412002FBD28 /* UITabBarItem+CHBase.m */; };
+		3BDC9B7B24137412002FBD28 /* UITabBarItem+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B2424137412002FBD28 /* UITabBarItem+CHBase.h */; };
+		3BDC9B7C24137412002FBD28 /* UIFont+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B2624137412002FBD28 /* UIFont+CHBase.h */; };
+		3BDC9B7D24137412002FBD28 /* UIFont+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B2724137412002FBD28 /* UIFont+CHBase.m */; };
+		3BDC9B7E24137412002FBD28 /* UIBarItem+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B2924137412002FBD28 /* UIBarItem+CHBase.m */; };
+		3BDC9B7F24137412002FBD28 /* UIBarItem+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B2A24137412002FBD28 /* UIBarItem+CHBase.h */; };
+		3BDC9B8024137412002FBD28 /* UITextView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B2C24137412002FBD28 /* UITextView+CHBase.m */; };
+		3BDC9B8124137412002FBD28 /* UITextView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B2D24137412002FBD28 /* UITextView+CHBase.h */; };
+		3BDC9B8224137412002FBD28 /* UIDevice+CHMachineInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B2F24137412002FBD28 /* UIDevice+CHMachineInfo.m */; };
+		3BDC9B8324137412002FBD28 /* UIDevice+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B3024137412002FBD28 /* UIDevice+CHBase.h */; };
+		3BDC9B8424137412002FBD28 /* UIDevice+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B3124137412002FBD28 /* UIDevice+CHBase.m */; };
+		3BDC9B8524137412002FBD28 /* UIDevice+CHMachineInfo.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B3224137412002FBD28 /* UIDevice+CHMachineInfo.h */; };
+		3BDC9B8624137412002FBD28 /* UICollectionView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B3424137412002FBD28 /* UICollectionView+CHBase.h */; };
+		3BDC9B8724137412002FBD28 /* UICollectionView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B3524137412002FBD28 /* UICollectionView+CHBase.m */; };
+		3BDC9B8824137412002FBD28 /* UIBarButtonItem+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B3724137412002FBD28 /* UIBarButtonItem+CHBase.h */; };
+		3BDC9B8924137412002FBD28 /* UIBarButtonItem+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B3824137412002FBD28 /* UIBarButtonItem+CHBase.m */; };
+		3BDC9B8A24137412002FBD28 /* UIBezierPath+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B3A24137412002FBD28 /* UIBezierPath+CHBase.h */; };
+		3BDC9B8B24137412002FBD28 /* UIBezierPath+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B3B24137412002FBD28 /* UIBezierPath+CHBase.m */; };
+		3BDC9B8C24137412002FBD28 /* UINavigationBar+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B3D24137412002FBD28 /* UINavigationBar+CHBase.m */; };
+		3BDC9B8D24137412002FBD28 /* UINavigationBar+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B3E24137412002FBD28 /* UINavigationBar+CHBase.h */; };
+		3BDC9B8E24137412002FBD28 /* UINavigationController+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B4024137412002FBD28 /* UINavigationController+CHBase.h */; };
+		3BDC9B8F24137412002FBD28 /* UINavigationController+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B4124137412002FBD28 /* UINavigationController+CHBase.m */; };
+		3BDC9B9024137412002FBD28 /* UITableView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B4324137412002FBD28 /* UITableView+CHBase.h */; };
+		3BDC9B9124137412002FBD28 /* UITableView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B4424137412002FBD28 /* UITableView+CHBase.m */; };
+		3BDC9B9224137412002FBD28 /* UIControl+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B4624137412002FBD28 /* UIControl+CHBase.h */; };
+		3BDC9B9324137412002FBD28 /* UIControl+CHRepeatClickPrevention.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B4724137412002FBD28 /* UIControl+CHRepeatClickPrevention.h */; };
+		3BDC9B9424137412002FBD28 /* UIControl+CHRepeatClickPrevention.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B4824137412002FBD28 /* UIControl+CHRepeatClickPrevention.m */; };
+		3BDC9B9524137412002FBD28 /* UIControl+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B4924137412002FBD28 /* UIControl+CHBase.m */; };
+		3BDC9B9624137412002FBD28 /* UIGestureRecognizer+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B4B24137412002FBD28 /* UIGestureRecognizer+CHBase.h */; };
+		3BDC9B9724137412002FBD28 /* UIGestureRecognizer+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B4C24137412002FBD28 /* UIGestureRecognizer+CHBase.m */; };
+		3BDC9B9824137412002FBD28 /* UICollectionViewFlowLayout+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B4E24137412002FBD28 /* UICollectionViewFlowLayout+CHBase.m */; };
+		3BDC9B9924137412002FBD28 /* UICollectionViewFlowLayout+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B4F24137412002FBD28 /* UICollectionViewFlowLayout+CHBase.h */; };
+		3BDC9B9A24137412002FBD28 /* UISwipeGestureRecognizer+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B5124137412002FBD28 /* UISwipeGestureRecognizer+CHBase.h */; };
+		3BDC9B9B24137412002FBD28 /* UISwipeGestureRecognizer+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B5224137412002FBD28 /* UISwipeGestureRecognizer+CHBase.m */; };
+		3BDC9B9C24137412002FBD28 /* UITabBar+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B5424137412002FBD28 /* UITabBar+CHBase.h */; };
+		3BDC9B9D24137412002FBD28 /* UITabBar+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B5524137412002FBD28 /* UITabBar+CHBase.m */; };
+		3BDC9B9E24137412002FBD28 /* UISlider+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B5724137412002FBD28 /* UISlider+CHBase.m */; };
+		3BDC9B9F24137412002FBD28 /* UISlider+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B5824137412002FBD28 /* UISlider+CHBase.h */; };
+		3BDC9BA024137412002FBD28 /* UITextField+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9B5A24137412002FBD28 /* UITextField+CHBase.m */; };
+		3BDC9BA124137412002FBD28 /* UITextField+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9B5B24137412002FBD28 /* UITextField+CHBase.h */; };
 		3BE5C7D5240FF75B00155F96 /* NSObject+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE5C7D3240FF75B00155F96 /* NSObject+CHBase.h */; };
 		3BE5C7D6240FF75B00155F96 /* NSObject+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5C7D4240FF75B00155F96 /* NSObject+CHBase.m */; };
 		3BE5C7D9240FFB8A00155F96 /* NSArray+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE5C7D7240FFB8900155F96 /* NSArray+CHBase.h */; };
@@ -141,6 +211,76 @@
 		3BDC9AF124136AA1002FBD28 /* CALayer+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CALayer+CHBase.h"; path = "CHCategories/Classes/QuartzCore/CALayer/CALayer+CHBase.h"; sourceTree = "<group>"; };
 		3BDC9AF624136C34002FBD28 /* CHMacroHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHMacroHelper.h; path = CHCategories/Classes/Macro/CHMacroHelper.h; sourceTree = "<group>"; };
 		3BDC9AF724136C34002FBD28 /* CHMacroHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHMacroHelper.m; path = CHCategories/Classes/Macro/CHMacroHelper.m; sourceTree = "<group>"; };
+		3BDC9AFC24137412002FBD28 /* UIImage+CHImageCompression.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CHImageCompression.h"; sourceTree = "<group>"; };
+		3BDC9AFD24137412002FBD28 /* UIImage+CHGIFImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CHGIFImage.h"; sourceTree = "<group>"; };
+		3BDC9AFE24137412002FBD28 /* UIImage+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9AFF24137412002FBD28 /* UIImage+CHImageEffect.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CHImageEffect.m"; sourceTree = "<group>"; };
+		3BDC9B0024137412002FBD28 /* UIImage+CHGIFImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CHGIFImage.m"; sourceTree = "<group>"; };
+		3BDC9B0124137412002FBD28 /* UIImage+CHImageCompression.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+CHImageCompression.m"; sourceTree = "<group>"; };
+		3BDC9B0224137412002FBD28 /* UIImage+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B0324137412002FBD28 /* UIImage+CHImageEffect.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+CHImageEffect.h"; sourceTree = "<group>"; };
+		3BDC9B0524137412002FBD28 /* UIScrollView+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B0624137412002FBD28 /* UIScrollView+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B0824137412002FBD28 /* UIActivityIndicatorView+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIActivityIndicatorView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B0924137412002FBD28 /* UIActivityIndicatorView+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIActivityIndicatorView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B0B24137412002FBD28 /* UIScreen+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScreen+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B0C24137412002FBD28 /* UIScreen+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScreen+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B0E24137412002FBD28 /* UIApplication+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIApplication+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B0F24137412002FBD28 /* UIApplication+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIApplication+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B1124137412002FBD28 /* UITableViewCell+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableViewCell+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B1224137412002FBD28 /* UITableViewCell+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableViewCell+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B1424137412002FBD28 /* UIButton+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B1524137412002FBD28 /* UIButton+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B1724137412002FBD28 /* UIColor+CHColorSpace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CHColorSpace.h"; sourceTree = "<group>"; };
+		3BDC9B1824137412002FBD28 /* UIColor+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B1924137412002FBD28 /* UIColor+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B1A24137412002FBD28 /* UIColor+CHColorSpace.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+CHColorSpace.m"; sourceTree = "<group>"; };
+		3BDC9B1C24137412002FBD28 /* UIView+CHAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CHAnimation.h"; sourceTree = "<group>"; };
+		3BDC9B1D24137412002FBD28 /* UIView+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B1E24137412002FBD28 /* UIView+CHTouchInset.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CHTouchInset.m"; sourceTree = "<group>"; };
+		3BDC9B1F24137412002FBD28 /* UIView+CHAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CHAnimation.m"; sourceTree = "<group>"; };
+		3BDC9B2024137412002FBD28 /* UIView+CHTouchInset.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+CHTouchInset.h"; sourceTree = "<group>"; };
+		3BDC9B2124137412002FBD28 /* UIView+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B2324137412002FBD28 /* UITabBarItem+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBarItem+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B2424137412002FBD28 /* UITabBarItem+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBarItem+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B2624137412002FBD28 /* UIFont+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B2724137412002FBD28 /* UIFont+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B2924137412002FBD28 /* UIBarItem+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarItem+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B2A24137412002FBD28 /* UIBarItem+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarItem+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B2C24137412002FBD28 /* UITextView+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B2D24137412002FBD28 /* UITextView+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B2F24137412002FBD28 /* UIDevice+CHMachineInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CHMachineInfo.m"; sourceTree = "<group>"; };
+		3BDC9B3024137412002FBD28 /* UIDevice+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B3124137412002FBD28 /* UIDevice+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIDevice+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B3224137412002FBD28 /* UIDevice+CHMachineInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIDevice+CHMachineInfo.h"; sourceTree = "<group>"; };
+		3BDC9B3424137412002FBD28 /* UICollectionView+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B3524137412002FBD28 /* UICollectionView+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B3724137412002FBD28 /* UIBarButtonItem+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBarButtonItem+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B3824137412002FBD28 /* UIBarButtonItem+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBarButtonItem+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B3A24137412002FBD28 /* UIBezierPath+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIBezierPath+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B3B24137412002FBD28 /* UIBezierPath+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIBezierPath+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B3D24137412002FBD28 /* UINavigationBar+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationBar+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B3E24137412002FBD28 /* UINavigationBar+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationBar+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B4024137412002FBD28 /* UINavigationController+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B4124137412002FBD28 /* UINavigationController+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B4324137412002FBD28 /* UITableView+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITableView+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B4424137412002FBD28 /* UITableView+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITableView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B4624137412002FBD28 /* UIControl+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B4724137412002FBD28 /* UIControl+CHRepeatClickPrevention.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIControl+CHRepeatClickPrevention.h"; sourceTree = "<group>"; };
+		3BDC9B4824137412002FBD28 /* UIControl+CHRepeatClickPrevention.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CHRepeatClickPrevention.m"; sourceTree = "<group>"; };
+		3BDC9B4924137412002FBD28 /* UIControl+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIControl+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B4B24137412002FBD28 /* UIGestureRecognizer+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIGestureRecognizer+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B4C24137412002FBD28 /* UIGestureRecognizer+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIGestureRecognizer+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B4E24137412002FBD28 /* UICollectionViewFlowLayout+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UICollectionViewFlowLayout+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B4F24137412002FBD28 /* UICollectionViewFlowLayout+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UICollectionViewFlowLayout+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B5124137412002FBD28 /* UISwipeGestureRecognizer+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISwipeGestureRecognizer+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B5224137412002FBD28 /* UISwipeGestureRecognizer+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISwipeGestureRecognizer+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B5424137412002FBD28 /* UITabBar+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITabBar+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B5524137412002FBD28 /* UITabBar+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITabBar+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B5724137412002FBD28 /* UISlider+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UISlider+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B5824137412002FBD28 /* UISlider+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UISlider+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9B5A24137412002FBD28 /* UITextField+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9B5B24137412002FBD28 /* UITextField+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+CHBase.h"; sourceTree = "<group>"; };
 		3BE5C7D3240FF75B00155F96 /* NSObject+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+CHBase.h"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.h"; sourceTree = "<group>"; };
 		3BE5C7D4240FF75B00155F96 /* NSObject+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CHBase.m"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.m"; sourceTree = "<group>"; };
 		3BE5C7D7240FFB8900155F96 /* NSArray+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CHBase.h"; path = "CHCategories/Classes/Foundation/NSArray/NSArray+CHBase.h"; sourceTree = "<group>"; };
@@ -378,6 +518,300 @@
 			name = NSValue;
 			sourceTree = "<group>";
 		};
+		3BDC9AFA24137412002FBD28 /* UIKit */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9AFB24137412002FBD28 /* UIImage */,
+				3BDC9B0424137412002FBD28 /* UIScrollView */,
+				3BDC9B0724137412002FBD28 /* UIActivityIndicatorView */,
+				3BDC9B0A24137412002FBD28 /* UIScreen */,
+				3BDC9B0D24137412002FBD28 /* UIApplication */,
+				3BDC9B1024137412002FBD28 /* UITableViewCell */,
+				3BDC9B1324137412002FBD28 /* UIButton */,
+				3BDC9B1624137412002FBD28 /* UIColor */,
+				3BDC9B1B24137412002FBD28 /* UIView */,
+				3BDC9B2224137412002FBD28 /* UITabBarItem */,
+				3BDC9B2524137412002FBD28 /* UIFont */,
+				3BDC9B2824137412002FBD28 /* UIBarItem */,
+				3BDC9B2B24137412002FBD28 /* UITextView */,
+				3BDC9B2E24137412002FBD28 /* UIDevice */,
+				3BDC9B3324137412002FBD28 /* UICollectionView */,
+				3BDC9B3624137412002FBD28 /* UIBarButtonItem */,
+				3BDC9B3924137412002FBD28 /* UIBezierPath */,
+				3BDC9B3C24137412002FBD28 /* UINavigationBar */,
+				3BDC9B3F24137412002FBD28 /* UINavigationController */,
+				3BDC9B4224137412002FBD28 /* UITableView */,
+				3BDC9B4524137412002FBD28 /* UIControl */,
+				3BDC9B4A24137412002FBD28 /* UIGestureRecognizer */,
+				3BDC9B4D24137412002FBD28 /* UICollectionViewFlowLayout */,
+				3BDC9B5024137412002FBD28 /* UISwipeGestureRecognizer */,
+				3BDC9B5324137412002FBD28 /* UITabBar */,
+				3BDC9B5624137412002FBD28 /* UISlider */,
+				3BDC9B5924137412002FBD28 /* UITextField */,
+			);
+			name = UIKit;
+			path = CHCategories/Classes/UIKit;
+			sourceTree = "<group>";
+		};
+		3BDC9AFB24137412002FBD28 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9AFC24137412002FBD28 /* UIImage+CHImageCompression.h */,
+				3BDC9AFD24137412002FBD28 /* UIImage+CHGIFImage.h */,
+				3BDC9AFE24137412002FBD28 /* UIImage+CHBase.m */,
+				3BDC9AFF24137412002FBD28 /* UIImage+CHImageEffect.m */,
+				3BDC9B0024137412002FBD28 /* UIImage+CHGIFImage.m */,
+				3BDC9B0124137412002FBD28 /* UIImage+CHImageCompression.m */,
+				3BDC9B0224137412002FBD28 /* UIImage+CHBase.h */,
+				3BDC9B0324137412002FBD28 /* UIImage+CHImageEffect.h */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		3BDC9B0424137412002FBD28 /* UIScrollView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B0524137412002FBD28 /* UIScrollView+CHBase.m */,
+				3BDC9B0624137412002FBD28 /* UIScrollView+CHBase.h */,
+			);
+			path = UIScrollView;
+			sourceTree = "<group>";
+		};
+		3BDC9B0724137412002FBD28 /* UIActivityIndicatorView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B0824137412002FBD28 /* UIActivityIndicatorView+CHBase.h */,
+				3BDC9B0924137412002FBD28 /* UIActivityIndicatorView+CHBase.m */,
+			);
+			path = UIActivityIndicatorView;
+			sourceTree = "<group>";
+		};
+		3BDC9B0A24137412002FBD28 /* UIScreen */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B0B24137412002FBD28 /* UIScreen+CHBase.m */,
+				3BDC9B0C24137412002FBD28 /* UIScreen+CHBase.h */,
+			);
+			path = UIScreen;
+			sourceTree = "<group>";
+		};
+		3BDC9B0D24137412002FBD28 /* UIApplication */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B0E24137412002FBD28 /* UIApplication+CHBase.m */,
+				3BDC9B0F24137412002FBD28 /* UIApplication+CHBase.h */,
+			);
+			path = UIApplication;
+			sourceTree = "<group>";
+		};
+		3BDC9B1024137412002FBD28 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B1124137412002FBD28 /* UITableViewCell+CHBase.h */,
+				3BDC9B1224137412002FBD28 /* UITableViewCell+CHBase.m */,
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		3BDC9B1324137412002FBD28 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B1424137412002FBD28 /* UIButton+CHBase.h */,
+				3BDC9B1524137412002FBD28 /* UIButton+CHBase.m */,
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		3BDC9B1624137412002FBD28 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B1724137412002FBD28 /* UIColor+CHColorSpace.h */,
+				3BDC9B1824137412002FBD28 /* UIColor+CHBase.h */,
+				3BDC9B1924137412002FBD28 /* UIColor+CHBase.m */,
+				3BDC9B1A24137412002FBD28 /* UIColor+CHColorSpace.m */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		3BDC9B1B24137412002FBD28 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B1C24137412002FBD28 /* UIView+CHAnimation.h */,
+				3BDC9B1D24137412002FBD28 /* UIView+CHBase.h */,
+				3BDC9B1E24137412002FBD28 /* UIView+CHTouchInset.m */,
+				3BDC9B1F24137412002FBD28 /* UIView+CHAnimation.m */,
+				3BDC9B2024137412002FBD28 /* UIView+CHTouchInset.h */,
+				3BDC9B2124137412002FBD28 /* UIView+CHBase.m */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		3BDC9B2224137412002FBD28 /* UITabBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B2324137412002FBD28 /* UITabBarItem+CHBase.m */,
+				3BDC9B2424137412002FBD28 /* UITabBarItem+CHBase.h */,
+			);
+			path = UITabBarItem;
+			sourceTree = "<group>";
+		};
+		3BDC9B2524137412002FBD28 /* UIFont */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B2624137412002FBD28 /* UIFont+CHBase.h */,
+				3BDC9B2724137412002FBD28 /* UIFont+CHBase.m */,
+			);
+			path = UIFont;
+			sourceTree = "<group>";
+		};
+		3BDC9B2824137412002FBD28 /* UIBarItem */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B2924137412002FBD28 /* UIBarItem+CHBase.m */,
+				3BDC9B2A24137412002FBD28 /* UIBarItem+CHBase.h */,
+			);
+			path = UIBarItem;
+			sourceTree = "<group>";
+		};
+		3BDC9B2B24137412002FBD28 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B2C24137412002FBD28 /* UITextView+CHBase.m */,
+				3BDC9B2D24137412002FBD28 /* UITextView+CHBase.h */,
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		3BDC9B2E24137412002FBD28 /* UIDevice */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B2F24137412002FBD28 /* UIDevice+CHMachineInfo.m */,
+				3BDC9B3024137412002FBD28 /* UIDevice+CHBase.h */,
+				3BDC9B3124137412002FBD28 /* UIDevice+CHBase.m */,
+				3BDC9B3224137412002FBD28 /* UIDevice+CHMachineInfo.h */,
+			);
+			path = UIDevice;
+			sourceTree = "<group>";
+		};
+		3BDC9B3324137412002FBD28 /* UICollectionView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B3424137412002FBD28 /* UICollectionView+CHBase.h */,
+				3BDC9B3524137412002FBD28 /* UICollectionView+CHBase.m */,
+			);
+			path = UICollectionView;
+			sourceTree = "<group>";
+		};
+		3BDC9B3624137412002FBD28 /* UIBarButtonItem */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B3724137412002FBD28 /* UIBarButtonItem+CHBase.h */,
+				3BDC9B3824137412002FBD28 /* UIBarButtonItem+CHBase.m */,
+			);
+			path = UIBarButtonItem;
+			sourceTree = "<group>";
+		};
+		3BDC9B3924137412002FBD28 /* UIBezierPath */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B3A24137412002FBD28 /* UIBezierPath+CHBase.h */,
+				3BDC9B3B24137412002FBD28 /* UIBezierPath+CHBase.m */,
+			);
+			path = UIBezierPath;
+			sourceTree = "<group>";
+		};
+		3BDC9B3C24137412002FBD28 /* UINavigationBar */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B3D24137412002FBD28 /* UINavigationBar+CHBase.m */,
+				3BDC9B3E24137412002FBD28 /* UINavigationBar+CHBase.h */,
+			);
+			path = UINavigationBar;
+			sourceTree = "<group>";
+		};
+		3BDC9B3F24137412002FBD28 /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B4024137412002FBD28 /* UINavigationController+CHBase.h */,
+				3BDC9B4124137412002FBD28 /* UINavigationController+CHBase.m */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		3BDC9B4224137412002FBD28 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B4324137412002FBD28 /* UITableView+CHBase.h */,
+				3BDC9B4424137412002FBD28 /* UITableView+CHBase.m */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		3BDC9B4524137412002FBD28 /* UIControl */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B4624137412002FBD28 /* UIControl+CHBase.h */,
+				3BDC9B4724137412002FBD28 /* UIControl+CHRepeatClickPrevention.h */,
+				3BDC9B4824137412002FBD28 /* UIControl+CHRepeatClickPrevention.m */,
+				3BDC9B4924137412002FBD28 /* UIControl+CHBase.m */,
+			);
+			path = UIControl;
+			sourceTree = "<group>";
+		};
+		3BDC9B4A24137412002FBD28 /* UIGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B4B24137412002FBD28 /* UIGestureRecognizer+CHBase.h */,
+				3BDC9B4C24137412002FBD28 /* UIGestureRecognizer+CHBase.m */,
+			);
+			path = UIGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		3BDC9B4D24137412002FBD28 /* UICollectionViewFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B4E24137412002FBD28 /* UICollectionViewFlowLayout+CHBase.m */,
+				3BDC9B4F24137412002FBD28 /* UICollectionViewFlowLayout+CHBase.h */,
+			);
+			path = UICollectionViewFlowLayout;
+			sourceTree = "<group>";
+		};
+		3BDC9B5024137412002FBD28 /* UISwipeGestureRecognizer */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B5124137412002FBD28 /* UISwipeGestureRecognizer+CHBase.h */,
+				3BDC9B5224137412002FBD28 /* UISwipeGestureRecognizer+CHBase.m */,
+			);
+			path = UISwipeGestureRecognizer;
+			sourceTree = "<group>";
+		};
+		3BDC9B5324137412002FBD28 /* UITabBar */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B5424137412002FBD28 /* UITabBar+CHBase.h */,
+				3BDC9B5524137412002FBD28 /* UITabBar+CHBase.m */,
+			);
+			path = UITabBar;
+			sourceTree = "<group>";
+		};
+		3BDC9B5624137412002FBD28 /* UISlider */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B5724137412002FBD28 /* UISlider+CHBase.m */,
+				3BDC9B5824137412002FBD28 /* UISlider+CHBase.h */,
+			);
+			path = UISlider;
+			sourceTree = "<group>";
+		};
+		3BDC9B5924137412002FBD28 /* UITextField */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9B5A24137412002FBD28 /* UITextField+CHBase.m */,
+				3BDC9B5B24137412002FBD28 /* UITextField+CHBase.h */,
+			);
+			path = UITextField;
+			sourceTree = "<group>";
+		};
 		42AE2441372CA5313251276F08A98298 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -452,6 +886,7 @@
 		D4DA120DCB59A7DC78A88FC421667D45 /* CHCategories */ = {
 			isa = PBXGroup;
 			children = (
+				3BDC9AFA24137412002FBD28 /* UIKit */,
 				3BDC9AF624136C34002FBD28 /* CHMacroHelper.h */,
 				3BDC9AF724136C34002FBD28 /* CHMacroHelper.m */,
 				11F2692E45735CA82F72D34CF52F7893 /* CHCategories.h */,
@@ -527,48 +962,83 @@
 			buildActionMask = 2147483647;
 			files = (
 				3BE5C7D5240FF75B00155F96 /* NSObject+CHBase.h in Headers */,
+				3BDC9B7424137412002FBD28 /* UIView+CHAnimation.h in Headers */,
 				3BE5C8652412980500155F96 /* NSURL+CHBase.h in Headers */,
+				3BDC9B8624137412002FBD28 /* UICollectionView+CHBase.h in Headers */,
 				3BDC9AF824136C34002FBD28 /* CHMacroHelper.h in Headers */,
 				3BE5C86E241298EE00155F96 /* NSAttributedString+CHCreation.h in Headers */,
+				3BDC9B6324137412002FBD28 /* UIImage+CHImageEffect.h in Headers */,
+				3BDC9B8324137412002FBD28 /* UIDevice+CHBase.h in Headers */,
+				3BDC9B5C24137412002FBD28 /* UIImage+CHImageCompression.h in Headers */,
 				3BE5C80A2412842D00155F96 /* NSFileManager+CHBase.h in Headers */,
 				3BE5C84E241295DE00155F96 /* NSString+CHBase.h in Headers */,
 				3BE5C848241295DE00155F96 /* NSString+CHEmoji.h in Headers */,
 				3BE5C7FA24127F4800155F96 /* NSDate+CHBase.h in Headers */,
 				3BE5C84B241295DE00155F96 /* NSString+CHTrimming.h in Headers */,
+				3BDC9B6B24137412002FBD28 /* UIApplication+CHBase.h in Headers */,
+				3BDC9B8D24137412002FBD28 /* UINavigationBar+CHBase.h in Headers */,
+				3BDC9B9224137412002FBD28 /* UIControl+CHBase.h in Headers */,
+				3BDC9B6E24137412002FBD28 /* UIButton+CHBase.h in Headers */,
 				3BE5C845241295DE00155F96 /* NSString+CHCrypto.h in Headers */,
 				3BE5C7E0240FFBCA00155F96 /* NSData+CHBase.h in Headers */,
+				3BDC9B8824137412002FBD28 /* UIBarButtonItem+CHBase.h in Headers */,
 				3BDC9AEC241369CF002FBD28 /* CHCoreGraphicHelper.h in Headers */,
+				3BDC9B6224137412002FBD28 /* UIImage+CHBase.h in Headers */,
 				3BE5C85D241297F300155F96 /* NSUserDefaults+CHBase.h in Headers */,
+				3BDC9B6624137412002FBD28 /* UIActivityIndicatorView+CHBase.h in Headers */,
 				3BE5C82B2412891700155F96 /* NSObject+CHKeyValueObserving.h in Headers */,
+				3BDC9B7124137412002FBD28 /* UIColor+CHBase.h in Headers */,
 				3BE5C86D241298EE00155F96 /* NSAttributedString+CHParagraphStyleAttributes.h in Headers */,
+				3BDC9BA124137412002FBD28 /* UITextField+CHBase.h in Headers */,
 				243B58A47CA3CB08A019B63406708ABA /* CHCategories-umbrella.h in Headers */,
 				3BE5C81D241287C500155F96 /* NSParagraphStyle+CHBase.h in Headers */,
+				3BDC9B9024137412002FBD28 /* UITableView+CHBase.h in Headers */,
+				3BDC9B9924137412002FBD28 /* UICollectionViewFlowLayout+CHBase.h in Headers */,
+				3BDC9B8124137412002FBD28 /* UITextView+CHBase.h in Headers */,
+				3BDC9B7B24137412002FBD28 /* UITabBarItem+CHBase.h in Headers */,
 				3BE5C8302412891700155F96 /* NSObject+CHKeyValueCoding.h in Headers */,
 				3BE5C7F524127DEE00155F96 /* NSCharacterSet+CHBase.h in Headers */,
+				3BDC9B8A24137412002FBD28 /* UIBezierPath+CHBase.h in Headers */,
 				3BE5C82F2412891700155F96 /* NSObject+CHDataBind.h in Headers */,
+				3BDC9B7C24137412002FBD28 /* UIFont+CHBase.h in Headers */,
 				3BE5C8222412886800155F96 /* NSPointerArray+CHBase.h in Headers */,
 				3BE5C84F241295DE00155F96 /* NSString+CHDrawing.h in Headers */,
 				3BE5C7E2240FFBCA00155F96 /* NSData+CHCrypto.h in Headers */,
+				3BDC9B5D24137412002FBD28 /* UIImage+CHGIFImage.h in Headers */,
 				3BDC9AF224136AA1002FBD28 /* CALayer+CHAnimation.h in Headers */,
+				3BDC9B8524137412002FBD28 /* UIDevice+CHMachineInfo.h in Headers */,
 				3BE5C81A241286EE00155F96 /* NSNotificationCenter+CHBase.h in Headers */,
 				3BE5C8012412819300155F96 /* NSNumber+CHBase.h in Headers */,
 				4380A85033508FD0FF5BBB1E69AC6620 /* CHCategories.h in Headers */,
 				3BE5C850241295DE00155F96 /* NSString+CHCheck.h in Headers */,
 				3BE5C7F124124BBF00155F96 /* NSCalendar+CHBase.h in Headers */,
 				3BE5C871241298EE00155F96 /* NSAttributedString+CHBase.h in Headers */,
+				3BDC9B9F24137412002FBD28 /* UISlider+CHBase.h in Headers */,
+				3BDC9B6C24137412002FBD28 /* UITableViewCell+CHBase.h in Headers */,
+				3BDC9B9C24137412002FBD28 /* UITabBar+CHBase.h in Headers */,
 				3BE5C80D2412850100155F96 /* NSIndexPath+CHBase.h in Headers */,
 				3BE5C849241295DE00155F96 /* NSString+CHChinese.h in Headers */,
+				3BDC9B6524137412002FBD28 /* UIScrollView+CHBase.h in Headers */,
 				3BE5C846241295DE00155F96 /* NSString+CHRoundNumberString.h in Headers */,
 				3BE5C7FE2412807C00155F96 /* NSDecimalNumber+CHBase.h in Headers */,
 				3BE5C811241285AE00155F96 /* NSJSONSerialization+CHBase.h in Headers */,
 				ED182E5C2E0D5784597E26B381C11886 /* NSValue+CHBase.h in Headers */,
+				3BDC9B7524137412002FBD28 /* UIView+CHBase.h in Headers */,
 				3BE5C8322412891700155F96 /* NSObject+CHMultipleDelegates.h in Headers */,
+				3BDC9B9624137412002FBD28 /* UIGestureRecognizer+CHBase.h in Headers */,
+				3BDC9B8E24137412002FBD28 /* UINavigationController+CHBase.h in Headers */,
+				3BDC9B9A24137412002FBD28 /* UISwipeGestureRecognizer+CHBase.h in Headers */,
+				3BDC9B9324137412002FBD28 /* UIControl+CHRepeatClickPrevention.h in Headers */,
+				3BDC9B7824137412002FBD28 /* UIView+CHTouchInset.h in Headers */,
+				3BDC9B7024137412002FBD28 /* UIColor+CHColorSpace.h in Headers */,
+				3BDC9B7F24137412002FBD28 /* UIBarItem+CHBase.h in Headers */,
 				3BE5C859241296E700155F96 /* NSTimer+CHBase.h in Headers */,
 				3BDC9AF524136AA1002FBD28 /* CALayer+CHBase.h in Headers */,
 				3BE5C8162412863300155F96 /* NSKeyedArchiver+CHBase.h in Headers */,
 				3BE5C855241295DE00155F96 /* NSString+CHRegularExpression.h in Headers */,
 				3BE5C861241297FD00155F96 /* NSURLComponents+CHBase.h in Headers */,
 				3BE5C805241282DF00155F96 /* NSDictionary+CHBase.h in Headers */,
+				3BDC9B6924137412002FBD28 /* UIScreen+CHBase.h in Headers */,
 				3BE5C7D9240FFB8A00155F96 /* NSArray+CHBase.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -703,44 +1173,79 @@
 				AB1AB585F9EE987BD1385C129540B2F7 /* CHCategories-dummy.m in Sources */,
 				3BE5C7F224124BBF00155F96 /* NSCalendar+CHBase.m in Sources */,
 				3BE5C84A241295DE00155F96 /* NSString+CHTrimming.m in Sources */,
+				3BDC9BA024137412002FBD28 /* UITextField+CHBase.m in Sources */,
 				3BE5C872241298EE00155F96 /* NSAttributedString+CHBase.m in Sources */,
+				3BDC9B7E24137412002FBD28 /* UIBarItem+CHBase.m in Sources */,
 				3BE5C870241298EE00155F96 /* NSAttributedString+CHCreation.m in Sources */,
+				3BDC9B9824137412002FBD28 /* UICollectionViewFlowLayout+CHBase.m in Sources */,
 				3BE5C7FD2412807C00155F96 /* NSDecimalNumber+CHBase.m in Sources */,
 				3BDC9AF324136AA1002FBD28 /* CALayer+CHBase.m in Sources */,
 				3BE5C82C2412891700155F96 /* NSObject+CHDataBind.m in Sources */,
+				3BDC9B8424137412002FBD28 /* UIDevice+CHBase.m in Sources */,
 				3BE5C85E241297F300155F96 /* NSUserDefaults+CHBase.m in Sources */,
 				3BE5C86F241298EE00155F96 /* NSAttributedString+CHParagraphStyleAttributes.m in Sources */,
 				3BE5C84C241295DE00155F96 /* NSString+CHCrypto.m in Sources */,
+				3BDC9B8724137412002FBD28 /* UICollectionView+CHBase.m in Sources */,
+				3BDC9B8B24137412002FBD28 /* UIBezierPath+CHBase.m in Sources */,
+				3BDC9B6024137412002FBD28 /* UIImage+CHGIFImage.m in Sources */,
 				E6F37193B44FF7BDDD989FB973CE4E75 /* NSValue+CHBase.m in Sources */,
 				3BDC9AF924136C34002FBD28 /* CHMacroHelper.m in Sources */,
+				3BDC9B7324137412002FBD28 /* UIColor+CHColorSpace.m in Sources */,
 				3BE5C856241295DE00155F96 /* NSString+CHDrawing.m in Sources */,
 				3BE5C847241295DE00155F96 /* NSString+CHRoundNumberString.m in Sources */,
 				3BE5C812241285AE00155F96 /* NSJSONSerialization+CHBase.m in Sources */,
 				3BE5C7D6240FF75B00155F96 /* NSObject+CHBase.m in Sources */,
 				3BE5C7F624127DEE00155F96 /* NSCharacterSet+CHBase.m in Sources */,
+				3BDC9B9D24137412002FBD28 /* UITabBar+CHBase.m in Sources */,
+				3BDC9B6124137412002FBD28 /* UIImage+CHImageCompression.m in Sources */,
+				3BDC9B7A24137412002FBD28 /* UITabBarItem+CHBase.m in Sources */,
 				3BDC9AED241369CF002FBD28 /* CHCoreGraphicHelper.m in Sources */,
 				3BE5C8022412819300155F96 /* NSNumber+CHBase.m in Sources */,
 				3BE5C862241297FD00155F96 /* NSURLComponents+CHBase.m in Sources */,
+				3BDC9B7724137412002FBD28 /* UIView+CHAnimation.m in Sources */,
 				3BE5C85A241296E700155F96 /* NSTimer+CHBase.m in Sources */,
+				3BDC9B8F24137412002FBD28 /* UINavigationController+CHBase.m in Sources */,
+				3BDC9B8224137412002FBD28 /* UIDevice+CHMachineInfo.m in Sources */,
 				3BE5C8662412980500155F96 /* NSURL+CHBase.m in Sources */,
 				3BE5C8312412891700155F96 /* NSObject+CHKeyValueCoding.m in Sources */,
+				3BDC9B7624137412002FBD28 /* UIView+CHTouchInset.m in Sources */,
 				3BDC9AF424136AA1002FBD28 /* CALayer+CHAnimation.m in Sources */,
+				3BDC9B6724137412002FBD28 /* UIActivityIndicatorView+CHBase.m in Sources */,
+				3BDC9B8024137412002FBD28 /* UITextView+CHBase.m in Sources */,
+				3BDC9B9124137412002FBD28 /* UITableView+CHBase.m in Sources */,
 				3BE5C7E1240FFBCA00155F96 /* NSData+CHBase.m in Sources */,
+				3BDC9B7224137412002FBD28 /* UIColor+CHBase.m in Sources */,
 				3BE5C851241295DE00155F96 /* NSString+CHChinese.m in Sources */,
+				3BDC9B8C24137412002FBD28 /* UINavigationBar+CHBase.m in Sources */,
+				3BDC9B5E24137412002FBD28 /* UIImage+CHBase.m in Sources */,
 				3BE5C853241295DE00155F96 /* NSString+CHBase.m in Sources */,
 				3BE5C84D241295DE00155F96 /* NSString+CHRegularExpression.m in Sources */,
 				3BE5C82D2412891700155F96 /* NSObject+CHMultipleDelegates.m in Sources */,
 				3BE5C819241286EE00155F96 /* NSNotificationCenter+CHBase.m in Sources */,
+				3BDC9B9B24137412002FBD28 /* UISwipeGestureRecognizer+CHBase.m in Sources */,
+				3BDC9B5F24137412002FBD28 /* UIImage+CHImageEffect.m in Sources */,
+				3BDC9B7924137412002FBD28 /* UIView+CHBase.m in Sources */,
+				3BDC9B9524137412002FBD28 /* UIControl+CHBase.m in Sources */,
 				3BE5C854241295DE00155F96 /* NSString+CHCheck.m in Sources */,
 				3BE5C8152412863300155F96 /* NSKeyedArchiver+CHBase.m in Sources */,
+				3BDC9B6F24137412002FBD28 /* UIButton+CHBase.m in Sources */,
 				3BE5C852241295DE00155F96 /* NSString+CHEmoji.m in Sources */,
 				3BE5C80E2412850100155F96 /* NSIndexPath+CHBase.m in Sources */,
+				3BDC9B9424137412002FBD28 /* UIControl+CHRepeatClickPrevention.m in Sources */,
+				3BDC9B9724137412002FBD28 /* UIGestureRecognizer+CHBase.m in Sources */,
+				3BDC9B9E24137412002FBD28 /* UISlider+CHBase.m in Sources */,
+				3BDC9B6424137412002FBD28 /* UIScrollView+CHBase.m in Sources */,
 				3BE5C7F924127F4800155F96 /* NSDate+CHBase.m in Sources */,
 				3BE5C8212412886800155F96 /* NSPointerArray+CHBase.m in Sources */,
+				3BDC9B6A24137412002FBD28 /* UIApplication+CHBase.m in Sources */,
+				3BDC9B8924137412002FBD28 /* UIBarButtonItem+CHBase.m in Sources */,
 				3BE5C8092412842D00155F96 /* NSFileManager+CHBase.m in Sources */,
 				3BE5C7DF240FFBCA00155F96 /* NSData+CHCrypto.m in Sources */,
 				3BE5C82E2412891700155F96 /* NSObject+CHKeyValueObserving.m in Sources */,
+				3BDC9B7D24137412002FBD28 /* UIFont+CHBase.m in Sources */,
+				3BDC9B6D24137412002FBD28 /* UITableViewCell+CHBase.m in Sources */,
 				3BE5C81E241287C500155F96 /* NSParagraphStyle+CHBase.m in Sources */,
+				3BDC9B6824137412002FBD28 /* UIScreen+CHBase.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

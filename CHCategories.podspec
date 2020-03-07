@@ -323,6 +323,302 @@ Pod::Spec.new do |s|
         end
     end
     
+    # UIKit
+    s.subspec 'UIKit' do |uikit|
+        
+        # UIActivityIndicatorView
+        uikit.subspec 'UIActivityIndicatorView' do |uiactivityindicatorview|
+            # UIActivityIndicatorView+CHBase
+            uiactivityindicatorview.subspec 'UIActivityIndicatorView+CHBase' do |uiactivityindicatorview_ch_base|
+                uiactivityindicatorview_ch_base.source_files = 'CHCategories/Classes/UIKit/UIActivityIndicatorView/UIActivityIndicatorView+CHBase.{h,m}'
+            end
+        end
+        
+        # UIApplication
+        uikit.subspec 'UIApplication' do |uiapplication|
+            # UIApplication+CHBase
+            uiapplication.subspec 'UIApplication+CHBase' do |uiapplication_ch_base|
+                uiapplication_ch_base.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uiapplication_ch_base.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
+                uiapplication_ch_base.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo'
+                uiapplication_ch_base.source_files = 'CHCategories/Classes/UIKit/UIApplication/UIApplication+CHBase.{h,m}'
+            end
+        end
+        
+        # UIBarButtonItem
+        uikit.subspec 'UIBarButtonItem' do |uibarbuttonitem|
+            # UIBarButtonItem+CHBase
+            uibarbuttonitem.subspec 'UIBarButtonItem+CHBase' do |uibarbuttonitem_chbase|
+                uibarbuttonitem_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uibarbuttonitem_chbase.dependency 'CHCategories/UIKit/UIControl/UIControl+CHBase'
+                uibarbuttonitem_chbase.dependency 'CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase'
+                uibarbuttonitem_chbase.dependency 'CHCategories/UIKit/UIView/UIView+CHBase'
+                uibarbuttonitem_chbase.source_files = 'CHCategories/Classes/UIKit/UIBarButtonItem/UIBarButtonItem+CHBase.{h,m}'
+            end
+        end
+        
+        # UIBarItem
+        uikit.subspec 'UIBarItem' do |uibaritem|
+            # UIBarItem+CHBase
+            uibaritem.subspec 'UIBarItem+CHBase' do |uibaritem_chbase|
+                uibaritem_chbase.source_files = 'CHCategories/Classes/UIKit/UIBarItem/UIBarItem+CHBase.{h,m}'
+            end
+        end
+        
+        # UIBezierPath
+        uikit.subspec 'UIBezierPath' do |uibezierpath|
+            # UIBezierPath+CHBase
+            uibezierpath.subspec 'UIBezierPath+CHBase' do |uibezierpath_chbase|
+                uibezierpath_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
+                uibezierpath_chbase.source_files = 'CHCategories/Classes/UIKit/UIBezierPath/UIBezierPath+CHBase.{h,m}'
+            end
+        end
+        
+        # UIButton
+        uikit.subspec 'UIButton' do |uibutton|
+            # UIButton+CHBase
+            uibutton.subspec 'UIButton+CHBase' do |uibutton_chbase|
+                uibutton_chbase.dependency 'CHCategories/UIKit/UIView/UIView+CHBase'
+                uibutton_chbase.source_files = 'CHCategories/Classes/UIKit/UIButton/UIButton+CHBase.{h,m}'
+            end
+        end
+        
+        # UICollectionView
+        uikit.subspec 'UICollectionView' do |uicollectionview|
+            # UICollectionView+CHBase
+            uicollectionview.subspec 'UICollectionView+CHBase' do |uicollectionview_chbase|
+                uicollectionview_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
+                uicollectionview_chbase.dependency 'CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase'
+                uicollectionview_chbase.source_files = 'CHCategories/Classes/UIKit/UICollectionView/UICollectionView+CHBase.{h,m}'
+            end
+        end
+        
+        # UICollectionViewFlowLayout
+        uikit.subspec 'UICollectionViewFlowLayout' do |uicollectionviewflowlayout|
+            # UICollectionViewFlowLayout+CHBase
+            uicollectionviewflowlayout.subspec 'UICollectionViewFlowLayout+CHBase' do |uicollectionviewflowlayout_chbase|
+                uicollectionviewflowlayout_chbase.source_files = 'CHCategories/Classes/UIKit/UICollectionViewFlowLayout/UICollectionViewFlowLayout+CHBase.{h,m}'
+            end
+        end
+        
+        # UIColor
+        uikit.subspec 'UIColor' do |uicolor|
+            # UIColor+CHBase
+            uicolor.subspec 'UIColor+CHBase' do |uicolor_chbase|
+                uicolor_chbase.source_files = 'CHCategories/Classes/UIKit/UIColor/UIColor+CHBase.{h,m}'
+            end
+            
+            # UIColor+CHColorSpace
+            uicolor.subspec 'UIColor+CHColorSpace' do |uicolor_chcolorspace|
+                uicolor_chcolorspace.source_files = 'CHCategories/Classes/UIKit/UIColor/UIColor+CHColorSpace.{h,m}'
+            end
+        end
+        
+        # UIControl
+        uikit.subspec 'UIControl' do |uicontrol|
+            # UIControl+CHBase
+            uicontrol.subspec 'UIControl+CHBase' do |uicontrol_chbase|
+                uicontrol_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uicontrol_chbase.source_files = 'CHCategories/Classes/UIKit/UIControl/UIControl+CHBase.{h,m}'
+            end
+            
+            # UIControl+CHRepeatClickPrevention
+            uicontrol.subspec 'UIControl+CHRepeatClickPrevention' do |uicontrol_chrepeatclickprevention|
+                uicontrol_chrepeatclickprevention.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uicontrol_chrepeatclickprevention.source_files = 'CHCategories/Classes/UIKit/UIControl/UIControl+CHRepeatClickPrevention.{h,m}'
+            end
+        end
+        
+        # UIDevice
+        uikit.subspec 'UIDevice' do |uidevice|
+            # UIDevice+CHBase
+            uidevice.subspec 'UIDevice+CHBase' do |uidevice_ch_base|
+                uidevice_ch_base.source_files = 'CHCategories/Classes/UIKit/UIDevice/UIDevice+CHBase.{h,m}'
+                uidevice_ch_base.frameworks = 'CoreTelephony'
+            end
+            
+            # UIDevice+CHMachineInfo
+            uidevice.subspec 'UIDevice+CHMachineInfo' do |uidevice_ch_machineinfo|
+                uidevice_ch_machineinfo.dependency 'CHCategories/CoreGraphic'
+                uidevice_ch_machineinfo.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
+                uidevice_ch_machineinfo.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHBase'
+                uidevice_ch_machineinfo.dependency 'CHCategories/UIKit/UIScreen/UIScreen+CHBase'
+                uidevice_ch_machineinfo.source_files = 'CHCategories/Classes/UIKit/UIDevice/UIDevice+CHMachineInfo.{h,m}'
+            end
+        end
+        
+        # UIFont
+        uikit.subspec 'UIFont' do |uifont|
+            # UIFont+CHBase
+            uifont.subspec 'UIFont+CHBase' do |uifont_chbase|
+                uifont_chbase.frameworks = 'CoreText', 'CoreGraphics'
+                uifont_chbase.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo'
+                uifont_chbase.source_files = 'CHCategories/Classes/UIKit/UIFont/UIFont+CHBase.{h,m}'
+            end
+        end
+        
+        # UIGestureRecognizer
+        uikit.subspec 'UIGestureRecognizer' do |uigesturerecognizer|
+            # UIGestureRecognizer+CHBase
+            uigesturerecognizer.subspec 'UIGestureRecognizer+CHBase' do |uigesturerecognizer_chbase|
+                uigesturerecognizer_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uigesturerecognizer_chbase.source_files = 'CHCategories/Classes/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase.{h,m}'
+            end
+        end
+        
+        # UIImage
+        uikit.subspec 'UIImage' do |uiimage|
+            # UIImage+CHBase
+            uiimage.subspec 'UIImage+CHBase' do |uiimage_chbase|
+                uiimage_chbase.frameworks = 'CoreText'
+                uiimage_chbase.dependency 'CHCategories/CoreGraphic'
+                uiimage_chbase.dependency 'CHCategories/Foundation/NSString/NSString+CHEmoji'
+                uiimage_chbase.source_files = 'CHCategories/Classes/UIKit/UIImage/UIImage+CHBase.{h,m}'
+            end
+            
+            # UIImage+CHGIFImage
+            uiimage.subspec 'UIImage+CHGIFImage' do |uiimage_chgifimage|
+                uiimage_chgifimage.frameworks = 'ImageIO'
+                uiimage_chgifimage.source_files = 'CHCategories/Classes/UIKit/UIImage/UIImage+CHGIFImage.{h,m}'
+            end
+            
+            # UIImage+CHImageCompression
+            uiimage.subspec 'UIImage+CHImageCompression' do |uiimage_chimagecompression|
+                uiimage_chimagecompression.dependency 'CHCategories/UIKit/UIImage/UIImage+CHBase'
+                uiimage_chimagecompression.source_files = 'CHCategories/Classes/UIKit/UIImage/UIImage+CHImageCompression.{h,m}'
+            end
+            
+            # UIImage+CHImageEffect
+            uiimage.subspec 'UIImage+CHImageEffect' do |uiimage_chimageeffect|
+                uiimage_chimageeffect.frameworks = 'Accelerate'
+                uiimage_chimageeffect.dependency 'CHCategories/CoreGraphic'
+                uiimage_chimageeffect.dependency 'CHCategories/UIKit/UIImage/UIImage+CHBase'
+                uiimage_chimageeffect.source_files = 'CHCategories/Classes/UIKit/UIImage/UIImage+CHImageEffect.{h,m}'
+            end
+        end
+        
+        # UINavigationBar
+        uikit.subspec 'UINavigationBar' do |uinavigationBar|
+            # UINavigationBar+CHBase
+            uinavigationBar.subspec 'UINavigationBar+CHBase' do |uinavigationBar_chbase|
+                uinavigationBar_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uinavigationBar_chbase.source_files = 'CHCategories/Classes/UIKit/UINavigationBar/UINavigationBar+CHBase.{h,m}'
+            end
+        end
+        
+        # UINavigationController
+        uikit.subspec 'UINavigationController' do |uinavigationController|
+            # UINavigationController+CHBase
+            uinavigationController.subspec 'UINavigationController+CHBase' do |uinavigationController_chbase|
+                uinavigationController_chbase.source_files = 'CHCategories/Classes/UIKit/UINavigationController/UINavigationController+CHBase.{h,m}'
+            end
+        end
+        
+        # UIScreen
+        uikit.subspec 'UIScreen' do |uiscreen|
+            # UIScreen+CHBase
+            uiscreen.subspec 'UIScreen+CHBase' do |uiscreen_chbase|
+                uiscreen_chbase.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHBase'
+                uiscreen_chbase.source_files = 'CHCategories/Classes/UIKit/UIScreen/UIScreen+CHBase.{h,m}'
+            end
+        end
+        
+        # UIScrollView
+        uikit.subspec 'UIScrollView' do |uiscrollview|
+            # UIScrollView+CHBase
+            uiscrollview.subspec 'UIScrollView+CHBase' do |uiscrollview_chbase|
+                uiscrollview_chbase.dependency 'CHCategories/CoreGraphic'
+                uiscrollview_chbase.source_files = 'CHCategories/Classes/UIKit/UIScrollView/UIScrollView+CHBase.{h,m}'
+            end
+        end
+        
+        # UISlider
+        uikit.subspec 'UISlider' do |uislider|
+            # UISlider+CHBase
+            uislider.subspec 'UISlider+CHBase' do |uislider_chbase|
+                uislider_chbase.source_files = 'CHCategories/Classes/UIKit/UISlider/UISlider+CHBase.{h,m}'
+            end
+        end
+        
+        # UISwipeGestureRecognizer
+        uikit.subspec 'UISwipeGestureRecognizer' do |uiswipegesturerecognizer|
+            # UISwipeGestureRecognizer+CHBase
+            uiswipegesturerecognizer.subspec 'UISwipeGestureRecognizer+CHBase' do |uiswipegesturerecognizer_chbase|
+                uiswipegesturerecognizer_chbase.dependency 'CHCategories/UIKit/UIGestureRecognizer/UIGestureRecognizer+CHBase'
+                uiswipegesturerecognizer_chbase.source_files = 'CHCategories/Classes/UIKit/UISwipeGestureRecognizer/UISwipeGestureRecognizer+CHBase.{h,m}'
+            end
+        end
+        
+        # UITabBar
+        uikit.subspec 'UITabBar' do |uitabbar|
+            # UITabBar+CHBase
+            uitabbar.subspec 'UITabBar+CHBase' do |uitabbar_chbase|
+                uitabbar_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uitabbar_chbase.source_files = 'CHCategories/Classes/UIKit/UITabBar/UITabBar+CHBase.{h,m}'
+            end
+        end
+        
+        # UITabBarItem
+        uikit.subspec 'UITabBarItem' do |uitabbaritem|
+            # UITabBarItem+CHBase
+            uitabbaritem.subspec 'UITabBarItem+CHBase' do |uitabbaritem_chbase|
+                uitabbaritem_chbase.dependency 'CHCategories/UIKit/UIBarItem/UIBarItem+CHBase'
+                uitabbaritem_chbase.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo'
+                uitabbaritem_chbase.source_files = 'CHCategories/Classes/UIKit/UITabBarItem/UITabBarItem+CHBase.{h,m}'
+            end
+        end
+        
+        # UITableView
+        uikit.subspec 'UITableView' do |uitableview|
+            # UITableView+CHBase
+            uitableview.subspec 'UITableView+CHBase' do |uitableview_chbase|
+                uitableview_chbase.dependency 'CHCategories/CoreGraphic'
+                uitableview_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
+                uitableview_chbase.dependency 'CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase'
+                uitableview_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uitableview_chbase.dependency 'CHCategories/UIKit/UIScrollView/UIScrollView+CHBase'
+                uitableview_chbase.dependency 'CHCategories/UIKit/UIView/UIView+CHBase'
+                uitableview_chbase.source_files = 'CHCategories/Classes/UIKit/UITableView/UITableView+CHBase.{h,m}'
+            end
+        end
+        
+        # UITableViewCell
+        uikit.subspec 'UITableViewCell' do |uitableviewcell|
+            # UITableViewCell+CHBase
+            uitableviewcell.subspec 'UITableViewCell+CHBase' do |uitableviewcell_chbase|
+                uitableviewcell_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uitableviewcell_chbase.source_files = 'CHCategories/Classes/UIKit/UITableViewCell/UITableViewCell+CHBase.{h,m}'
+            end
+        end
+        
+        # UITextField
+        uikit.subspec 'UITextField' do |uitextfield|
+            # UITextField+CHBase
+            uitextfield.subspec 'UITextField+CHBase' do |uitextfield_chbase|
+                uitextfield_chbase.source_files = 'CHCategories/Classes/UIKit/UITextField/UITextField+CHBase.{h,m}'
+            end
+        end
+        
+        # UIView
+        uikit.subspec 'UIView' do |uiview|
+            # UIView+CHAnimation
+            uiview.subspec 'UIView+CHAnimation' do |uiview_chanimation|
+                uiview_chanimation.source_files = 'CHCategories/Classes/UIKit/UIView/UIView+CHAnimation.{h,m}'
+            end
+            
+            # UIView+CHBase
+            uiview.subspec 'UIView+CHBase' do |uiview_chbase|
+                uiview_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
+                uiview_chbase.source_files = 'CHCategories/Classes/UIKit/UIView/UIView+CHBase.{h,m}'
+            end
+            
+            # UIView+CHTouchInset
+            uiview.subspec 'UIView+CHTouchInset' do |uiview_chtouchinset|
+                uiview_chtouchinset.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uiview_chtouchinset.source_files = 'CHCategories/Classes/UIKit/UIView/UIView+CHTouchInset.{h,m}'
+            end
+        end
+    end
     
     # QuartzCore
     s.subspec 'QuartzCore' do |quartzCore|
