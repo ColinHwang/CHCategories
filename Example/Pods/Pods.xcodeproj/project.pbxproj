@@ -14,6 +14,8 @@
 		3BDC9AF324136AA1002FBD28 /* CALayer+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9AEF24136AA0002FBD28 /* CALayer+CHBase.m */; };
 		3BDC9AF424136AA1002FBD28 /* CALayer+CHAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9AF024136AA0002FBD28 /* CALayer+CHAnimation.m */; };
 		3BDC9AF524136AA1002FBD28 /* CALayer+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9AF124136AA1002FBD28 /* CALayer+CHBase.h */; };
+		3BDC9AF824136C34002FBD28 /* CHMacroHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9AF624136C34002FBD28 /* CHMacroHelper.h */; };
+		3BDC9AF924136C34002FBD28 /* CHMacroHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9AF724136C34002FBD28 /* CHMacroHelper.m */; };
 		3BE5C7D5240FF75B00155F96 /* NSObject+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE5C7D3240FF75B00155F96 /* NSObject+CHBase.h */; };
 		3BE5C7D6240FF75B00155F96 /* NSObject+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BE5C7D4240FF75B00155F96 /* NSObject+CHBase.m */; };
 		3BE5C7D9240FFB8A00155F96 /* NSArray+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BE5C7D7240FFB8900155F96 /* NSArray+CHBase.h */; };
@@ -137,6 +139,8 @@
 		3BDC9AEF24136AA0002FBD28 /* CALayer+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CALayer+CHBase.m"; path = "CHCategories/Classes/QuartzCore/CALayer/CALayer+CHBase.m"; sourceTree = "<group>"; };
 		3BDC9AF024136AA0002FBD28 /* CALayer+CHAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "CALayer+CHAnimation.m"; path = "CHCategories/Classes/QuartzCore/CALayer/CALayer+CHAnimation.m"; sourceTree = "<group>"; };
 		3BDC9AF124136AA1002FBD28 /* CALayer+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "CALayer+CHBase.h"; path = "CHCategories/Classes/QuartzCore/CALayer/CALayer+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9AF624136C34002FBD28 /* CHMacroHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CHMacroHelper.h; path = CHCategories/Classes/Macro/CHMacroHelper.h; sourceTree = "<group>"; };
+		3BDC9AF724136C34002FBD28 /* CHMacroHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CHMacroHelper.m; path = CHCategories/Classes/Macro/CHMacroHelper.m; sourceTree = "<group>"; };
 		3BE5C7D3240FF75B00155F96 /* NSObject+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSObject+CHBase.h"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.h"; sourceTree = "<group>"; };
 		3BE5C7D4240FF75B00155F96 /* NSObject+CHBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CHBase.m"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.m"; sourceTree = "<group>"; };
 		3BE5C7D7240FFB8900155F96 /* NSArray+CHBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "NSArray+CHBase.h"; path = "CHCategories/Classes/Foundation/NSArray/NSArray+CHBase.h"; sourceTree = "<group>"; };
@@ -448,6 +452,8 @@
 		D4DA120DCB59A7DC78A88FC421667D45 /* CHCategories */ = {
 			isa = PBXGroup;
 			children = (
+				3BDC9AF624136C34002FBD28 /* CHMacroHelper.h */,
+				3BDC9AF724136C34002FBD28 /* CHMacroHelper.m */,
 				11F2692E45735CA82F72D34CF52F7893 /* CHCategories.h */,
 				3BDC9AEA241369CF002FBD28 /* CHCoreGraphicHelper.h */,
 				3BDC9AEB241369CF002FBD28 /* CHCoreGraphicHelper.m */,
@@ -522,6 +528,7 @@
 			files = (
 				3BE5C7D5240FF75B00155F96 /* NSObject+CHBase.h in Headers */,
 				3BE5C8652412980500155F96 /* NSURL+CHBase.h in Headers */,
+				3BDC9AF824136C34002FBD28 /* CHMacroHelper.h in Headers */,
 				3BE5C86E241298EE00155F96 /* NSAttributedString+CHCreation.h in Headers */,
 				3BE5C80A2412842D00155F96 /* NSFileManager+CHBase.h in Headers */,
 				3BE5C84E241295DE00155F96 /* NSString+CHBase.h in Headers */,
@@ -705,6 +712,7 @@
 				3BE5C86F241298EE00155F96 /* NSAttributedString+CHParagraphStyleAttributes.m in Sources */,
 				3BE5C84C241295DE00155F96 /* NSString+CHCrypto.m in Sources */,
 				E6F37193B44FF7BDDD989FB973CE4E75 /* NSValue+CHBase.m in Sources */,
+				3BDC9AF924136C34002FBD28 /* CHMacroHelper.m in Sources */,
 				3BE5C856241295DE00155F96 /* NSString+CHDrawing.m in Sources */,
 				3BE5C847241295DE00155F96 /* NSString+CHRoundNumberString.m in Sources */,
 				3BE5C812241285AE00155F96 /* NSJSONSerialization+CHBase.m in Sources */,

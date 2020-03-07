@@ -348,4 +348,10 @@ Pod::Spec.new do |s|
     s.subspec 'CoreGraphic' do |coregraphic|
         coregraphic.source_files = 'CHCategories/Classes/CoreGraphic/*.{h,m}'
     end
+    
+    # Macro
+    s.subspec 'Macro' do |macro|
+        macro.frameworks = 'UIKit'
+        macro.source_files = 'CHCategories/Classes/Macro/*.{h,m}'
+    end
 end
