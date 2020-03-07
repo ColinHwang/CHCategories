@@ -52,6 +52,20 @@ NS_ASSUME_NONNULL_BEGIN
  */
 - (void)ch_decrementNetworkActivityCount;
 
+#pragma mark - Lanuch Image
+/**
+获取当前设备方向对应的启动图片(或为nil)
+*/
+@property (nonatomic, readonly, nullable) UIImage *ch_appLanuchImage;
+
+/**
+ 根据设备方向, 获取对应的启动图片(或为nil)
+
+ @param orientation 设备方向
+ @return 对应的启动图片, 无则返回nil
+ */
+- (nullable UIImage *)ch_appLanuchImageForOrientation:(UIInterfaceOrientation)orientation;
+
 @end
 
 NS_ASSUME_NONNULL_END

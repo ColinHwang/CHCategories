@@ -569,7 +569,7 @@ static const int CH_UI_TABLE_VIEW_FOOTERS_FOR_SECTIONS_KEY;
 //}
 //
 //- (void)setCh_estimatedSectionHeaderHeightEnabled:(BOOL)ch_estimatedSectionHeaderHeightEnabled {
-//    CGFloat dimension = ch_estimatedRowHeightEnabled ? UITableViewAutomaticDimension : 0;
+//    CGFloat dimension = ch_estimatedSectionHeaderHeightEnabled ? UITableViewAutomaticDimension : 0;
 //    self.estimatedSectionHeaderHeight = dimension;
 //}
 //

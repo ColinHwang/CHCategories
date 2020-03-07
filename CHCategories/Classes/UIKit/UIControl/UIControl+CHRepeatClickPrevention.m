@@ -59,7 +59,7 @@ static const int CH_UI_CONTROL_IGNORE_EVENT_KEY;
     if (self.ch_ignoreEvent) return;
     if (self.ch_acceptEventInterval > 0) {
         self.ch_ignoreEvent = YES;
-        [self performSelector:@selector(_ch_setupIgnoreEvent:) withObject:@(NO) afterDelay:self.jx_acceptEventInterval];
+        [self performSelector:@selector(_ch_setupIgnoreEvent:) withObject:@(NO) afterDelay:self.ch_acceptEventInterval];
     }
     
     [self _ch_ui_control_sendAction:action to:target forEvent:event];

@@ -12,6 +12,7 @@
 #import "NSString+CHBase.h"
 #import <sys/sysctl.h>
 #import "UIDevice+CHMachineInfo.h"
+#import "UIScreen+CHBase.h"
 
 #define CHUIApplicationNetworkIndicatorDelay (1/30.0)
 
@@ -202,6 +203,46 @@
 
 - (void)ch_decrementNetworkActivityCount {
     [self _ch_changeNetworkActivityCount:-1];
+}
+
+#pragma mark - Lanuch Image
+- (UIImage *)ch_appLanuchImage {
+    return [self ch_appLanuchImageForOrientation:self.statusBarOrientation];
+}
+
+- (UIImage *)ch_appLanuchImageForOrientation:(UIInterfaceOrientation)orientation {
+    NSString *orientationType = nil;
+    switch (orientation) {
+        case UIInterfaceOrientationUnknown:
+        case UIInterfaceOrientationPortrait:
+        case UIInterfaceOrientationPortraitUpsideDown:
+        {
+            orientationType = @"Portrait";
+        }
+            break;
+        case UIInterfaceOrientationLandscapeLeft:
+        case UIInterfaceOrientationLandscapeRight:
+        {
+            orientationType = @"Landscape";
+        }
+            break;
+    }
+    
+    NSString *lanuchImageName = nil;
+    NSArray *imageDatas = [[[NSBundle mainBundle] infoDictionary] valueForKey:@"UILaunchImages"];
+    CGSize screenSize = [[UIScreen mainScreen] ch_boundsForOrientation:orientation].size;
+    for (NSDictionary *imageData in imageDatas) {
+        NSString *aOrientationType = [imageData objectForKey:@"UILaunchImageOrientation"];
+        if (![orientationType isEqualToString:aOrientationType]) continue;
+        
+        CGSize imageSize = CGSizeFromString([imageData objectForKey:@"UILaunchImageSize"]);
+        if (!CGSizeEqualToSize(screenSize, imageSize)) continue;
+        
+        lanuchImageName = [imageData objectForKey:@"UILaunchImageName"];
+    }
+    if (!lanuchImageName.length) return nil;
+    
+    return [UIImage imageNamed:lanuchImageName];
 }
 
 @end

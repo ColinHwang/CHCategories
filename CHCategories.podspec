@@ -341,6 +341,7 @@ Pod::Spec.new do |s|
                 uiapplication_ch_base.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
                 uiapplication_ch_base.dependency 'CHCategories/Foundation/NSString/NSString+CHBase'
                 uiapplication_ch_base.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo'
+                uiapplication_ch_base.dependency 'CHCategories/UIKit/UIScreen/UIScreen+CHBase'
                 uiapplication_ch_base.source_files = 'CHCategories/Classes/UIKit/UIApplication/UIApplication+CHBase.{h,m}'
             end
         end
