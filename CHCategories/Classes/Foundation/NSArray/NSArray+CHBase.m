@@ -235,11 +235,10 @@
 #pragma mark - Filter
 - (NSArray<id> *)ch_filteredArray:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))block {
     return [self ch_filteredArrayWithOptions:kNilOptions usingBlock:block];
-
 }
 
 - (NSArray<id> *)ch_filteredArrayWithOptions:(NSEnumerationOptions)opts usingBlock:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))block {
-     NSMutableArray<id> *buffer = [NSMutableArray arrayWithArray:self];
+    NSMutableArray<id> *buffer = [NSMutableArray arrayWithArray:self];
     [buffer ch_filterWithOptions:opts usingBlock:block];
     return buffer.copy;
 }
@@ -541,11 +540,16 @@
 
 - (void)ch_filterWithOptions:(NSEnumerationOptions)opts usingBlock:(BOOL (^)(id obj, NSUInteger idx, BOOL *stop))block {
     if (!block) return;
+    
+    __block NSMutableIndexSet *indexSet = [NSMutableIndexSet indexSet];
     [self enumerateObjectsWithOptions:opts usingBlock:^(id  _Nonnull object, NSUInteger index, BOOL * _Nonnull aStop) {
         if (!block(object, index, aStop)) {
-            [self ch_removeObject:object];
+            [indexSet addIndex:index];
         }
     }];
+    if (!indexSet.count) return;
+    
+    [self removeObjectsAtIndexes:indexSet];
 }
 
 #pragma mark - Sort
@@ -560,7 +564,7 @@
 - (void)ch_shuffle {
     for (NSUInteger i = self.count; i > 1; i--) {
         [self ch_exchangeObjectAtIndex:(i - 1)
-                  withObjectAtIndex:arc4random_uniform((u_int32_t)i)]; // 机会递减: (A B C) -> B (A C) -> B C (A)
+                     withObjectAtIndex:arc4random_uniform((u_int32_t)i)]; // 机会递减: (A B C) -> B (A C) -> B C (A)
     }
 }
 
