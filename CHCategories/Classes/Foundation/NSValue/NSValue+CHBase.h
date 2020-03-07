@@ -63,6 +63,21 @@ NS_INLINE CFRange CHCFRangeFromNSRange(NSRange range) {
  */
 - (CGColorRef)ch_CGColorValue;
 
+/**
+根据SEL, 创建NSValue对象
+
+@param selector selector
+@return NSValue对象
+*/
++ (NSValue *)ch_valueWithSelector:(SEL)selector;
+
+/**
+获取NSValue对象内的SEL
+
+@return SEL
+*/
+- (SEL)ch_selectorValue;
+
 @end
 
 NS_ASSUME_NONNULL_END

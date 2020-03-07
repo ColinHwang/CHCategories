@@ -124,8 +124,9 @@ Pod::Spec.new do |s|
         foundation.subspec 'NSException' do |nsexception|
             # NSException+CHBase
             nsexception.subspec 'NSException+CHBase' do |nsexception_chbase|
-                nsexception_chbase.source_files = 'CHCategories/Classes/Foundation/NSException/NSException+CHBase.{h,m}'
                 nsexception_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                nsexception_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
+                nsexception_chbase.source_files = 'CHCategories/Classes/Foundation/NSException/NSException+CHBase.{h,m}'
             end
         end
         
@@ -181,6 +182,7 @@ Pod::Spec.new do |s|
         foundation.subspec 'NSObject' do |nsobject|
             # NSObject+CHBase
             nsobject.subspec 'NSObject+CHBase' do |nsobject_chbase|
+                nsobject_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 nsobject_chbase.source_files = 'CHCategories/Classes/Foundation/NSObject/NSObject+CHBase.{h,m}'
             end
             
@@ -448,6 +450,7 @@ Pod::Spec.new do |s|
             # UIControl+CHRepeatClickPrevention
             uicontrol.subspec 'UIControl+CHRepeatClickPrevention' do |uicontrol_chrepeatclickprevention|
                 uicontrol_chrepeatclickprevention.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uicontrol_chrepeatclickprevention.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uicontrol_chrepeatclickprevention.source_files = 'CHCategories/Classes/UIKit/UIControl/UIControl+CHRepeatClickPrevention.{h,m}'
             end
         end
@@ -525,6 +528,7 @@ Pod::Spec.new do |s|
             # UIImageView+CHBase
             uiimageview.subspec 'UIImageView+CHBase' do |uiimageview_chbase|
                 uiimageview_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uiimageview_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uiimageview_chbase.source_files = 'CHCategories/Classes/UIKit/UIImageView/UIImageView+CHBase.{h,m}'
             end
         end
@@ -534,6 +538,7 @@ Pod::Spec.new do |s|
             # UINavigationBar+CHBase
             uinavigationBar.subspec 'UINavigationBar+CHBase' do |uinavigationBar_chbase|
                 uinavigationBar_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uinavigationBar_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uinavigationBar_chbase.source_files = 'CHCategories/Classes/UIKit/UINavigationBar/UINavigationBar+CHBase.{h,m}'
             end
         end
@@ -586,6 +591,7 @@ Pod::Spec.new do |s|
             # UITabBar+CHBase
             uitabbar.subspec 'UITabBar+CHBase' do |uitabbar_chbase|
                 uitabbar_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uitabbar_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uitabbar_chbase.source_files = 'CHCategories/Classes/UIKit/UITabBar/UITabBar+CHBase.{h,m}'
             end
         end
@@ -608,6 +614,7 @@ Pod::Spec.new do |s|
                 uitableview_chbase.dependency 'CHCategories/Foundation/NSArray/NSArray+CHBase'
                 uitableview_chbase.dependency 'CHCategories/Foundation/NSIndexPath/NSIndexPath+CHBase'
                 uitableview_chbase.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uitableview_chbase.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uitableview_chbase.dependency 'CHCategories/UIKit/UIScrollView/UIScrollView+CHBase'
                 uitableview_chbase.dependency 'CHCategories/UIKit/UIView/UIView+CHBase'
                 uitableview_chbase.source_files = 'CHCategories/Classes/UIKit/UITableView/UITableView+CHBase.{h,m}'
@@ -649,6 +656,7 @@ Pod::Spec.new do |s|
             # UIView+CHTouchInset
             uiview.subspec 'UIView+CHTouchInset' do |uiview_chtouchinset|
                 uiview_chtouchinset.dependency 'CHCategories/Foundation/NSObject/NSObject+CHBase'
+                uiview_chtouchinset.dependency 'CHCategories/Foundation/NSValue/NSValue+CHBase'
                 uiview_chtouchinset.source_files = 'CHCategories/Classes/UIKit/UIView/UIView+CHTouchInset.{h,m}'
             end
         end

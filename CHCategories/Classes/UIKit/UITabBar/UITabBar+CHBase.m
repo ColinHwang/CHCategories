@@ -8,6 +8,7 @@
 
 #import "UITabBar+CHBase.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 
 static const int CH_TAB_BAR_SHADOW_IMAGE_VIEW_BACKGROUND_COLOR_KEY;
 
@@ -17,9 +18,9 @@ static const int CH_TAB_BAR_SHADOW_IMAGE_VIEW_BACKGROUND_COLOR_KEY;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selectors[] = {
-            @selector(layoutSubviews),
-        };
+        NSArray *selectors = @[
+            [NSValue ch_valueWithSelector:@selector(layoutSubviews)],
+        ];
         CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"ch_ui_tab_bar_");
     });
 }

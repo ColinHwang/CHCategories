@@ -317,7 +317,7 @@ FOUNDATION_EXPORT Class CHNSBlockClass(void);
  @param newMethodPrefix 新方法前缀
  @return 替换成功返回YES, 否则返回NO
  */
-FOUNDATION_EXTERN BOOL CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(Class aClass, SEL _Nonnull * _Nullable selectors, NSString *newMethodPrefix);
+FOUNDATION_EXTERN BOOL CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(Class aClass, NSArray<NSValue *> *selectors, NSString *newMethodPrefix);
 
 /**
  根据新方法前缀, 替换指定类别的静态方法集(类方法)
@@ -327,7 +327,7 @@ FOUNDATION_EXTERN BOOL CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(Class
  @param newMethodPrefix 新方法前缀
  @return 替换成功返回YES, 否则返回NO
  */
-FOUNDATION_EXTERN BOOL CHNSObjectSwizzleClassMethodsWithNewMethodPrefix(Class aClass, SEL _Nonnull * _Nullable selectors, NSString *newMethodPrefix);
+FOUNDATION_EXTERN BOOL CHNSObjectSwizzleClassMethodsWithNewMethodPrefix(Class aClass, NSArray<NSValue *> *selectors, NSString *newMethodPrefix);
 
 @end
 

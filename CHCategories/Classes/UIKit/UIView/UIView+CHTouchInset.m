@@ -8,6 +8,7 @@
 
 #import "UIView+CHTouchInset.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 
 static const int CH_UI_VIEW_TOUCH_INSET_KEY;
 
@@ -16,9 +17,9 @@ static const int CH_UI_VIEW_TOUCH_INSET_KEY;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selectors[] = {
-            @selector(pointInside:withEvent:),
-        };
+        NSArray *selectors = @[
+            [NSValue ch_valueWithSelector:@selector(pointInside:withEvent:)],
+        ];
         CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"_ch_ui_view_");
     });
 }

@@ -11,6 +11,7 @@
 #import "NSArray+CHBase.h"
 #import "NSIndexPath+CHBase.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 #import "UIScrollView+CHBase.h"
 #import "UIView+CHBase.h"
 
@@ -30,9 +31,9 @@ static const int CH_UI_TABLE_VIEW_FOOTERS_FOR_SECTIONS_KEY;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selectors[] = {
-            @selector(setDelegate:),
-        };
+        NSArray *selectors = @[
+            [NSValue ch_valueWithSelector:@selector(setDelegate:)],
+        ];
         CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"_ch_ui_table_view_");
     });
 }

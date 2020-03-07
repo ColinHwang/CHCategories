@@ -23,4 +23,12 @@ const NSRange CHNSRangeZero = {0, 0};
     return color;
 }
 
++ (NSValue *)ch_valueWithSelector:(SEL)selector {
+    return [NSValue valueWithPointer:selector];
+}
+
+- (SEL)ch_selectorValue {
+    return self.pointerValue;
+}
+
 @end

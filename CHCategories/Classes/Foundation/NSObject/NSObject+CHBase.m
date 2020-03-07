@@ -6,6 +6,7 @@
 //
 
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 #import <objc/message.h>
 
 static const int CH_NS_OBJECT_THROTTLE_SERIAL_QUEUE_KEY;
@@ -588,28 +589,24 @@ Class CHNSBlockClass(void) {
     return YES;
 }
 
-BOOL CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(Class aClass, SEL *selectors, NSString *newMethodPrefix) {
+BOOL CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(Class aClass, NSArray<NSValue *> *selectors, NSString *newMethodPrefix) {
     if (!newMethodPrefix.length) return NO;
-    
-    int count = sizeof(selectors) / sizeof(SEL);
-    if (!count) return NO;
-    
-    for (NSUInteger index = 0; index < count; index++) {
-        SEL originalSelector = selectors[index];
+    if (!selectors.count) return NO;
+        
+    for (NSValue *value in selectors) {
+        SEL originalSelector = value.ch_selectorValue;
         SEL swizzledSelector = NSSelectorFromString([newMethodPrefix stringByAppendingString:NSStringFromSelector(originalSelector)]);
         [aClass ch_swizzleInstanceMethod:originalSelector withNewMethod:swizzledSelector];
     }
     return YES;
 }
 
-BOOL CHNSObjectSwizzleClassMethodsWithNewMethodPrefix(Class aClass, SEL *selectors, NSString *newMethodPrefix) {
+BOOL CHNSObjectSwizzleClassMethodsWithNewMethodPrefix(Class aClass, NSArray<NSValue *> *selectors, NSString *newMethodPrefix) {
     if (!newMethodPrefix.length) return NO;
+    if (!selectors.count) return NO;
     
-    int count = sizeof(selectors) / sizeof(SEL);
-    if (!count) return NO;
-    
-    for (NSUInteger index = 0; index < count; index++) {
-        SEL originalSelector = selectors[index];
+    for (NSValue *value in selectors) {
+        SEL originalSelector = value.ch_selectorValue;
         SEL swizzledSelector = NSSelectorFromString([newMethodPrefix stringByAppendingString:NSStringFromSelector(originalSelector)]);
         [aClass ch_swizzleClassMethod:originalSelector withNewMethod:swizzledSelector];
     }

@@ -8,6 +8,7 @@
 
 #import "UIControl+CHRepeatClickPrevention.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 
 static const int CH_UI_CONTROL_REPEAT_CLICK_PREVENTION_KEY;
 static const int CH_UI_CONTROL_ACCEPT_EVENT_INTERVAL_KEY;
@@ -18,9 +19,9 @@ static const int CH_UI_CONTROL_IGNORE_EVENT_KEY;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selectors[] = {
-            @selector(sendAction:to:forEvent:),
-        };
+        NSArray *selectors = @[
+            [NSValue ch_valueWithSelector:@selector(sendAction:to:forEvent:)],
+        ];
         CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"_ch_ui_control_");
     });
 }

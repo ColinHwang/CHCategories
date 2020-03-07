@@ -8,6 +8,7 @@
 
 #import "UINavigationBar+CHBase.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 
 static const int CH_UI_NAVIGATION_SHADOW_IMAGE_VIEW_BACKGROUND_COLOR_KEY;
 
@@ -17,9 +18,9 @@ static const int CH_UI_NAVIGATION_SHADOW_IMAGE_VIEW_BACKGROUND_COLOR_KEY;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selectors[] = {
-            @selector(layoutSubviews),
-        };
+        NSArray *selectors = @[
+            [NSValue ch_valueWithSelector:@selector(layoutSubviews)],
+        ];
         CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"_ch_ui_navigation_bar_");
     });
 }

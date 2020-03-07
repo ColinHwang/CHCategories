@@ -7,6 +7,7 @@
 
 #import "NSException+CHBase.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 
 static BOOL CH_NS_EXCEPTIOM_KVC_ACCESS_PROHIBITED_EXCEPTIOM_ENABLED = NO;
 
@@ -17,9 +18,9 @@ static BOOL CH_NS_EXCEPTIOM_KVC_ACCESS_PROHIBITED_EXCEPTIOM_ENABLED = NO;
     if (@available(iOS 13.0, *)) {
         static dispatch_once_t onceToken;
         dispatch_once(&onceToken, ^{
-            SEL selectors[] = {
-                @selector(raise:format:),
-            };
+            NSArray *selectors = @[
+                [NSValue ch_valueWithSelector:@selector(raise:format:)],
+            ];
             CHNSObjectSwizzleClassMethodsWithNewMethodPrefix(self, selectors, @"_ch_ns_exception_");
         });
     }

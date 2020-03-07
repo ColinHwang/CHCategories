@@ -7,6 +7,7 @@
 
 #import "UIImageView+CHBase.h"
 #import "NSObject+CHBase.h"
+#import "NSValue+CHBase.h"
 
 static const int CH_UI_IMAGE_VIEW_SCALE_INTRINSIC_CONTENT_SIZE_ENABLED_KEY;
 static const int CH_UI_IMAGE_VIEW_PREFERRED_SCALE_INTRINSIC_CONTENT_HEIGHT_KEY;
@@ -18,9 +19,9 @@ static const int CH_UI_IMAGE_VIEW_PREFERRED_SCALE_INTRINSIC_CONTENT_WIDTH_KEY;
 + (void)load {
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
-        SEL selectors[] = {
-            @selector(intrinsicContentSize),
-        };
+        NSArray *selectors = @[
+            [NSValue ch_valueWithSelector:@selector(intrinsicContentSize)],
+        ];
         CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix(self, selectors, @"_ch_ui_image_view_");
     });
 }
