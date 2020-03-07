@@ -12,7 +12,7 @@ NS_ASSUME_NONNULL_BEGIN
 @interface UIViewController (CHBase)
 
 /**
- 设置全局偏好呈现转场风格(Default is UIModalPresentationFullScreen)
+ 设置全局偏好呈现转场风格(Default is UIModalPresentationAutomatic)
 
  @param style 呈现转场风格
 */

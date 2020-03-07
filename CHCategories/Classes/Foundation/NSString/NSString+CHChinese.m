@@ -116,13 +116,13 @@
      https://en.wikipedia.org/wiki/CJK_Radicals_Supplement
      
      康熙部首 2F00–2FDF
-     部首补充  2E80–2EFF
+     部首补充 2E80–2EFF
      */
     static NSString *regex;
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         NSMutableString *buffer = [NSMutableString stringWithString:@"\u2F00-\u2FDF"]; // 康熙部首
-        [buffer appendString:@"\u2E80-\u2EFF"];                                        // 部首补充
+        [buffer appendString:@"\u2E80-\u2EFF"];                                       // 部首补充
         regex = buffer.copy;
     });
     return regex;

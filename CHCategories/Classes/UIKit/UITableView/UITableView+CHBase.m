@@ -1149,9 +1149,9 @@ static const int CH_UI_TABLE_VIEW_FOOTERS_FOR_SECTIONS_KEY;
     if (!self.delegate) return;
     if (![self.delegate respondsToSelector:selector]) return;
     
-    SEL selectors[] = {
-        selector,
-    };
+    NSArray *selectors = @[
+        [NSValue ch_valueWithSelector:selector],
+    ];
     CHNSObjectSwizzleInstanceMethodsWithNewMethodPrefix([self.delegate class], selectors, @"_ch_ui_table_view_");
 }
 

@@ -9,7 +9,10 @@
 #import "NSObject+CHBase.h"
 #import "NSValue+CHBase.h"
 
-static UIModalPresentationStyle CH_UI_VIEW_CONTROLLER_PREFERRED_MODAL_PRESENTATION_STYLE = UIModalPresentationFullScreen;
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wunguarded-availability-new"
+static UIModalPresentationStyle CH_UI_VIEW_CONTROLLER_PREFERRED_MODAL_PRESENTATION_STYLE = UIModalPresentationAutomatic;
+#pragma clang diagnostic pop
 
 @implementation UIViewController (CHBase)
 
@@ -57,8 +60,9 @@ static UIModalPresentationStyle CH_UI_VIEW_CONTROLLER_PREFERRED_MODAL_PRESENTATI
 
 - (void)_ch_ui_view_controller_configurePreferredModalPresentationStyle:(UIViewController *)viewController {
     if (@available(iOS 13.0, *)) {
-        if (viewController.modalPresentationStyle == UIModalPresentationAutomatic) {
-            viewController.modalPresentationStyle = [UIViewController ch_preferredModalPresentationStyle];
+        UIModalPresentationStyle preferredModalPresentationStyle = [UIViewController ch_preferredModalPresentationStyle];
+        if (viewController.modalPresentationStyle != preferredModalPresentationStyle) {
+            viewController.modalPresentationStyle = preferredModalPresentationStyle;
         }
     }
 }
