@@ -212,4 +212,26 @@ static inline dispatch_time_t ch_dispatch_walltime_date(NSDate *date) {
  */
 extern unsigned long ch_gcd(unsigned long, unsigned long);
 
+#pragma mark - Avoid
+/**
+ 空字符串防护处理
+
+ @param _value_ 字符串
+ @return nil则返回空字符串, 否则不处理
+ */
+#ifndef CH_STRING_AVOID_NIL
+#define CH_STRING_AVOID_NIL(_value_) (_value_) ? : @""
+#endif
+
+/**
+ 空对象防护处理
+
+ @param _value_ 对象
+ @param _className_ 对象类别
+ @return nil则返回对象类别创建的新对象, 否则不处理
+ */
+#ifndef CH_OBJECT_AVOID_NIL
+#define CH_OBJECT_AVOID_NIL(_value_, _className_) (_value_) ? : [[(_className_) class] new]
+#endif
+
 #endif /* CHMacroHelper_h */
