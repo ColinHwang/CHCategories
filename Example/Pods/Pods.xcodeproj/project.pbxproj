@@ -49,6 +49,8 @@
 		37C80D68AA8A100B32C37FA3972ED9B1 /* NSURL+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = A45D6F4BE0E1D52730D8EA855026A9F9 /* NSURL+CHBase.m */; };
 		3BDC9BA5241382FB002FBD28 /* UIImageView+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BA3241382FB002FBD28 /* UIImageView+CHBase.h */; };
 		3BDC9BA6241382FB002FBD28 /* UIImageView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */; };
+		3BDC9BAA241385DB002FBD28 /* UIAlertController+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 3BDC9BA8241385DB002FBD28 /* UIAlertController+CHBase.h */; };
+		3BDC9BAB241385DB002FBD28 /* UIAlertController+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 3BDC9BA9241385DB002FBD28 /* UIAlertController+CHBase.m */; };
 		40CF3885630F3599945B3E58779AEAA3 /* NSPointerArray+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = D97BE73D6A3CE0F1A11948F5A3434EDF /* NSPointerArray+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		419B46813D250A411D19AE726EC2625D /* NSAttributedString+CHCreation.m in Sources */ = {isa = PBXBuildFile; fileRef = D88310E2C7250715FAE7744D6901A38C /* NSAttributedString+CHCreation.m */; };
 		44C2D4823A8CFED29290C4376CAD91BA /* NSNumber+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 7914E9F89F1CC4C977822F4D20908D6D /* NSNumber+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -248,6 +250,8 @@
 		3B1359C0332426A90618BC288D5856AC /* UIFont+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+CHBase.m"; path = "CHCategories/Classes/UIKit/UIFont/UIFont+CHBase.m"; sourceTree = "<group>"; };
 		3BDC9BA3241382FB002FBD28 /* UIImageView+CHBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CHBase.h"; sourceTree = "<group>"; };
 		3BDC9BA4241382FB002FBD28 /* UIImageView+CHBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+CHBase.m"; sourceTree = "<group>"; };
+		3BDC9BA8241385DB002FBD28 /* UIAlertController+CHBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIAlertController+CHBase.h"; sourceTree = "<group>"; };
+		3BDC9BA9241385DB002FBD28 /* UIAlertController+CHBase.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIAlertController+CHBase.m"; sourceTree = "<group>"; };
 		3C6470C2006AE1D05EAEED45BC99D2E9 /* NSPointerArray+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSPointerArray+CHBase.m"; path = "CHCategories/Classes/Foundation/NSPointerArray/NSPointerArray+CHBase.m"; sourceTree = "<group>"; };
 		3C6C62D33F64E834B5E57888B53AFF96 /* NSDictionary+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSDictionary+CHBase.h"; path = "CHCategories/Classes/Foundation/NSDictionary/NSDictionary+CHBase.h"; sourceTree = "<group>"; };
 		3DB1E649FA010F8BB37571D8D7A375D5 /* Pods-CHCategories_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-CHCategories_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
@@ -759,6 +763,16 @@
 			path = CHCategories/Classes/UIKit/UIImageView;
 			sourceTree = "<group>";
 		};
+		3BDC9BA7241385C3002FBD28 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				3BDC9BA8241385DB002FBD28 /* UIAlertController+CHBase.h */,
+				3BDC9BA9241385DB002FBD28 /* UIAlertController+CHBase.m */,
+			);
+			name = UIAlertController;
+			path = CHCategories/Classes/UIKit/UIAlertController;
+			sourceTree = "<group>";
+		};
 		3F27CB4CB3C5753F1C5EA7177C47B20A /* NSArray */ = {
 			isa = PBXGroup;
 			children = (
@@ -1049,6 +1063,7 @@
 		85C9414CBA514705A3AF774B071E1AF0 /* UIKit */ = {
 			isa = PBXGroup;
 			children = (
+				3BDC9BA7241385C3002FBD28 /* UIAlertController */,
 				3BDC9BA2241382DC002FBD28 /* UIImageView */,
 				317213D4366C38BF24448904E884CD4A /* UIActivityIndicatorView */,
 				F66AE996F5576DDFD7259B9A31969F9F /* UIApplication */,
@@ -1836,6 +1851,7 @@
 				A78209F971C9EDA38A18B5BA0CBF2D53 /* UIControl+CHRepeatClickPrevention.h in Headers */,
 				F3C0562819D93E11B268F66D1C9F5DEA /* UIDevice+CHBase.h in Headers */,
 				89B10A32BEBFA3AD2A0B1AA8476BA8EE /* UIDevice+CHMachineInfo.h in Headers */,
+				3BDC9BAA241385DB002FBD28 /* UIAlertController+CHBase.h in Headers */,
 				5E3421BF811188116C96592EA02646DE /* UIFont+CHBase.h in Headers */,
 				5ABD86D12BA35D466BDED8F1135227EB /* UIGestureRecognizer+CHBase.h in Headers */,
 				8F7BAF798C243B699CA3D92A40B61F71 /* UIImage+CHBase.h in Headers */,
@@ -1978,6 +1994,7 @@
 			files = (
 				F3E9005BB77D9FD00EAD201164B4F2B3 /* CALayer+CHAnimation.m in Sources */,
 				FC658D802EB5CF1A323FD0B0F9720383 /* CALayer+CHBase.m in Sources */,
+				3BDC9BAB241385DB002FBD28 /* UIAlertController+CHBase.m in Sources */,
 				DC57CFC5912ADD7026EDDE7C13DEE98A /* CHCategories-dummy.m in Sources */,
 				239B885CF65F8DA8D24D77896645DA0C /* CHCoreGraphicHelper.m in Sources */,
 				86186F4157052454A19B0FD6CD12DADF /* CHMacroHelper.m in Sources */,

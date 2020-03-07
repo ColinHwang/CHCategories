@@ -217,7 +217,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  获取过滤处理的数组
 
- @param block 过滤回调处理(返回NO, 元素移除出数组, 否则不移除, obj:元素, idx:索引, *stop:是否停止过滤)
+ @param block 过滤回调处理(返回YES, 元素保留, 否则移除出数组, obj:元素, idx:索引, *stop:是否停止过滤)
  @return 过滤处理的新数组
  */
 - (NSArray<ObjectType> *)ch_filteredArray:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block;
@@ -534,7 +534,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  过滤数组元素
 
- @param block 过滤回调处理(返回NO, 元素移除出数组, 否则不移除, obj:元素, idx:索引, *stop:是否停止过滤)
+ @param block 过滤回调处理(返回YES, 元素保留, 否则移除出数组, obj:元素, idx:索引, *stop:是否停止过滤)
  */
 - (void)ch_filter:(BOOL (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block;
 

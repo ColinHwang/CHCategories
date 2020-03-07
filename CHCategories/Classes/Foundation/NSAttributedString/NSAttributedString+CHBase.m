@@ -546,6 +546,7 @@
 - (void)ch_removeFont {
     [self ch_removeAttribute:NSFontAttributeName];
 }
+
 #pragma mark - Paragraph Style
 - (void)ch_setParagraphStyle:(NSParagraphStyle *)paragraphStyle range:(NSRange)range {
     [self ch_setAttribute:NSParagraphStyleAttributeName value:paragraphStyle range:range];

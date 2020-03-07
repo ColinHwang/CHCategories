@@ -336,6 +336,16 @@ Pod::Spec.new do |s|
             end
         end
         
+        # UIAlertController
+        uikit.subspec 'UIAlertController' do |uialertcontroller|
+            # UIAlertController+CHBase
+            uialertcontroller.subspec 'UIAlertController+CHBase' do |uialertcontroller_ch_base|
+                uialertcontroller_ch_base.dependency 'CHCategories/Foundation/NSAttributedString/NSAttributedString+CHBase'
+                uialertcontroller_ch_base.dependency 'CHCategories/UIKit/UIDevice/UIDevice+CHMachineInfo'
+                uialertcontroller_ch_base.source_files = 'CHCategories/Classes/UIKit/UIAlertController/UIAlertController+CHBase.{h,m}'
+            end
+        end
+        
         # UIApplication
         uikit.subspec 'UIApplication' do |uiapplication|
             # UIApplication+CHBase
