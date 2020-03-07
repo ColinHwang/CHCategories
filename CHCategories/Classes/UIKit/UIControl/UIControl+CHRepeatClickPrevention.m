@@ -49,8 +49,37 @@ static const int CH_UI_CONTROL_IGNORE_EVENT_KEY;
     [self ch_setAssociatedValue:@(ignoreEvent) withKey:&CH_UI_CONTROL_IGNORE_EVENT_KEY];
 }
 
++ (NSMutableSet *)_ch_ui_control_getRepeatClickPreventionClassForTargetsOfWhitelist {
+    static dispatch_once_t onceToken;
+    static NSMutableSet *set;
+    dispatch_once(&onceToken, ^{
+        set = [NSMutableSet set];
+    });
+    return set;
+}
+
++ (void)ch_addRepeatClickPreventionClassForTargetsToWhitelist:(Class)aClass {
+    if (!aClass) return;
+    
+    NSMutableSet *set = [self _ch_ui_control_getRepeatClickPreventionClassForTargetsOfWhitelist];
+    [set addObject:aClass];
+}
+
++ (void)ch_removeRepeatClickPreventionClassForTargetsFromWhitelist:(Class)aClass {
+    if (!aClass) return;
+    
+    NSMutableSet *set = [self _ch_ui_control_getRepeatClickPreventionClassForTargetsOfWhitelist];
+    [set removeObject:aClass];
+}
+
 #pragma mark - Swizzle
 - (void)_ch_ui_control_sendAction:(SEL)action to:(id)target forEvent:(UIEvent *)event {
+    NSMutableSet *whitelist = [[self class] _ch_ui_control_getRepeatClickPreventionClassForTargetsOfWhitelist];
+    if ([whitelist containsObject:[target class]]) {
+        [self _ch_ui_control_sendAction:action to:target forEvent:event];
+        return;
+    }
+    
     if (!self.ch_repeatClickPrevention) {
         [self _ch_ui_control_sendAction:action to:target forEvent:event];
         return;
@@ -67,7 +96,7 @@ static const int CH_UI_CONTROL_IGNORE_EVENT_KEY;
 
 - (void)_ch_setupIgnoreEvent:(NSNumber *)value {
     BOOL ignoreEvent = [value boolValue];
-    [self setJx_ignoreEvent:ignoreEvent];
+    [self setCh_ignoreEvent:ignoreEvent];
 }
 
 @end
