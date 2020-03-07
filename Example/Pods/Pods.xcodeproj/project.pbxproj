@@ -11,12 +11,10 @@
 		029ABEDBFA2F1ECFBBCCC2FC1FEC83D0 /* NSCalendar+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 660EEF61E57443F67CD13591CD37F864 /* NSCalendar+CHBase.m */; };
 		03DB4981742033F238C0F0A5F4A201C3 /* NSObject+CHDataBind.m in Sources */ = {isa = PBXBuildFile; fileRef = 48CBCC25D1B4B51D8DABA2408A8DEADD /* NSObject+CHDataBind.m */; };
 		0420A44C47D8BA82DDE345A94ED1F3F4 /* UITableView+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 68E7CEF56CF6DF40A4A9674D3D98AFA8 /* UITableView+CHBase.m */; };
-		043650B0F78461455608DDD03FB1E2A4 /* UIColor+CHColorSpace.m in Sources */ = {isa = PBXBuildFile; fileRef = 47E46D7A1CD476AC8036B975EE3B9906 /* UIColor+CHColorSpace.m */; };
 		04AF4E33E369E7EDD385AA09D3A992E9 /* UIScreen+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 6717F35E569B63CF60EB5B010992240A /* UIScreen+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0692019A2F3640A98B812545BCADCE25 /* NSIndexPath+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = F6A4228140D8395AFB9F5452CCE439BE /* NSIndexPath+CHBase.m */; };
 		06AA900A410D2A96C10E5EC446BD472D /* CHMacroHelper.h in Headers */ = {isa = PBXBuildFile; fileRef = B70E2BB9AE3392F103A973FB4B7CC6D2 /* CHMacroHelper.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		08577C704642C2C4E951131E8DAAD2AC /* NSJSONSerialization+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 74E12ADC3D4B445272FFA4C83B7610C5 /* NSJSONSerialization+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		09FEC4652686E24A2374CC5B0928BD7A /* UIColor+CHColorSpace.h in Headers */ = {isa = PBXBuildFile; fileRef = 3A1BBD4085E952012329902D44EBC766 /* UIColor+CHColorSpace.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A01091F1FFBA4162C48BF981E11DCCF /* NSParagraphStyle+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 518AF720EC31D897DE0F638C0B173CA0 /* NSParagraphStyle+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A3DECD91129B0AF20F2473749501167 /* UISwipeGestureRecognizer+CHBase.h in Headers */ = {isa = PBXBuildFile; fileRef = 1366EAE4D78001D0411E702F84DF119C /* UISwipeGestureRecognizer+CHBase.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0B073A407BDEB4312EA658FAFCADEBC0 /* UITextField+CHBase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1A2FE93B88F64E491C013704B19CE3E7 /* UITextField+CHBase.m */; };
@@ -249,7 +247,6 @@
 		32D726A287B90C9AE115410DB336D5AE /* NSObject+CHKeyValueObserving.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CHKeyValueObserving.m"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHKeyValueObserving.m"; sourceTree = "<group>"; };
 		32D930B87B4C59E22F779BA05EBA41A3 /* UIDevice+CHMachineInfo.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIDevice+CHMachineInfo.m"; path = "CHCategories/Classes/UIKit/UIDevice/UIDevice+CHMachineInfo.m"; sourceTree = "<group>"; };
 		36D7BA4F843855F7CE52D52BE8CFC843 /* NSObject+CHKeyValueCoding.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "NSObject+CHKeyValueCoding.h"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHKeyValueCoding.h"; sourceTree = "<group>"; };
-		3A1BBD4085E952012329902D44EBC766 /* UIColor+CHColorSpace.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIColor+CHColorSpace.h"; path = "CHCategories/Classes/UIKit/UIColor/UIColor+CHColorSpace.h"; sourceTree = "<group>"; };
 		3A86D6EDF7B6A8846145F442A86D99AF /* UIFont+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIFont+CHBase.h"; path = "CHCategories/Classes/UIKit/UIFont/UIFont+CHBase.h"; sourceTree = "<group>"; };
 		3B1359C0332426A90618BC288D5856AC /* UIFont+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIFont+CHBase.m"; path = "CHCategories/Classes/UIKit/UIFont/UIFont+CHBase.m"; sourceTree = "<group>"; };
 		3BDC9BA3241382FB002FBD28 /* UIImageView+CHBase.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+CHBase.h"; sourceTree = "<group>"; };
@@ -269,7 +266,6 @@
 		4186EB63AD6C25634971979E5E37A628 /* Pods-CHCategories_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-CHCategories_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		422DA6FEF0C4B93A6F5D3B23CD950FEC /* UISlider+CHBase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UISlider+CHBase.h"; path = "CHCategories/Classes/UIKit/UISlider/UISlider+CHBase.h"; sourceTree = "<group>"; };
 		44EEDDD7308AB9E17EC06F2F8D1E5009 /* NSValue+CHBase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSValue+CHBase.m"; path = "CHCategories/Classes/Foundation/NSValue/NSValue+CHBase.m"; sourceTree = "<group>"; };
-		47E46D7A1CD476AC8036B975EE3B9906 /* UIColor+CHColorSpace.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIColor+CHColorSpace.m"; path = "CHCategories/Classes/UIKit/UIColor/UIColor+CHColorSpace.m"; sourceTree = "<group>"; };
 		48CBCC25D1B4B51D8DABA2408A8DEADD /* NSObject+CHDataBind.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "NSObject+CHDataBind.m"; path = "CHCategories/Classes/Foundation/NSObject/NSObject+CHDataBind.m"; sourceTree = "<group>"; };
 		49B3F485792F86762D02969F73379775 /* UIView+CHTouchInset.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIView+CHTouchInset.m"; path = "CHCategories/Classes/UIKit/UIView/UIView+CHTouchInset.m"; sourceTree = "<group>"; };
 		4D28FDA4AA4CD05EA40885CAF13FE979 /* Pods-CHCategories_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-CHCategories_Example.debug.xcconfig"; sourceTree = "<group>"; };
@@ -966,15 +962,6 @@
 			name = UITableViewCell;
 			sourceTree = "<group>";
 		};
-		637091E91972E4D212555416ABEFF515 /* UIColor+CHColorSpace */ = {
-			isa = PBXGroup;
-			children = (
-				3A1BBD4085E952012329902D44EBC766 /* UIColor+CHColorSpace.h */,
-				47E46D7A1CD476AC8036B975EE3B9906 /* UIColor+CHColorSpace.m */,
-			);
-			name = "UIColor+CHColorSpace";
-			sourceTree = "<group>";
-		};
 		63B46C837D729930EA07DBC283102AB0 /* UINavigationBar+CHBase */ = {
 			isa = PBXGroup;
 			children = (
@@ -1491,7 +1478,6 @@
 			isa = PBXGroup;
 			children = (
 				8C0E6FA6D208A48A08318B4CEFEB9B73 /* UIColor+CHBase */,
-				637091E91972E4D212555416ABEFF515 /* UIColor+CHColorSpace */,
 			);
 			name = UIColor;
 			sourceTree = "<group>";
@@ -1877,7 +1863,6 @@
 				84BB68130418C1249664D737AA3D90CC /* UICollectionView+CHBase.h in Headers */,
 				91F943F09E236AA76B996D04D4BAADC2 /* UICollectionViewFlowLayout+CHBase.h in Headers */,
 				856A0CF8A3AA9A69DC8198BFB919847D /* UIColor+CHBase.h in Headers */,
-				09FEC4652686E24A2374CC5B0928BD7A /* UIColor+CHColorSpace.h in Headers */,
 				C76B5646912B3EC84839643F0F16A675 /* UIControl+CHBase.h in Headers */,
 				A78209F971C9EDA38A18B5BA0CBF2D53 /* UIControl+CHRepeatClickPrevention.h in Headers */,
 				F3C0562819D93E11B268F66D1C9F5DEA /* UIDevice+CHBase.h in Headers */,
@@ -2078,7 +2063,6 @@
 				80FB213115A6854A7009D2F78F027A26 /* UICollectionView+CHBase.m in Sources */,
 				913E6B05479F1D7080B1BDE515CBC9CA /* UICollectionViewFlowLayout+CHBase.m in Sources */,
 				18F8E50B75DA3252A1C5FDFD8CBE2D32 /* UIColor+CHBase.m in Sources */,
-				043650B0F78461455608DDD03FB1E2A4 /* UIColor+CHColorSpace.m in Sources */,
 				A2600951ACE45D17186567C0ED4309F7 /* UIControl+CHBase.m in Sources */,
 				D7D496716E06E57983A635B6E658E571 /* UIControl+CHRepeatClickPrevention.m in Sources */,
 				6EB4D3345832CCC56C0AC278285E576B /* UIDevice+CHBase.m in Sources */,

@@ -432,11 +432,6 @@ Pod::Spec.new do |s|
             uicolor.subspec 'UIColor+CHBase' do |uicolor_chbase|
                 uicolor_chbase.source_files = 'CHCategories/Classes/UIKit/UIColor/UIColor+CHBase.{h,m}'
             end
-            
-            # UIColor+CHColorSpace
-            uicolor.subspec 'UIColor+CHColorSpace' do |uicolor_chcolorspace|
-                uicolor_chcolorspace.source_files = 'CHCategories/Classes/UIKit/UIColor/UIColor+CHColorSpace.{h,m}'
-            end
         end
         
         # UIControl

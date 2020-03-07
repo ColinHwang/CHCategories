@@ -59,7 +59,6 @@
 #import "UICollectionView+CHBase.h"
 #import "UICollectionViewFlowLayout+CHBase.h"
 #import "UIColor+CHBase.h"
-#import "UIColor+CHColorSpace.h"
 #import "UIControl+CHBase.h"
 #import "UIControl+CHRepeatClickPrevention.h"
 #import "UIDevice+CHBase.h"
@@ -85,6 +84,7 @@
 #import "UIView+CHAnimation.h"
 #import "UIView+CHBase.h"
 #import "UIView+CHTouchInset.h"
+#import "UIViewController+CHBase.h"
 
 /* QuartzCore */
 #import "CALayer+CHAnimation.h"
