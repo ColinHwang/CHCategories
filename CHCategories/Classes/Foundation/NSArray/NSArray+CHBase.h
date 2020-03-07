@@ -238,7 +238,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block Map回调处理(返回处理后的元素, 返回nil则不添加进新数组, obj:元素, idx:索引, *stop:是否停止)
  @return Map处理的新数组
  */
-- (NSArray<ObjectType> *)ch_mappedArray:(ObjectType (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block;
+- (NSArray<id> *)ch_mappedArray:(ObjectType (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block;
 
 /**
  根据遍历方式, 获取Map处理的数组
@@ -247,7 +247,7 @@ NS_ASSUME_NONNULL_BEGIN
  @param block Map回调处理(返回处理后的元素, 返回nil则不添加进新数组, obj:元素, idx:索引, *stop:是否停止)
  @return Map处理的新数组
  */
-- (NSArray<ObjectType> *)ch_mappedArrayWithOptions:(NSEnumerationOptions)opts usingBlock:(ObjectType (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block;
+- (NSArray<id> *)ch_mappedArrayWithOptions:(NSEnumerationOptions)opts usingBlock:(ObjectType (^)(ObjectType obj, NSUInteger idx, BOOL *stop))block;
 
 #pragma mark - Sort
 /**
