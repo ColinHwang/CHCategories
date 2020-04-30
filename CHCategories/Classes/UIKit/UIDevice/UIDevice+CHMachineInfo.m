@@ -104,6 +104,9 @@
 #endif
 
 #pragma mark - Machine Model Info
+#define CHDeviceIsSimulatorMatchScreenSize( _size_ ) \
+if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), _size_); \
+
 #define CHDeviceIsMachineModelInSet( _objs... ) \
 if (!self.ch_machineModel) return NO; \
 static BOOL isConstained = NO; \
@@ -124,137 +127,116 @@ return isConstained; \
     /*
      https://www.theiphonewiki.com
      */
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X480);
-
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X480);
     CHDeviceIsMachineModelInSet(@"iPhone3,1", @"iPhone3,2", @"iPhone3,3");
 }
 
 - (BOOL)ch_isiPhone4s {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X480);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X480);
     CHDeviceIsMachineModelInSet(@"iPhone4,1");
 }
 
 - (BOOL)ch_isiPhone5 {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X568);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X568);
     CHDeviceIsMachineModelInSet(@"iPhone5,1", @"iPhone5,2");
 }
 
 - (BOOL)ch_isiPhone5c {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X568);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X568);
     CHDeviceIsMachineModelInSet(@"iPhone5,3", @"iPhone5,4");
 }
 
 - (BOOL)ch_isiPhone5s {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X568);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X568);
     CHDeviceIsMachineModelInSet(@"iPhone6,1", @"iPhone6,2");
 }
 
 - (BOOL)ch_isiPhone6 {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X667);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X667);
     CHDeviceIsMachineModelInSet(@"iPhone7,2");
 }
 
 - (BOOL)ch_isiPhone6Plus {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X736);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X736);
     CHDeviceIsMachineModelInSet(@"iPhone7,1");
 }
 
 - (BOOL)ch_isiPhone6s {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X667);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X667);
     CHDeviceIsMachineModelInSet(@"iPhone8,1");
 }
 
 - (BOOL)ch_isiPhone6sPlus {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X736);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X736);
     CHDeviceIsMachineModelInSet(@"iPhone8,2");
 }
 
 - (BOOL)ch_isiPhoneSE {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X568);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X568);
     CHDeviceIsMachineModelInSet(@"iPhone8,4");
 }
 
 - (BOOL)ch_isiPhone7 {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X667);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X667);
     CHDeviceIsMachineModelInSet(@"iPhone9,1", @"iPhone9,3");
 }
 
 - (BOOL)ch_isiPhone7Plus {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X736);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X736);
     CHDeviceIsMachineModelInSet(@"iPhone9,2", @"iPhone9,4");
 }
 
 - (BOOL)ch_isiPhone8 {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X667);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X667);
     CHDeviceIsMachineModelInSet(@"iPhone10,1", @"iPhone10,4");
 }
 
 - (BOOL)ch_isiPhone8Plus {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X736);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X736);
     CHDeviceIsMachineModelInSet(@"iPhone10,2", @"iPhone10,5");
 }
 
 - (BOOL)ch_isiPhoneX {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X812);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X812);
     CHDeviceIsMachineModelInSet(@"iPhone10,3", @"iPhone10,6");
 }
 
 - (BOOL)ch_isiPhoneXR {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X896);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X896);
     CHDeviceIsMachineModelInSet(@"iPhone11,8");
 }
 
 - (BOOL)ch_isiPhoneXS {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X812);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X812);
     CHDeviceIsMachineModelInSet(@"iPhone11,2");
 }
 
 - (BOOL)ch_isiPhoneXSMax {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X896);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X896);
     CHDeviceIsMachineModelInSet(@"iPhone11,4", @"iPhone11,6");
 }
 
 - (BOOL)ch_isiPhone11 {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X896);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X896);
     CHDeviceIsMachineModelInSet(@"iPhone12,1");
 }
 
 - (BOOL)ch_isiPhone11Pro {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint375X812);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint375X812);
     CHDeviceIsMachineModelInSet(@"iPhone12,3");
 }
 
 - (BOOL)ch_isiPhone11ProMax {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint414X896);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint414X896);
     CHDeviceIsMachineModelInSet(@"iPhone12,5");
 }
 
 - (BOOL)ch_isiPhoneSE2 {
-    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X568);
-    
+    CHDeviceIsSimulatorMatchScreenSize(CHUIScreenSizeInPoint320X568);
     CHDeviceIsMachineModelInSet(@"iPhone12,8");
 }
 
+#undef CHDeviceIsSimulatorMatchScreenSize
 #undef CHDeviceIsMachineModelInSet
 
 #pragma mark - Operation System Info
