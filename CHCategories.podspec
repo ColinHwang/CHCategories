@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
     s.name             = 'CHCategories'
-    s.version          = '0.1.0'
+    s.version          = '0.2.0'
     s.summary          = 'Categories for Cocoa.'
     s.homepage         = 'https://github.com/ColinHwang/CHCategories'
     s.license          = { :type => 'MIT', :file => 'LICENSE' }
