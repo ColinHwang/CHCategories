@@ -110,7 +110,7 @@ const CGSize CHUIScreenSizeInPoint414X896 = {414, 896};
             else if ([model isEqualToString:@"iPhone12,5"]) size = CGSizeMake(1242, 2688);
         } else if ([model hasPrefix:@"iPad"]) {
             if ([model isEqualToString:@"iPad6,3"]) size = CGSizeMake(1536, 2048);
-            if ([model isEqualToString:@"iPad6,4"]) size = CGSizeMake(1536, 2048);
+            else if ([model isEqualToString:@"iPad6,4"]) size = CGSizeMake(1536, 2048);
             else if ([model isEqualToString:@"iPad6,7"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad6,8"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad7,1"]) size = CGSizeMake(2048, 2732);
