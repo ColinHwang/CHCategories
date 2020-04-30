@@ -61,7 +61,7 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
 
 - (NSString *)ch_machineModelName {
     /*
-     https://www.theiphonewiki.com
+     https://www.theiphonewiki.com/wiki/Models
      */
     static dispatch_once_t one;
     static NSString *name;
@@ -127,6 +127,7 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPhone12,1" : @"iPhone 11",
                                @"iPhone12,3" : @"iPhone 11 Pro",
                                @"iPhone12,5" : @"iPhone 11 Pro Max",
+                               @"iPhone12,8" : @"iPhone SE 2",
                                
                                @"iPad1,1" : @"iPad 1",
                                @"iPad2,1" : @"iPad 2 (WiFi)",
@@ -151,8 +152,8 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPad4,7" : @"iPad mini 3 (WiFi)",
                                @"iPad4,8" : @"iPad mini 3 (Cellular)",
                                @"iPad4,9" : @"iPad mini 3 (China)",
-                               @"iPad5,1" : @"iPad mini 4",
-                               @"iPad5,2" : @"iPad mini 4",
+                               @"iPad5,1" : @"iPad mini 4 (WiFi)",
+                               @"iPad5,2" : @"iPad mini 4 (Cellular)",
                                @"iPad5,3" : @"iPad Air 2 (WiFi)",
                                @"iPad5,4" : @"iPad Air 2 (Cellular)",
                                @"iPad6,3" : @"iPad Pro 9.7 inch (WiFi)",
@@ -167,6 +168,8 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPad7,4" : @"iPad Pro 10.5 inch (Cellular)",
                                @"iPad7,5" : @"iPad 6 (WiFi)",
                                @"iPad7,6" : @"iPad 6 (Cellular)",
+                               @"iPad7,11" : @"iPad 7 (WiFi)",
+                               @"iPad7,12" : @"iPad 7 (Cellular)",
                                @"iPad8,1" : @"iPad Pro 11 inch (WiFi)",
                                @"iPad8,2" : @"iPad Pro 11 inch (WiFi)",
                                @"iPad8,3" : @"iPad Pro 11 inch (Cellular)",
@@ -174,10 +177,15 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                @"iPad8,5" : @"iPad Pro 12.9 inch 3 (WiFi)",
                                @"iPad8,6" : @"iPad Pro 12.9 inch 3 (WiFi)",
                                @"iPad8,7" : @"iPad Pro 12.9 inch 3 (Cellular)",
-                               @"iPad11,1" : @"iPad mini 5",
-                               @"iPad11,2" : @"iPad mini 5",
-                               @"iPad11,3" : @"iPad Air 3",
-                               @"iPad11,4" : @"iPad Air 3",
+                               @"iPad8,8" : @"iPad Pro 12.9 inch 3 (Cellular)",
+                               @"iPad8,9" : @"iPad Pro 11 inch 2 (WiFi)",
+                               @"iPad8,10" : @"iPad Pro 11 inch 2 (Cellular)",
+                               @"iPad8,11" : @"iPad Pro 12.9 inch 4 (WiFi)",
+                               @"iPad8,12" : @"iPad Pro 12.9 inch 4 (Cellular)",
+                               @"iPad11,1" : @"iPad mini 5 (WiFi)",
+                               @"iPad11,2" : @"iPad mini 5 (Cellular)",
+                               @"iPad11,3" : @"iPad Air 3 (WiFi)",
+                               @"iPad11,4" : @"iPad Air 3 (Cellular)",
                                
                                @"AppleTV2,1" : @"Apple TV 2",
                                @"AppleTV3,1" : @"Apple TV 3",
@@ -187,6 +195,7 @@ typedef NS_ENUM(NSUInteger, CHUIDeviceCurrentMemoryInfo) {
                                
                                @"AirPods1,1" : @"AirPods 1",
                                @"AirPods2,1" : @"AirPods 2",
+                               @"iProd8,1" : @"AirPods Pro",
                                
                                @"i386" : @"Simulator x86",
                                @"x86_64" : @"Simulator x64",

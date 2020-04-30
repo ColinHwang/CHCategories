@@ -105,8 +105,13 @@ const CGSize CHUIScreenSizeInPoint414X896 = {414, 896};
             else if ([model isEqualToString:@"iPhone11,4"]) size = CGSizeMake(1242, 2688);
             else if ([model isEqualToString:@"iPhone11,6"]) size = CGSizeMake(1242, 2688);
             else if ([model isEqualToString:@"iPhone11,8"]) size = CGSizeMake(828, 1792);
+            else if ([model isEqualToString:@"iPhone12,1"]) size = CGSizeMake(828, 1792);
+            else if ([model isEqualToString:@"iPhone12,3"]) size = CGSizeMake(1125, 2436);
+            else if ([model isEqualToString:@"iPhone12,5"]) size = CGSizeMake(1242, 2688);
         } else if ([model hasPrefix:@"iPad"]) {
-            if ([model isEqualToString:@"iPad6,7"]) size = CGSizeMake(2048, 2732);
+            if ([model isEqualToString:@"iPad6,3"]) size = CGSizeMake(1536, 2048);
+            if ([model isEqualToString:@"iPad6,4"]) size = CGSizeMake(1536, 2048);
+            else if ([model isEqualToString:@"iPad6,7"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad6,8"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad7,1"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad7,2"]) size = CGSizeMake(2048, 2732);
@@ -122,6 +127,14 @@ const CGSize CHUIScreenSizeInPoint414X896 = {414, 896};
             else if ([model isEqualToString:@"iPad8,6"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad8,7"]) size = CGSizeMake(2048, 2732);
             else if ([model isEqualToString:@"iPad8,8"]) size = CGSizeMake(2048, 2732);
+            else if ([model isEqualToString:@"iPad8,9"]) size = CGSizeMake(1668, 2338);
+            else if ([model isEqualToString:@"iPad8,10"]) size = CGSizeMake(1668, 2338);
+            else if ([model isEqualToString:@"iPad8,11"]) size = CGSizeMake(2048, 2732);
+            else if ([model isEqualToString:@"iPad8,12"]) size = CGSizeMake(2048, 2732);
+            else if ([model isEqualToString:@"iPad11,1"]) size = CGSizeMake(1536, 2048);
+            else if ([model isEqualToString:@"iPad11,2"]) size = CGSizeMake(1536, 2048);
+            else if ([model isEqualToString:@"iPad11,3"]) size = CGSizeMake(1668, 2224);
+            else if ([model isEqualToString:@"iPad11,4"]) size = CGSizeMake(1668, 2224);
         }
     }
     
@@ -207,6 +220,10 @@ const CGSize CHUIScreenSizeInPoint414X896 = {414, 896};
                                                       @"iPhone11,4" : @458, // @"iPhone XS Max",
                                                       @"iPhone11,6" : @458, // @"iPhone XS Max",
                                                       @"iPhone11,8" : @326, // @"iPhone XR",
+                                                      @"iPhone12,1" : @326, // @"iPhone 11",
+                                                      @"iPhone12,3" : @458, // @"iPhone 11 Pro",
+                                                      @"iPhone12,5" : @458, // @"iPhone 11 Pro Max",
+                                                      @"iPhone12,8" : @326, // @"iPhone SE 2",
                                                       
                                                       @"iPad1,1" : @132, // @"iPad 1",
                                                       @"iPad2,1" : @132, // @"iPad 2 (WiFi)",
@@ -247,6 +264,8 @@ const CGSize CHUIScreenSizeInPoint414X896 = {414, 896};
                                                       @"iPad7,4" : @264, // @"iPad Pro 10.5 inch (Cellular)",
                                                       @"iPad7,5" : @264, // @"iPad 6 (WiFi)",
                                                       @"iPad7,6" : @264, // @"iPad 6 (Cellular)",
+                                                      @"iPad7,11" : @264, // @"iPad 7 (WiFi)",
+                                                      @"iPad7,12" : @264, // @"iPad 7 (Cellular)",
                                                       @"iPad8,1" : @264, // @"iPad Pro 11 inch (WiFi)",
                                                       @"iPad8,2" : @264, // @"iPad Pro 11 inch (WiFi)",
                                                       @"iPad8,3" : @264, // @"iPad Pro 11 inch (Cellular)",
@@ -255,6 +274,14 @@ const CGSize CHUIScreenSizeInPoint414X896 = {414, 896};
                                                       @"iPad8,6" : @264, // @"iPad Pro 12.9 inch 3 (WiFi)",
                                                       @"iPad8,7" : @264, // @"iPad Pro 12.9 inch 3 (Cellular)",
                                                       @"iPad8,8" : @264, // @"iPad Pro 12.9 inch 3 (Cellular)",
+                                                      @"iPad8,9" : @264, // @"iPad Pro 11 inch 2 (WiFi)",
+                                                      @"iPad8,10" : @264, // @"iPad Pro 11 inch 2 (Cellular)",
+                                                      @"iPad8,11" : @264, // @"iPad Pro 12.9 inch 4 (WiFi)",
+                                                      @"iPad8,12" : @264, // @"iPad Pro 12.9 inch 4 (Cellular)",
+                                                      @"iPad11,1" : @326, // @"iPad mini 5 (WiFi)",
+                                                      @"iPad11,2" : @326, // @"iPad mini 5 (Cellular)",
+                                                      @"iPad11,3" : @264, // @"iPad Air 3 (WiFi)",
+                                                      @"iPad11,4" : @264, // @"iPad Air 3 (Cellular)",
                                                       };
         NSString *model = [UIDevice currentDevice].ch_machineModel;
         if (model) {

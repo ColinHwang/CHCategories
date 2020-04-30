@@ -39,6 +39,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (nonatomic, readonly) BOOL ch_isiPhoneXR;     ///< 设备是否为iPhoneXR
 @property (nonatomic, readonly) BOOL ch_isiPhoneXS;     ///< 设备是否为iPhoneXS
 @property (nonatomic, readonly) BOOL ch_isiPhoneXSMax;  ///< 设备是否为iPhoneXSMax
+@property (nonatomic, readonly) BOOL ch_isiPhoneSE2;  ///< 设备是否为iPhoneSE 2
 
 #pragma mark - Operation System Info
 @property (nonatomic, readonly) BOOL ch_isiOS6Later;  ///< 设备系统版本是否iOS6及以上

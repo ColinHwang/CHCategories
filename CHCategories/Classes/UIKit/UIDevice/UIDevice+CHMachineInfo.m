@@ -249,6 +249,12 @@ return isConstained; \
     CHDeviceIsMachineModelInSet(@"iPhone12,5");
 }
 
+- (BOOL)ch_isiPhoneSE2 {
+    if ([UIDevice currentDevice].ch_isSimulator) return CGSizeEqualToSize(CHScreenSize(), CHUIScreenSizeInPoint320X568);
+    
+    CHDeviceIsMachineModelInSet(@"iPhone12,8");
+}
+
 #undef CHDeviceIsMachineModelInSet
 
 #pragma mark - Operation System Info
