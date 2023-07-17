@@ -1,6 +1,5 @@
 # CHCategories
 
-[![CI Status](https://img.shields.io/travis/ColinHwang/CHCategories.svg?style=flat)](https://travis-ci.org/ColinHwang/CHCategories)
 [![Version](https://img.shields.io/cocoapods/v/CHCategories.svg?style=flat)](https://cocoapods.org/pods/CHCategories)
 [![License](https://img.shields.io/cocoapods/l/CHCategories.svg?style=flat)](https://cocoapods.org/pods/CHCategories)
 [![Platform](https://img.shields.io/cocoapods/p/CHCategories.svg?style=flat)](https://cocoapods.org/pods/CHCategories)
